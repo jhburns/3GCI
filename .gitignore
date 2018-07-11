@@ -1,5 +1,5 @@
 *.log
-*.lock
+yarn.lock
 /node_modules
 /public
 /themes/GCI/static/created
