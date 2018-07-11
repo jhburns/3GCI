@@ -1,0 +1,21 @@
+<!doctype html>
+<html class="no-js" lang="{{ .Site.LanguageCode }}">
+
+    <head>
+        {{ if .Site.Params.header.enable }}
+        {{ partial "head.html" . }}
+        {{ end }}
+    </head>
+
+    <body>
+
+        {{ if .Site.Params.body.enable }}
+        {{ partial "body.html" . }}
+        {{ end }}
+
+        {{ if .Site.Params.scripts.enable }}
+        {{ partial "scripts.html" . }}
+        {{ end }}
+
+    </body>
+</html>
