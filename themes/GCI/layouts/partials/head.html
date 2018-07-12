@@ -19,7 +19,7 @@
     {{ if fileExists "/themes/GCI/static/created/main.css" }}
         <link rel="stylesheet" href="/created/main.css">
     {{ else }}
-        <p>Error: CSS not compiled, please contact Admin to run "yarn run watch" and restart hugo server</p>
+        <p>Error: CSS not compiled, please contact Admin to run "yarn run webpack -p" and restart hugo server</p>
     {{ end }}
 
 </section>
