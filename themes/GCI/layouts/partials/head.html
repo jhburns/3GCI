@@ -7,12 +7,19 @@
 
     <!-- Place favicon.ico in the root directory also, some browsers read from there -->
 
-    {{ if (fileExists "static/favicon.ico") }}
+    {{ if fileExists "/themes/GCI/static/favicon.ico" }}
         <link rel="icon" href="{{ .Site.BaseURL }}/favicon.ico" type="image/x-icon" />
         <link rel="shortcut icon" href="{{ .Site.BaseURL }}/favicon.ico" type="image/x-icon" />
     {{ end }}
 
-    <link rel="stylesheet" href="/base.css">
-    <link rel="stylesheet" href="/created/main.css">
+    {{ if fileExists "/themes/GCI/static/base.css" }}
+        <link rel="stylesheet" href="/base.css">
+    {{ end }}
+
+    {{ if fileExists "/themes/GCI/static/created/main.css" }}
+        <link rel="stylesheet" href="/created/main.css">
+    {{ else }}
+        <p>Error: CSS not compiled, please contact Admin to run "yarn run watch" and restart hugo server</p>
+    {{ end }}
 
 </section>
