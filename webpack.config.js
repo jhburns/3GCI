@@ -1,3 +1,4 @@
+const webpack = require('webpack');
 const path = require('path');
 //needed to prevent webpack from putting everything into js file
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
@@ -9,7 +10,7 @@ module.exports = {
     output: {
         filename: "js/script.js",
         //needs to be dumped into static to be read by hugo
-        path: __dirname + "/themes/GCI/static/created",
+        path: path.join(__dirname, "/themes/GCI/static/created"),
         libraryTarget: 'umd'
     },
 
