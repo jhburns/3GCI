@@ -8,11 +8,7 @@
     </head>
 
     <body>
-
-        {{ if .Site.Params.body.enable }}
-        {{ partial "body.html" . }}
-        {{ end }}
-
+    
         {{ if .Site.Params.scripts.enable }}
         {{ partial "scripts.html" . }}
         {{ end }}

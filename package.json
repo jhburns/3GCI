@@ -9,7 +9,8 @@
   },
   "scripts": {
     "watch": "webpack --watch",
-    "clean": "node clean.js"
+    "clean": "node clean.js",
+    "server": "hugo server --disableFastRender"
   },
   "author": "jhburns",
   "license": "UNLICENSED",
