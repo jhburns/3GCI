@@ -4,8 +4,8 @@ node_js:
   - "node"
 
 install:
-  - rm -rf public || exit 0
   - npm install
+  - npm run clean || exit 0
   - wget https://github.com/gohugoio/hugo/releases/download/v0.43/hugo_0.43_Linux-64bit.deb
   - sudo dpkg -i hugo_0.43_Linux-64bit.deb
 
