@@ -10,7 +10,8 @@
   "scripts": {
     "watch": "webpack --watch",
     "clean": "node clean.js",
-    "server": "hugo server --disableFastRender"
+    "server": "hugo server --disableFastRender",
+    "make": "webpack -p"
   },
   "author": "jhburns",
   "license": "UNLICENSED",

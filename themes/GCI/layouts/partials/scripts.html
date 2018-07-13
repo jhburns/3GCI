@@ -1,5 +1,5 @@
 <section id="scripts">
-    {{ if fileExists "/themes/GCI/static/created/js/script.js" }}
+    {{ if and (fileExists "/themes/GCI/static/created/js/script.js") (.Site.Params.scripts.webpack_enable) }}
         <script src="{{ .Site.BaseURL }}/created/js/script.js"></script>
     {{ end }}
 </section>

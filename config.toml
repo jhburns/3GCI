@@ -1,4 +1,4 @@
-baseURL = "https://clever-lewin-2e0e7b.netlify.com/"
+baseURL = ""
 languageCode = "en-us"
 title = "Chapman security"
 theme="GCI"
@@ -8,69 +8,6 @@ ignoreFiles = [ "README.md" ]
 [Params.header]
     enable = true
 
-[Params.body]
-    enable = true
-    welcome = "Cyber Education"
-    title = "Cyber Smart Panthers"
-    question = "Are you a student or faculty?"
-    b1 = "STUDENT"
-    b2 = "FACULTY"
-
-[Params.alert]
-    enable = false
-    msg = "Take the Chapman Apps Student Poll!"
-
 [Params.scripts]
     enable = true
-
-[Params.blog]
-    buttxt = "GO HOME"
-
-[Params.page]
-
-    [Params.page.nav]
-        enable = true
-        title = "Cyber Education"
-        areas = ["Tips", "Tools", "Training", "Report Incident"]
-        logo = "/img/icon.png"
-
-        [Params.page.nav.report]
-            enable = false
-
-
-    [Params.page.setup]
-        enable = true
-        tagline = "Secure yourself here at Chapman"
-        buttxt = "Watch Video"
-        link = "https://www.google.com/"
-
-    [Params.page.tips]
-        enable = true
-        title = "Tips"
-        read = "Read More"
-        buttxt = "see all"
-
-        enableAll = false
-
-    [Params.page.tools]
-        enable = true
-        title = "Tools"
-
-    [Params.page.training]
-        enable = true
-        title = "Training"
-
-    [Params.page.report]
-        enable = false
-        title = "Report Security Issue"
-        enableMark = true
-        buttxt = "Report"
-
-    [Params.page.footer]
-        enable = true
-        msg_top = "Made by Jonathan Burns and the GCI team (2017)"
-        msg_bottom = "For a Chapman University project"
-
-[Params.err]
-    enable = true
-    msg = "Go Home"
+    webpack_enable = true
