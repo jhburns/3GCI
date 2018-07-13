@@ -7,9 +7,8 @@
 
 Either:
 
-Clone from GitHub with `git clone git@github.com:jhburns/3GCI.git`
-
-Go to https://github.com/jhburns/3GCI/releases, download the zip, and extract it
+- Clone from GitHub with `git clone git@github.com:jhburns/3GCI.git`
+- Go to https://github.com/jhburns/3GCI/releases, download the zip, and extract it
 
 ## Basic Setup
 To run the website, first install [yarn](https://yarnpkg.com/lang/en/)
