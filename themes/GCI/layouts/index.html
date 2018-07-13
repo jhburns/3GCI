@@ -3,15 +3,16 @@
 
     <head>
         {{ if .Site.Params.header.enable }}
-        {{ partial "head.html" . }}
+            {{ partial "head.html" . }}
         {{ end }}
     </head>
 
     <body>
-    
+        {{ partial "footer.html" . }}
         {{ if .Site.Params.scripts.enable }}
-        {{ partial "scripts.html" . }}
+            {{ partial "scripts.html" . }}
         {{ end }}
+
 
     </body>
 </html>

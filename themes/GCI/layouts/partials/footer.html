@@ -1,10 +1,5 @@
 <section id="footer">
-    <div class="cont foot-cont">
-        <div class="row">
-            <div class="gr-12 center gr-centered footer">
-                {{ .Site.Params.page.footer.msg_top }} <br>
-                {{ .Site.Params.page.footer.msg_bottom }}
-            </div>
-        </div>
-    </div>
+    {{ if .Site.Params.license.enable }}
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a>
+    {{ end }}
 </section>

@@ -1,6 +1,6 @@
 {
-  "name": "gci",
-  "version": "0.0.0",
+  "name": "GCI",
+  "version": "0.1.0",
   "description": "For a FFC GCI project",
   "main": "index.js",
   "repository": "3GCI",
@@ -15,7 +15,7 @@
     "fastball": "webpack -p && hugo server"
   },
   "author": "jhburns",
-  "license": "UNLICENSED",
+  "license": "CC-BY-NC-SA-4.0",
   "dependencies": {
     "babel-preset-env": "^1.7.0",
     "minimatch": "^3.0.4",
