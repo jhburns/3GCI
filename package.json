@@ -12,7 +12,8 @@
     "clean": "node clean.js",
     "server": "hugo server --disableFastRender",
     "make": "webpack -p && hugo",
-    "fastball": "webpack -p && hugo server"
+    "fastball": "webpack -p && hugo server",
+    "test": "webpack -p && hugo"
   },
   "author": "jhburns",
   "license": "CC-BY-NC-SA-4.0",
