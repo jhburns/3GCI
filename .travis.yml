@@ -6,7 +6,7 @@ node_js:
 addons:
   apt:
     packages:
-      - python-pygments
+      - hugo
 
 install:
   - rm -rf public || exit 0
