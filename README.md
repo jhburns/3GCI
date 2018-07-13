@@ -1,4 +1,7 @@
-# GCI Cybersecuriy Website
+**Status**  
+ [![Build Status](https://travis-ci.org/jhburns/3GCI.svg?branch=master)](https://travis-ci.org/jhburns/3GCI)
+
+# GCI Cybersecurity Website
 
 ## Basic Setup
 To run the website, first install [yarn](https://yarnpkg.com/lang/en/)
@@ -9,6 +12,6 @@ To open the site in your browser run `yarn run fastball` and got to http://local
 
 ## About
 
-Created by Jonathan H. Burns for GCI Cybersecuriy team. Under the CC-BY-NC-SA-4.0 licence.
+Created by Jonathan H. Burns for GCI Cybersecurity team. Under the CC-BY-NC-SA-4.0 licence.
 
-Version 0.1.1
+Version 0.1.2
