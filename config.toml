@@ -12,5 +12,8 @@ ignoreFiles = [ "README.md" ]
     enable = true
     webpack_enable = false
 
-[Params.license]
-    enable = false
+[Params.footer]
+    enable = true
+    [Params.footer.license]
+        enable = false
+
