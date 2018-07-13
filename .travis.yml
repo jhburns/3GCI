@@ -13,4 +13,3 @@ install:
 
 script:
   - npm test
-  - binaries/hugo --theme=fresh
