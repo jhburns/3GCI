@@ -19,6 +19,7 @@
   "license": "CC-BY-NC-SA-4.0",
   "dependencies": {
     "babel-preset-env": "^1.7.0",
+    "bootstrap": "^4.1.2",
     "minimatch": "^3.0.4",
     "scss": "^0.2.4"
   },
