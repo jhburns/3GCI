@@ -8,6 +8,9 @@ ignoreFiles = [ "README.md" ]
 [Params.header]
     enable = true
 
+[Params.nav]
+    enable = true
+
 [Params.scripts]
     enable = true
     webpack_enable = false

@@ -1,10 +1,20 @@
-//colors
-$primary-color: #ba183e;
-$secondary-color: #85142f;
+/* colors */
+$primary: #A50034;
+$body-copy: #231F20;
+$white: #FFFFFF;
 
+$browm:#6E6259;
+$beige:#DDCBA4;
 
-//fonts
-@import url('https://fonts.googleapis.com/css?family=Heebo|Roboto+Slab');
+$accent-green: #00966C;
+$accent-blue: #009CA6;
 
-$serifs: 'Roboto Slab', Georgia, serif;
-$sans: Heebo, Arial, sans-serif;
+$black: #383838;
+
+/* Fonts
+* Futura and Arial preferred, but default to Gothic/Lato which are online for free
+ */
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic|Lato');
+
+$title: Futura, Futura-Medium, "Futura Medium", "Didact Gothic", Arial, sans-serif;
+$normal: Arial, Lato, sans-serif;
