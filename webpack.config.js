@@ -27,7 +27,7 @@ module.exports = {
                 test: /\.scss/,
                 use: ExtractTextPlugin.extract({
                     fallback: 'style-loader',
-                    use: 'css-loader!resolve-url-loader!sass-loader?sourceMap=true'})
+                    use: ['css-loader', 'sass-loader?sourceMap=true']}),
             },
 
             //loads files
@@ -41,4 +41,5 @@ module.exports = {
     plugins: [
         new ExtractTextPlugin('[name].css'),
     ]
+
 };
