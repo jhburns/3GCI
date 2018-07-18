@@ -11,9 +11,16 @@ ignoreFiles = [ "README.md" ]
 [Params.nav]
     enable = true
 
+    [Params.nav.home]
+    enable = true
+    text = "Home"
+    alt = "CYBER SMART PANTHERS"
+    title = "CYBER SMART PANTHERS: Home"
+
 [Params.scripts]
     enable = true
     webpack_enable = false
+
 
 [Params.footer]
     enable = true
