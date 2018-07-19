@@ -10,7 +10,7 @@
   "scripts": {
     "watch": "webpack --watch",
     "clean": "node clean.js",
-    "server": "hugo server --disableFastRender",
+    "start": "hugo server --disableFastRender",
     "make": "webpack -p && hugo",
     "fastball": "webpack -p && hugo server",
     "test": "webpack -p"
@@ -30,6 +30,8 @@
     "colors": "^1.3.0",
     "css-loader": "^0.28.11",
     "extract-text-webpack-plugin": "^3.0.2",
+    "favicons-webpack-plugin": "0.0.9",
+    "html-webpack-plugin": "^3.2.0",
     "node-sass": "^4.9.0",
     "resolve-url-loader": "^2.3.0",
     "rmdir": "^1.2.0",
