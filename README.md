@@ -1,4 +1,5 @@
-**Status**  
+**Status of:** https://relaxed-keller-2816e7.netlify.com/
+
  [![Build Status](https://travis-ci.org/jhburns/3GCI.svg?branch=master)](https://travis-ci.org/jhburns/3GCI)
 
 # GCI Cybersecurity Website
@@ -21,4 +22,4 @@ To open the site in your browser run `yarn run fastball` and got to http://local
 
 Created by Jonathan H. Burns for GCI Cybersecurity team. Under the CC-BY-NC-SA-4.0 licence.
 
-Version 0.1.3
+Version 0.2.0s
