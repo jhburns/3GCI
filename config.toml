@@ -1,4 +1,4 @@
-baseURL = ""
+baseURL = "https://google.com"
 languageCode = "en-us"
 title = "Chapman security"
 theme="GCI"
