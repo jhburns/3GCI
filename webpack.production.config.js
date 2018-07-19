@@ -2,6 +2,8 @@ const webpack = require('webpack');
 const path = require('path');
 //needed to prevent webpack from putting everything into js file
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
 
@@ -27,9 +29,7 @@ module.exports = {
                 test: /\.scss/,
                 use: ExtractTextPlugin.extract({
                     fallback: 'style-loader',
-                    use: ['css-loader', 'sass-loader?sourceMap=true'],
-                    disable: true,
-                }),
+                    use: ['css-loader', 'sass-loader?sourceMap=true']}),
             },
 
             //loads files
@@ -42,6 +42,22 @@ module.exports = {
 
     plugins: [
         new ExtractTextPlugin('[name].css'),
+        new FaviconsWebpackPlugin({
+            // Your source logo
+            logo: './themes/GCI/static/icons/icon.jpg',
+            // The prefix for all image files (might be a folder or a name)
+            prefix: '/created/created-icons/',
+            emitStats: false,
+            persistentCache: true,
+            inject: true,
+        }),
+        new HtmlWebpackPlugin({
+            template: 'themes/GCI/static/icons/template.html',
+            inject: 'head',
+            filename: 'icons.html',
+            cache: 'true',
+            title: 'Icons',
+        }),
     ]
 
 };
