@@ -46,7 +46,7 @@ module.exports = {
             // Your source logo
             logo: './themes/GCI/static/icons/icon.jpg',
             // The prefix for all image files (might be a folder or a name)
-            prefix: '/created/created-icons/',
+            prefix: '/created-icons/',
             emitStats: false,
             persistentCache: true,
             inject: true,
