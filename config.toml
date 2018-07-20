@@ -12,14 +12,22 @@ ignoreFiles = [ "README.md" ]
     enable = true
 
     [Params.nav.home]
-    enable = true
-    text = ""
-    alt = "CYBER SMART PANTHERS"
-    title = "CYBER SMART PANTHERS: Home"
+        enable = true
+        text = ""
+        alt = "CYBER SMART PANTHERS"
+        title = "CYBER SMART PANTHERS: Home"
+
+    [Params.nav.menu]
+        enable = true
+        hamburgers = ['/icons/hamburger_black.svg', '/icons/hamburger_red.svg', '/icons/hamburger_brown.svg',
+                     '/icons/hamburger_beige.svg', '/icons/hamburger_green.svg', '/icons/hamburger_blue.svg',
+                      '/icons/hamburger_white.svg']
+         index = 0
 
 [Params.scripts]
     enable = true
     webpack_enable = false
+    bootstrap_enable = true
 
 
 [Params.footer]

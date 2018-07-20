@@ -1,16 +1,19 @@
 <section id="navbar">
         <nav class="navbar navbar-expand-lg pt-md-4 pb-md-4 pt-sm-2 pb-sm-2">
             <div class="container">
-            {{ if and (.Site.Params.nav.home.enable) (fileExists "themes/GCI/static/icons/logo.jpg") }}
-            <div class="row">
-                <div class="col-4">
+                {{ if and (.Site.Params.nav.home.enable) (fileExists "themes/GCI/static/icons/logo.jpg") }}
                     <a class="navbar-brand" href="#">
                         <img src="/icons/logo.jpg" class="d-inline-block align-top home-img" alt="{{ .Site.Params.nav.home.alt }}" title="{{ .Site.Params.nav.home.title }}">
                         {{ .Site.Params.nav.home.text }}
                     </a>
-                </div>
+                {{ end }}
+
+                {{ if .Site.Params.nav.menu.enable }}
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"><img src="{{ index $.Site.Params.nav.menu.hamburgers .Site.Params.nav.menu.index }}"></span>
+                    </button>
+                {{ end }}
+                
             </div>
-            </div>
-            {{ end }}
         </nav>
 </section>
