@@ -15,11 +15,8 @@
   font-size: 1rem;
 
   @include media-breakpoint-down(md) {
-    font-size: 2rem;
-  }
+    font-size: 3vh;
 
-  @include media-breakpoint-down(sm) {
-    font-size: 1rem;
   }
 
   @include media-breakpoint-up(xl) {
