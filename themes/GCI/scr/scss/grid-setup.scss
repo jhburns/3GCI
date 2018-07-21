@@ -1,4 +1,10 @@
+$grid-columns: 12;
+
 $enable-rounded: false;
 $enable-shadows: true;
 
+
+$theme-colors: (
+        primary: white
+);
 @import "node_modules/bootstrap/scss/bootstrap.scss";
