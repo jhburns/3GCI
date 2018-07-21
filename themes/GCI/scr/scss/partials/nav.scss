@@ -3,5 +3,18 @@
 }
 
 .navbar {
-  background-color: teal;
+  background-color: $white;
+}
+
+.nav-link {
+  color: $grey;
+  border-bottom: 2px solid lime;
+  border-color: $white;
+  font-size: 2rem;
+}
+
+.nav-link:hover {
+  color: $body-copy;
+  border-color: $primary;
+
 }

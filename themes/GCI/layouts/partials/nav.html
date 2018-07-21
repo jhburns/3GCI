@@ -16,10 +16,10 @@
                     {{ if .Site.Params.nav.links.enable }}
                         <ul class="navbar-nav ml-auto mr-5">
 
-
+                            <!-- TODO: Fix (current) functionality -->
                             {{ range $.Site.Params.nav.links.text }}
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ index . 1}}">{{ index . 0}} <span class="sr-only">(current)</span></a>
+                                    <a class="nav-link title" href="{{ index . 1}}">{{ index . 0}} <span class="sr-only">(current)</span></a>
                                 </li>
                             {{ end }}
 
@@ -31,7 +31,7 @@
                         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                     </form>
                 </div>
-                
+
             </div>
         </nav>
 
