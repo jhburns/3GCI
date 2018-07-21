@@ -22,10 +22,18 @@ ignoreFiles = [ "README.md" ]
         hamburgers = ['/icons/hamburger_black.svg', '/icons/hamburger_red.svg', '/icons/hamburger_brown.svg',
                      '/icons/hamburger_beige.svg', '/icons/hamburger_green.svg', '/icons/hamburger_blue.svg',
                       '/icons/hamburger_white.svg']
-         index = 0
+
+        # Index is which color menu is used, starting at 0 and going to 6
+        # see above
+        index = 0
 
     [Params.nav.links]
         enable = true
+
+        # Used by hugo to generate the navbar links
+        # It is a 2D array,
+        # First item: link text.
+        # Second item: link/section id (which should always start with /# for in page links)
         text = [['Home', '/#'],
                ['Waa', '/#waa']
                ]
