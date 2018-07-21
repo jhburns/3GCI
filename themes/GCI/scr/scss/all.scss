@@ -6,10 +6,6 @@
 
 @import "partials/nav";
 
-/* 3rd Party Imports */
-@import "node_modules/bootstrap/scss/bootstrap";
-
-
 /* A fake entry to avoid a warning when using webpack -p (production).
 * For some reason, 'warning { expected' by the parser if there isn't at least one of these.
 * Only happens in production for some reason

@@ -34,8 +34,11 @@ ignoreFiles = [ "README.md" ]
         # It is a 2D array,
         # First item: link text.
         # Second item: link/section id (which should always start with /# for in page links)
-        text = [['Home', '/#'],
-               ['Waa', '/#waa']
+        text = [['HOME', '/#'],
+               ['ABOUT', '/#about'],
+               ['TIPS', '/#tips'],
+               ['MORE RESOURCES', '/#resources'],
+               ['REPORT INCIDENT', '/#report']
                ]
 
 [Params.scripts]
