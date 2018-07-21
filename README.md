@@ -22,4 +22,4 @@ To open the site in your browser run `yarn run fastball` and got to http://local
 
 Created by Jonathan H. Burns for GCI Cybersecurity team. Under the CC-BY-NC-SA-4.0 licence.
 
-Version 0.2.0s
+Version 0.3.0s
