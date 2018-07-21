@@ -12,6 +12,12 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
+                    <!-- Search Bar for smaller than lg screens (when menu shown) so it is at the top -->
+                    <form class="form-inline my-2 my-lg-0 mt-5 mt-sm-1 mt-lg-0 d-lg-none">
+                        <input class="form-control form-control-search mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-search my-2 my-sm-0 " type="submit">Search</button>
+                    </form>
+
                     {{ if .Site.Params.nav.links.enable }}
                         <ul class="navbar-nav ml-auto mr-md-3 mr-xl-5">
 
@@ -25,10 +31,12 @@
                         </ul>
                     {{ end }}
 
-                    <form class="form-inline my-2 my-lg-0 mt-5 mt-sm-1 mt-lg-0">
+                    <!-- Search bar for desktop view so it is at the right -->
+                    <form class="form-inline my-2 my-lg-0 mt-5 mt-sm-1 mt-lg-0 d-none d-lg-block">
                         <input class="form-control form-control-search mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-search my-2 my-sm-0 " type="submit">Search</button>
                     </form>
+
                 </div>
         </nav>
 
