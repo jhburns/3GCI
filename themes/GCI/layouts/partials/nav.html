@@ -17,11 +17,12 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
                     {{ if .Site.Params.nav.links.enable }}
-                        <ul class="navbar-nav mr-auto">
+                        <ul class="navbar-nav ml-auto mr-5">
+
 
                             {{ range $.Site.Params.nav.links.text }}
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="#">{{ . }} <span class="sr-only">(current)</span></a>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ index . 1}}">{{ index . 0}} <span class="sr-only">(current)</span></a>
                                 </li>
                             {{ end }}
 
