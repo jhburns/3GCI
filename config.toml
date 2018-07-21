@@ -24,6 +24,10 @@ ignoreFiles = [ "README.md" ]
                       '/icons/hamburger_white.svg']
          index = 0
 
+    [Params.nav.links]
+        enable = true
+        text = ['Home', 'Waa', 'daa']
+
 [Params.scripts]
     enable = true
     webpack_enable = false
