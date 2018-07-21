@@ -17,7 +17,7 @@
 
                             <!-- TODO: Fix (current) functionality -->
                             {{ range $.Site.Params.nav.links.text }}
-                                <li class="nav-item ml-3 mt-3 mt-lg-0">
+                                <li class="nav-item ml-3 mt-1 mt-lg-0">
                                     <a class="nav-link title" href="{{ index . 1}}">{{ index . 0}} <span class="sr-only">(current)</span></a>
                                 </li>
                             {{ end }}
@@ -27,10 +27,9 @@
 
                     <form class="form-inline my-2 my-lg-0 mt-5 mt-sm-1 mt-lg-0">
                         <input class="form-control form-control-search mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-search my-2 my-sm-0" type="submit">Search</button>
+                        <button class="btn btn-outline-search my-2 my-sm-0 " type="submit">Search</button>
                     </form>
                 </div>
-
         </nav>
 
     <!-- A dummy nav bar to prevent content from being behind it -->
