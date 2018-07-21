@@ -1,8 +1,11 @@
 <section id="scripts">
     {{ if and (fileExists "/themes/GCI/static/created/js/script.js") (.Site.Params.scripts.webpack_enable) }}
-        <script src="{{ .Site.BaseURL }}/created/js/script.js"></script>
+        <script src="./created/js/script.js"></script>
     {{ end }}
 
+    {{ if (fileExists "/themes/GCI/static/created/js/no_scroll.js") (.Site.Params.scripts.no_scroll_enable) }}
+        <script src="./created/js/no_scroll.js"></script>
+    {{ end }}
 
     <!-- Bootstrap needed -->
 

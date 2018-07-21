@@ -7,10 +7,14 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
 
-    entry: ["./themes/GCI/scr/scss/all.scss"],
+
+    entry: {
+        main: "./themes/GCI/scr/scss/all.scss",
+        no_scroll: "./themes/GCI/scr/js/no_scroll.js",
+    },
 
     output: {
-        filename: "js/script.js",
+        filename: "js/[name].js",
         //needs to be dumped into static to be read by hugo
         path: path.join(__dirname, "/themes/GCI/static/created"),
         libraryTarget: 'umd'
