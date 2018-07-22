@@ -1,7 +1,10 @@
 <section id="navbar">
         <nav class="navbar navbar-expand-lg pt-md-4 pb-md-4 pt-sm-2 pb-sm-2 fixed-top">
-                {{ if .Site.Params.nav.home.enable }}
-                    {{ partial "navbar/navimg.html" . }}
+                {{ if and (.Site.Params.nav.home.enable) (fileExists "themes/GCI/static/icons/logo.jpg") }}
+                    <a class="navbar-brand" href="#">
+                        <img src="/icons/logo.jpg" class="d-inline-block align-top home-img" alt="{{ .Site.Params.nav.home.alt }}" title="{{ .Site.Params.nav.home.title }}">
+                        {{ .Site.Params.nav.home.text }}
+                    </a>
                 {{ end }}
 
                 {{ if .Site.Params.nav.menu.enable }}
@@ -44,9 +47,10 @@
     <!-- Should render behind the real navbar -->
     <!-- Only contains the stuff the changes vertical height, which is the img only for now -->
     <nav class="navbar navbar-expand-lg pt-md-4 pb-md-4 pt-sm-2 pb-sm-2">
-        {{ if .Site.Params.nav.home.enable }}
-        {{ partial "navbar/navimg.html" . }}
-        {{ end }}
+        <a class="navbar-brand" href="#">
+            <img src="" class="d-inline-block align-top home-img" alt="{{ .Site.Params.nav.home.alt }}" title="{{ .Site.Params.nav.home.title }}">
+            {{ .Site.Params.nav.home.text }}
+        </a>
     </nav>
 
 </section>
