@@ -6,16 +6,26 @@
     {{ partial "head.html" . }}
     {{ end }}
 </head>
+<body>
 
     {{ if .Site.Params.header.enable }}
     {{ partial "nav.html" . }}
     {{ end }}
 
-    <body>
 
     {{ if .Site.Params.err.enable }}
-
+        {{ partial "err.html" . }}
     {{ end }}
 
-    </body>
+
+
+    {{ if .Site.Params.scripts.enable }}
+        {{ partial "scripts.html" . }}
+    {{ end }}
+
+    {{ if .Site.Params.footer.enable }}
+        {{ partial "footer.html" . }}
+    {{ end }}
+
+</body>
 </html>

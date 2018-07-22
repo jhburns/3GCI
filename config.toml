@@ -52,3 +52,9 @@ ignoreFiles = [ "README.md" ]
     [Params.footer.license]
         enable = false
 
+[Params.err]
+    enable = true
+    title = "404: Page Not Found"
+    but = "Go Home"
+    text = "The requested webpage is not found, please try a different address."
+

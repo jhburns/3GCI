@@ -1,0 +1,18 @@
+<section id="404 not found">
+    <div class="container">
+        <div class="row mt-5">
+            <div class="h1 col-auto normal">
+                {{ .Site.Params.err.title }}
+            </div>
+            <div class="col-auto">
+                    <a class="btn btn-outline-red normal" role="button" href="{{ .Site.BaseURL }}">{{ .Site.Params.err.but }}</a>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-auto  faded-text normal">
+                {{ .Site.Params.err.text }}
+            </div>
+        </div>
+    </div>
+</section>

@@ -13,3 +13,11 @@ body {
   color: $black;
   font-family: $normal;
 }
+
+.btn-outline-red {
+  @include button-outline-variant($primary);
+}
+
+.faded-text {
+  color:  $grey;
+}
