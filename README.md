@@ -22,4 +22,5 @@ To open the site in your browser run `yarn run fastball` and got to http://local
 
 Created by Jonathan H. Burns for GCI Cybersecurity team. Under the CC-BY-NC-SA-4.0 licence.
 
-Version 0.3.0
+Version 0.3.1
+Reduced page size from ~400kb to ~200kb, half!
