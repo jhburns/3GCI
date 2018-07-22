@@ -5,12 +5,22 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
+const glob = require("glob");
+
+//Image plugins
+const { ImageminWebpackPlugin } = require("imagemin-webpack");
+const imageminMozjpeg= require("imagemin-mozjpeg");
+const imageminSvgo = require("imagemin-svgo");
+const imageminOptipng = require("imagemin-optipng");
+
 module.exports = {
 
 
     entry: {
         main: "./themes/GCI/scr/scss/all.scss",
         no_scroll: "./themes/GCI/scr/js/no_scroll.js",
+        icons: glob.sync("./themes/GCI/scr/img/icons/hamburger/*.svg"),
+        logo: "./themes/GCI/scr/img/icons/logo.jpeg",
     },
 
     output: {
@@ -36,10 +46,16 @@ module.exports = {
                     use: ['css-loader', 'sass-loader?sourceMap=true']}),
             },
 
-            //loads files
+            //image compression
             {
-                test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|eot|ico)$/,
-                loader: 'file-loader?name=./img/[name].[ext].'
+                loader: "file-loader",
+                options: {
+                    emitFile: true, // Don't forget emit images
+                    name: "img/[name].[ext]",
+                    bail: false, // Ignore errors on corrupted images
+                },
+                test: /\.(jpe?g|png|gif|svg)$/i
+
             }
         ]
     },
@@ -48,7 +64,7 @@ module.exports = {
         new ExtractTextPlugin('[name].css'),
         new FaviconsWebpackPlugin({
             // Your source logo
-            logo: './themes/GCI/static/icons/icon.jpg',
+            logo: './themes/GCI/scr/img/icons/icon.jpg',
             // The prefix for all image files (might be a folder or a name)
             prefix: '/created-icons/',
             emitStats: false,
@@ -56,11 +72,19 @@ module.exports = {
             inject: true,
         }),
         new HtmlWebpackPlugin({
-            template: 'themes/GCI/static/icons/template.html',
+            template: 'themes/GCI/scr/img/icons/template.html',
             inject: 'head',
             filename: 'icons.html',
             cache: 'true',
             title: 'Icons',
+        }),
+
+        new ImageminWebpackPlugin({
+            bail: false, // Ignore errors on corrupted images
+            imageminOptions: {
+                plugins: [imageminMozjpeg({quality: 90}), imageminSvgo(), imageminOptipng()]
+            },
+            name: "img/[name].[ext]",
         }),
     ]
 
