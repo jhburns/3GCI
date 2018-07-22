@@ -2,8 +2,8 @@
 	Cache-Control: max-age=864000
 	Cache-Control: public
 /created/*
-	Cache-Control: max-age=86400
+	Cache-Control: max-age=604801
 	Cache-Control: must-revalidate, public
 /icons/*
-	Cache-Control: max-age=86400
+	Cache-Control: max-age=604801
 	Cache-Control: must-revalidate, public
