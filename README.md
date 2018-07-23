@@ -14,13 +14,25 @@ Either:
 ## Basic Setup
 To run the website, first install [yarn](https://yarnpkg.com/lang/en/)
 
-Then in the root directory of this site (3GCI) run `yarn install`
+Then in the root directory of this site (./3GCI) run `yarn install`
 
-To open the site in your browser run `yarn run fastball` and got to http://localhost:1313/
+To open the site in your browser run `yarn run fastball` and go to http://localhost:1313/
+
+## Command overview
+Because of node, there are multiple shortcuts used to automate the site. To use each of them type `yarn run [command]`, example: `yarn run make`
+
+- **watch**: Automatically recompiles sass (*.scss files in .../scr/scss) so style can be developed quickly
+- **clean**: A custom script that deletes all the generated files
+- **start**: Starts the hugo server, which automatically watches files and recompiles after changes
+- **fastball**: Runs yarn (developer) once then launches hugo. Useful for quickly looking at the site
+- **test**: Used to check if production is functioning correctly
+   
+## Documentation
+Go to the  */Documentation* folder for full documentation
 
 ## About
 
 Created by Jonathan H. Burns for GCI Cybersecurity team. Under the CC-BY-NC-SA-4.0 licence.
 
-Version 0.3.1
+Version 0.3.2
 Reduced page size from ~400kb to ~200kb, half!
