@@ -1,44 +1,5 @@
-<!doctype html>
-<html class="no-js" lang="{{ .Site.LanguageCode }}">
-
-<head>
-    {{ if .Site.Params.header.enable }}
-    {{ partial "head.html" . }}
-    {{ end }}
-</head>
-
-<body>
-<!--[if lte IE 9]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-<![endif]-->
-
-<!-- Add your site or application content here -->
-
-{{ if .Site.Params.page.nav.enable }}
-{{ partial "nav.html" . }}
-{{ end }}
-
-<div class="gr-8 gr-11@mobile gr-10@tablet gr-centered cont">
-    <div class="row">
-        <div class="gr-12 center"><h1 class="blog-title">{{ .Title }}</h1></div>
-
-        <div class="gr-12">
-            {{ .Content }}
-        </div>
-
+{{ define "main" }}
+    <div style="background-color: #00ccd9"></div>
+        {{ .Content }}
     </div>
-</div>
-
-<div class="gr-8 gr-11@mobile gr-10@tablet gr-centered">
-    <div class="gr-adapt">
-        <!-- fix link to go to proper get started !-->
-        <a id="get-started" class="flavor-button" href="{{ .Site.BaseURL }}/student/">{{ .Site.Params.blog.buttxt }}</a>
-    </div>
-</div>
-
-{{ if .Site.Params.page.footer.enable }}
-{{ partial "footer.html" . }}
 {{ end }}
-
-</body>
-</html>
