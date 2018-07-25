@@ -1,5 +1,30 @@
-{{ define "main" }}
-    <div style="background-color: #00ccd9"></div>
+<!doctype html>
+<html lang="{{ .Site.LanguageCode }}">
+
+<head>
+    {{ if .Site.Params.header.enable }}
+        {{ partial "head.html" . }}
+    {{ end }}
+</head>
+
+<body>
+
+    {{ if .Site.Params.nav.enable }}
+        {{ partial "nav.html" . }}
+    {{ end }}
+
+    <div class="container">
         {{ .Content }}
     </div>
-{{ end }}
+
+
+    {{ if .Site.Params.footer.enable }}
+        {{ partial "footer.html" . }}
+    {{ end }}
+
+    {{ if .Site.Params.scripts.enable }}
+        {{ partial "scripts.html" . }}
+    {{ end }}
+
+</body>
+</html>
