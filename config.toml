@@ -43,6 +43,9 @@ enableRobotsTXT = true
                ['REPORT INCIDENT', '/#report']
                ]
 
+[Params.blog]
+    but = "More Tips"
+
 [Params.scripts]
     enable = true
     webpack_enable = false
