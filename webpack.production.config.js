@@ -54,7 +54,7 @@ module.exports = {
                     name: "img/[name].[ext]",
                     bail: false, // Ignore errors on corrupted images
                 },
-                test: /\.(jpe?g|png|gif|svg)$/i
+                test: /\.(jpe?g|png|svg)$/i
 
             }
         ]

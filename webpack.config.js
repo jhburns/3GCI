@@ -53,7 +53,7 @@ module.exports = {
                     bail: false, // Ignore errors on corrupted images
                     cache: true,
                 },
-                test: /\.(jpe?g|png|gif|svg)$/i
+                test: /\.(jpe?g|png|svg)$/i
 
             }
         ]
