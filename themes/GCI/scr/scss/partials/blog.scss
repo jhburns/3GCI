@@ -4,3 +4,41 @@
   -moz-box-shadow: 0px 0px 3px 0px rgba($black, 0.63);
   box-shadow: 0px 0px 3px 0px rgba($black,0.63);
 }
+
+.date {
+  color: $grey;
+}
+
+.top-title {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 3rem;
+  font-family: $title;
+  font-weight: 500;
+  line-height: 1.2;
+  color: $primary;
+}
+
+.blog-cont h1, .blog-cont h2, .blog-cont h3, .blog-cont h4, .blog-cont h5, .blog-cont h6 {
+  color: $black;
+  font-family: $normal;
+}
+
+.blog-cont a {
+  color: $grey;
+}
+
+.blog-cont a:hover {
+  color: $blue;
+}
+
+.blog-cont a:visited {
+  color: $purple;
+}
+
+.blog-cont img {
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+  padding: 5%;
+}
