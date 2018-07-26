@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="{{ .Site.LanguageCode }}">
+
+<head>
+    {{ if .Site.Params.header.enable }}
+    {{ partial "head.html" . }}
+    {{ end }}
+</head>
+
+<body>
+
+{{ if .Site.Params.nav.enable }}
+{{ partial "nav.html" . }}
+{{ end }}
+
+{{ if .Site.Params.footer.enable }}
+{{ partial "footer.html" . }}
+{{ end }}
+
+{{ if .Site.Params.scripts.enable }}
+{{ partial "scripts.html" . }}
+{{ end }}
+
+</body>
+</html>

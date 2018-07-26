@@ -38,7 +38,7 @@ enableRobotsTXT = true
         # Second item: link/section id (which should always start with /# for in page links)
         text = [['HOME', '/#'],
                ['ABOUT', '/#about'],
-               ['TIPS', '/#tips'],
+               ['TIPS', '/blog'],
                ['MORE RESOURCES', '/#resources'],
                ['REPORT INCIDENT', '/#report']
                ]

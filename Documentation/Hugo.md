@@ -9,7 +9,7 @@ Hugo does multiple thing for us, the first is to slot all content into the prope
 - Hugo also links all the partials together to form a single document from */layouts* 
 - It can also be used as a server while in development and nearly instantly rebuild the website. See the first *README.me*
 - Hugo inserts the compiled data from the */static* folder
-- It generates new webpages from the */content* folder
+- It generates new webpages from the */content* folder, specifically blogs
 
 ## Why
 Hugo is very fast and because it generates a static site, there is little overhead compared to a database
