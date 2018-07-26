@@ -11,3 +11,5 @@
 **Webpack.md**: Automation/compiling information
 
 **Netlify.md**: Hosting information
+
+**Blog.md**: Info about how to make a new blog post
