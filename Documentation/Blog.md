@@ -95,5 +95,7 @@ Currently only .jpg, .png, and .svg are supported.
 In earlier sections, config was briefly gone over, check here and at https://gohugo.io/content-management/front-matter/ for full config options. Here are the imporant ones.
 
 - slug: tells hugo what to make the url, overriding the filename
-- weight: in a list, tels hugo which place this blog should have. Higher is higher 
+- weight: in a list, tels hugo which place this blog should have. Higher is higher
+
+In addition although hugo will be able to process most Markdown that is not mentioned above, it may look weird. Please contact whoever is responsible or override the styling of the base element it generate yourself.  
 
