@@ -1,6 +1,6 @@
 {
   "name": "GCI",
-  "version": "0.3.2",
+  "version": "0.4.0",
   "description": "For a FFC GCI project",
   "main": "index.js",
   "repository": "3GCI",
