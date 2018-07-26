@@ -18,7 +18,7 @@ module.exports = {
 
     entry: {
         main: "./themes/GCI/scr/scss/all.scss",
-        no_scroll: "./themes/GCI/scr/js/no_scroll.js",
+        script: glob.sync('./themes/GCI/scr/js/**/*.js'),
         img: glob.sync('./themes/GCI/scr/img/**/*.{png,svg,jpeg,jpg}'),
         logo: "./themes/GCI/scr/img/icons/logo.jpeg",
     },
