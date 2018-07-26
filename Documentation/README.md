@@ -13,3 +13,5 @@
 **Netlify.md**: Hosting information
 
 **Blog.md**: Info about how to make a new blog post
+
+It is recommended to view these files either in GitHub, or to install the plugin to view Markdown files in WebStorm. https://plugins.jetbrains.com/plugin/7793-markdown-support  
