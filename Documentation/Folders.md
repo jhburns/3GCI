@@ -12,7 +12,9 @@
 
 - */themes/GCI/scr/js*: All the front-end custom javascript files needed
 
-- */themes/GCI/scr/img*: Images needed in the site
+- */themes/GCI/scr/img*: Images needed in the site, make sure that every file is named differently here
+
+- */themes/GCI/scr/img/blog*: Where blog images should all be added
 
 - */themes/GCI/static*: non-compiled static files, only the favicon for now (Version 0.3.2)
 
@@ -28,3 +30,9 @@
 - */.git*: Folder needed by git to track changes
 
 - */.idea*: Needed by Webstorm for configuring the IDE 
+
+- */themes/GCI/static/created*: All of the files and folders in here are compiled by webpack so changing anything here is not permanent
+
+- */node_modules*: This folder contains all the packages installed by yarn and shouldn't be touched
+
+- */Documentation*: has no effect on the project, and is only used for reading about it like now  
