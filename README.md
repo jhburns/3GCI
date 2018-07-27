@@ -34,5 +34,4 @@ Go to the  */Documentation* folder for full documentation
 
 Created by Jonathan H. Burns for GCI Cybersecurity team. Under the CC-BY-NC-SA-4.0 licence.
 
-Version 0.4.0
-Reduced page size from ~400kb to ~200kb, half!
+Version 0.4.1

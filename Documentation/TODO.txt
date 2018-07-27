@@ -30,11 +30,6 @@ All the stuff
     -create page
     -add links
 
--Footer
-    -add text
-    -add links
-    -add copyright
-
 -Markdown
     -get gist fixed
     -ship with local markdown viewer?
