@@ -1,0 +1,20 @@
+All the stuff
+
+-Search
+    -Create Custom Google Search
+    -Make sure it indexes the whole site
+    -Integrate it with site
+    -Style to fit site
+    -Mobile vs. Desktop implementation
+-Blog
+    -Add content to straight blog page
+    -Change from 'blog' to tips?
+    -Add blog insert onto front page
+    -Port all current blogs
+-About
+    -Add page
+    -Profile picture
+    -Copy text
+
+-Markdown
+    -test gist
