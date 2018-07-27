@@ -59,7 +59,7 @@ enableRobotsTXT = true
 
 [Params.err]
     enable = true
-    title = "404: Page Not Found"
+    title = "Page Not Found"
     but = "Go Home"
     text = "The requested webpage is not found, please try a different address in the URL bar above."
 
