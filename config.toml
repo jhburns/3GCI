@@ -18,6 +18,7 @@ enableRobotsTXT = true
         text = ""
         alt = "CYBER SMART PANTHERS"
         title = "CYBER SMART PANTHERS: Home"
+        link = "/"
 
     [Params.nav.menu]
         enable = true
