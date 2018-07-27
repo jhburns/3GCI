@@ -17,6 +17,10 @@ body {
   @include button-outline-variant($primary);
 }
 
+.btn-outline-red:visited {
+  color: $primary;
+}
+
 .faded-text {
   color:  $grey;
 }
@@ -27,14 +31,14 @@ body {
   background-color: $light-grey;
 }
 
-a {
+.red-link {
   color: $primary;
 }
 
-a:visited {
+.red-link:visited {
   color: $grey;
 }
 
-a:hover {
+.red-link:hover {
   color: $blue;
 }
