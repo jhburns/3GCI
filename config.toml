@@ -58,7 +58,7 @@ enableRobotsTXT = true
     copyright = "©2018 Chapman University, Cyber Smart Panthers GCI Team"
     text = "Made by Jonathan Burns and Rachel Ross"
     link = "https://github.com/jhburns/3GCI"
-    link_text = "Check out my work"
+    link_text = "Check out my work or apply for license"
 
     [Params.footer.license]
         enable = true
