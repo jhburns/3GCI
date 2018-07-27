@@ -1,5 +1,27 @@
 <section id="footer">
-    {{ if .Site.Params.footer.license.enable }}
-        <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a>
-    {{ end }}
+    <div class="container-fluid bg-grey p-4">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-6 col-12">
+                    <p class="normal">{{ .Site.Params.footer.copyright }}</p>
+                </div>
+
+                <div class="col-md-6 col-12">
+                    <p>{{ .Site.Params.footer.text }}</p>
+                </div>
+
+                {{ if .Site.Params.footer.license.enable }}
+                    <div class="col-md-6 col-12">
+                        <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a>
+                    </div>
+                {{ end }}
+
+                <div class="col-md-6 col-12 mt-4 mt-md-0">
+                    <a class="" href="{{ .Site.Params.footer.link }}">{{ .Site.Params.footer.link_text }}</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
 </section>

@@ -6,15 +6,39 @@ All the stuff
     -Integrate it with site
     -Style to fit site
     -Mobile vs. Desktop implementation
+
 -Blog
     -Add content to straight blog page
     -Change from 'blog' to tips?
     -Add blog insert onto front page
     -Port all current blogs
+    -add videos
+
 -About
     -Add page
     -Profile picture
     -Copy text
+-Home
+    -figure out best slash
+    -image carousel?
+    -rip images
+    -rip text
+    -add blog section
+    -add resources section
+
+-Resources
+    -create page
+    -add links
+
+-Footer
+    -add text
+    -add links
+    -add copyright
 
 -Markdown
-    -test gist
+    -get gist fixed
+    -ship with local markdown viewer?
+
+-Accessibility
+    -Fix current in navbar
+    -everything

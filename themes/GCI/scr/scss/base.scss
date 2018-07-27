@@ -24,3 +24,18 @@ body {
 
 /* Markdown changes */
 
+.bg-grey {
+  background-color: $light-grey;
+}
+
+a {
+  color: $primary;
+}
+
+a:visited {
+  color: $grey;
+}
+
+a:hover {
+  color: $blue;
+}
