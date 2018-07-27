@@ -40,7 +40,7 @@ enableRobotsTXT = true
                ['ABOUT', '/#about'],
                ['TIPS', '/blog'],
                ['MORE RESOURCES', '/#resources'],
-               ['REPORT INCIDENT', '/#report']
+               ['REPORT INCIDENT', 'https://web.chapman.edu/IncidentReport']
                ]
 
 [Params.blog]
