@@ -11,7 +11,7 @@
     "watch": "webpack --watch",
     "clean": "node clean.js",
     "start": "hugo server --disableFastRender",
-    "make": "webpack -p --config ./webpack.production.config.js && hugo",
+    "make": "node clean.js && webpack -p --config ./webpack.production.config.js && hugo",
     "fastball": "webpack && hugo server",
     "test": "webpack -p --config ./webpack.production.config.js"
   },
