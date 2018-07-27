@@ -21,6 +21,10 @@ body {
   color: $primary;
 }
 
+.btn-outline-red:hover {
+  color: $white;
+}
+
 .faded-text {
   color:  $grey;
 }
