@@ -35,6 +35,10 @@ body {
   background-color: $light-grey;
 }
 
+.bg-trans-grey {
+  background-color: rgba($black, 0.5);
+}
+
 .red-link {
   color: $primary;
 }

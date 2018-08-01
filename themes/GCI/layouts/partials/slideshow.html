@@ -1,24 +1,32 @@
-<section id="slideshow">
-
-
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-            {{ range where .Site.Pages "Type" "blog" }}
-                {{ if gt .Weight 0 }} <!-- Needed to prevent the blank defualt Blog from loading-->
-                    <div class="carousel-item {{ if .Params.active }}active{{ end }}"><!-- Needed to make sure only one element is active -->
-                        <img class="d-block w-100" src="{{ .Site.BaseURL }}{{ .Site.Params.img.source }}{{ .Params.image }}" alt="First slide">
-                    </div>
+<section id="slideshow" class="bg-grey">
+    <div class="container">
+        <div id="carouselExampleControls" class="carousel slide p-3 p-lg-4 round"
+             data-ride="{{ .Site.Params.slideshow.ride }}" data-interval="{{ .Site.Params.slideshow.interval }}"
+             data-keyboard="{{ .Site.Params.slideshow.keyboard }}" data-pause="{{ .Site.Params.slideshow.pause }}">
+            <div class="carousel-inner">
+                {{ range where .Site.Pages "Type" "blog" }}
+                    {{ if gt .Weight 0 }} <!-- Needed to prevent the blank defualt Blog from loading-->
+                        <div  class="carousel-item {{ if .Params.active }}active{{ end }}"><!-- Needed to make sure only one element is active -->
+                            <img class="slide-img w-100" href="#" src="{{ .Site.BaseURL }}{{ .Site.Params.img.source }}{{ .Params.image }}" alt="{{ .Params.alt }}" title="{{ .Params.img_title }}">
+                            <a href="{{ .Site.BaseURL }}blog/{{ .Slug }}">
+                            <div class="carousel-caption bg-trans-grey">
+                                <h3 class="title carousel-header">{{ .Params.Title }}</h3>
+                                <p class="title carousel-text">{{ .Params.Description }}</p>
+                            </div>
+                            </a>
+                        </div>
+                    {{ end }}
                 {{ end }}
-            {{ end }}
 
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
     </div>
 </section>

@@ -7,5 +7,5 @@ date = "2018-07-25"
 slug = "testing2"
 weight = 2
 draft = true
-image = "cat.jpg"
+image = "cat2.jpg"
 +++

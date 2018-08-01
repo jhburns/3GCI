@@ -1,0 +1,26 @@
+.slide-img {
+  object-fit: cover;
+  height: 30em;
+  max-height: 60vh;
+}
+
+.round {
+  border-radius: 20px;
+}
+
+.carousel-caption {
+  border-radius: 20px;
+  color: orange !important;
+}
+
+.carousel-caption:hover {
+  background-color: $primary
+}
+
+.carousel-header {
+  color: $carousel-color;
+}
+
+.carousel-text {
+  color: $carousel-color;
+}

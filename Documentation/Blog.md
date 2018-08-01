@@ -16,6 +16,8 @@ Welcome to the blog section which will detail mostly how to make a new post.
     weight = [integer, not 0]
     image = "[name].[extention]" 
     active = [true/false]
+    alt = "replaces an image that fails to load"
+    img_title = "Description of image"
     +++
 ```
 Example `passwords.md`
@@ -30,12 +32,14 @@ Example `passwords.md`
     weight = 6
     image = "cat.jpg"
     active = false
+    alt = "Man with ski-mask, staring at computer"
+    img_title = "Passoword Image"
     +++
 ```
 Now the blog should be available at http://localhost:1313/blog/name/ or on the site at the same reference.
 
 ### Active
-The active tag option should only be true for one blog, which will also be the first blog presented by the slideshow. If there is not exactly one active blog, the slideshow will misbehave. False by default so does not need to be included.
+The active tag option should only be true for one blog, which will also be the first blog presented by the slideshow. If there is not exactly one active blog, the slideshow will misbehave. False by default so does not need to be included for every other blog.
 
 ## Content
 
@@ -112,7 +116,9 @@ In earlier sections, config was briefly gone over, check here and at https://goh
 
 - slug: tells hugo what to make the url, overriding the filename.
 - weight: In a list, tells hugo which place this blog should have. Higher number means higher in the order. Cannot be zero.
-- draft: can only be set to 'true' since the default is false. Is only built when -D flag is used in hugo. All examples and testing should have this to prevent it from showing up in the production build 
+- draft: can only be set to 'true' since the default is false. Is only built when -D flag is used in hugo. All examples and testing should have this to prevent it from showing up in the production build
+- alt: what to replace the image with if it doesn't load. Needed for accessibility.  
+- img_title: Needed for accessibility.  
 
 In addition although hugo will be able to process most Markdown that is not mentioned above, it may look weird. Please contact whoever is responsible or override the styling of the base element it generate yourself.  
 

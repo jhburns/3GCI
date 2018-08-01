@@ -47,6 +47,14 @@ enableEmoji = true
                ['REPORT INCIDENT', 'https://web.chapman.edu/IncidentReport']
                ]
 
+
+[Params.slideshow]
+    enable = true
+    ride = "carousel"
+    interval = 5000
+    keyboard = false
+    pause = true
+
 [Params.blog]
     but = "More Tips"
 
@@ -72,6 +80,3 @@ enableEmoji = true
     title = "Page Not Found"
     but = "Go Home"
     text = "The requested webpage is not found, please try a different address in the URL bar above."
-
-[Params.slideshow]
-    enable = true
