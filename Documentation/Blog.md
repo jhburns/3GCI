@@ -15,7 +15,6 @@ Welcome to the blog section which will detail mostly how to make a new post.
     slug = "[name]"
     weight = [integer, not 0]
     image = "[name].[extention]" 
-    active = [true/false]
     alt = "replaces an image that fails to load"
     img_title = "Description of image"
     +++
@@ -31,7 +30,6 @@ Example `passwords.md`
     slug = "passwords"
     weight = 6
     image = "cat.jpg"
-    active = false
     alt = "Man with ski-mask, staring at computer"
     img_title = "Passoword Image"
     +++

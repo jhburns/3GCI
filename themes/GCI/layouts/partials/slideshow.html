@@ -1,3 +1,8 @@
+<!-- Needed because Hugo doesn't support changing variables normally -->
+<!-- And we need to track the number of actives because there can only be one -->
+{{ $scratch := newScratch }}
+{{ $scratch.Set "actives" 0 }}
+
 <section id="slideshow" class="bg-grey">
     <div class="container">
         <div id="carouselExampleControls" class="carousel slide p-3 p-lg-4 round"
@@ -5,9 +10,13 @@
              data-keyboard="{{ .Site.Params.slideshow.keyboard }}" data-pause="{{ .Site.Params.slideshow.pause }}">
             <div class="carousel-inner">
                 {{ range where .Site.Pages "Type" "blog" }}
-                    {{ if gt .Weight 0 }} <!-- Needed to prevent the blank defualt Blog from loading-->
-                        <div  class="carousel-item {{ if .Params.active }}active{{ end }}"><!-- Needed to make sure only one element is active -->
-                            <img class="slide-img w-100" href="#" src="{{ .Site.BaseURL }}{{ .Site.Params.img.source }}{{ .Params.image }}" alt="{{ .Params.alt }}" title="{{ .Params.img_title }}">
+                    <!-- Needed to prevent the blank defualt Blog from loading-->
+                    {{ if gt .Weight 0 }}
+                        <!-- Only added to the first blog -->
+                        <div  class="carousel-item {{ if (lt ($scratch.Get "actives") 1) }}
+                            active
+                            {{ $scratch.Add "actives" 1 }}{{ end }}"><!-- Needed to make sure only one element is active -->
+                            <img class="slide-img w-100" src="{{ .Site.BaseURL }}{{ .Site.Params.img.source }}{{ .Params.image }}" alt="{{ .Params.alt }}" title="{{ .Params.img_title }}">
                             <a href="{{ .Site.BaseURL }}blog/{{ .Slug }}">
                             <div class="carousel-caption bg-trans-grey">
                                 <h3 class="title carousel-header">{{ .Params.Title }}</h3>
