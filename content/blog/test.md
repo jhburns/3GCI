@@ -8,7 +8,7 @@ slug = "testing"
 weight = 1
 draft = true
 image = "cat.jpg"
-active = false
+active = true
 alt = "Waa"
 img_title = "Woo"
 +++
