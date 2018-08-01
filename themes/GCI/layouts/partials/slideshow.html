@@ -4,8 +4,8 @@
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             {{ range where .Site.Pages "Type" "blog" }}
-                {{ if gt .Weight 0 }}
-                    <div class="carousel-item {{ if .Params.active }}active{{ end }}">
+                {{ if gt .Weight 0 }} <!-- Needed to prevent the blank defualt Blog from loading-->
+                    <div class="carousel-item {{ if .Params.active }}active{{ end }}"><!-- Needed to make sure only one element is active -->
                         <img class="d-block w-100" src="{{ .Site.BaseURL }}{{ .Site.Params.img.source }}{{ .Params.image }}" alt="First slide">
                     </div>
                 {{ end }}

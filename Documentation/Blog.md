@@ -15,6 +15,7 @@ Welcome to the blog section which will detail mostly how to make a new post.
     slug = "[name]"
     weight = [integer, not 0]
     image = "[name].[extention]" 
+    active = [true/false]
     +++
 ```
 Example `passwords.md`
@@ -28,9 +29,13 @@ Example `passwords.md`
     slug = "passwords"
     weight = 6
     image = "cat.jpg"
+    active = false
     +++
 ```
 Now the blog should be available at http://localhost:1313/blog/name/ or on the site at the same reference.
+
+### Active
+The active tag option should only be true for one blog, which will also be the first blog presented by the slideshow. If there is not exactly one active blog, the slideshow will misbehave. False by default so does not need to be included.
 
 ## Content
 
@@ -106,7 +111,7 @@ The image that should be associated with the blog should also be added the the a
 In earlier sections, config was briefly gone over, check here and at https://gohugo.io/content-management/front-matter/ for full config options. Here are the imporant ones.
 
 - slug: tells hugo what to make the url, overriding the filename.
-- weight: **At least one blog has to have a weight of 1 or else the slideshow will not show (also will be the first). In a list, tells hugo which place this blog should have. Higher is higher.
+- weight: In a list, tells hugo which place this blog should have. Higher number means higher in the order. Cannot be zero.
 - draft: can only be set to 'true' since the default is false. Is only built when -D flag is used in hugo. All examples and testing should have this to prevent it from showing up in the production build 
 
 In addition although hugo will be able to process most Markdown that is not mentioned above, it may look weird. Please contact whoever is responsible or override the styling of the base element it generate yourself.  
