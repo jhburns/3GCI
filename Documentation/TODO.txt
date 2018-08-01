@@ -8,9 +8,6 @@ All the stuff
     -Mobile vs. Desktop implementation
 
 -Blog
-    -Add content to straight blog page
-    -Change from 'blog' to tips?
-    -Add blog insert onto front page
     -Port all current blogs
     -add videos
 
@@ -18,11 +15,9 @@ All the stuff
     -Add page
     -Profile picture
     -Copy text
+
 -Home
     -figure out best slash
-    -image carousel?
-    -rip images
-    -rip text
     -add blog section
     -add resources section
 
@@ -37,3 +32,6 @@ All the stuff
 -Accessibility
     -Fix current in navbar
     -everything
+
+-General
+	-Make main headers style

@@ -15,4 +15,4 @@ It is free and very fast.
 ## Advanced
 
 *_headers* file tells netlify to cache most static assets for a week or year. Main content is uncached to deliver new content as fast as possible.
- 
+See https://play.netlify.com/ to check if the header rules are valid 
