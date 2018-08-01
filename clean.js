@@ -1,6 +1,6 @@
 var version = '0.0.2';
 
-var removedDirectories = ['public', 'themes/GCI/static/created', 'yarn-error.log', 'error.log'];
+var removedDirectories = ['public', 'themes/GCI/static/created', 'yarn-error.log', 'error.log', 'resources'];
 
 try {
     const remove = require('rmdir');
