@@ -10,7 +10,7 @@
   "scripts": {
     "watch": "webpack --watch",
     "clean": "node clean.js",
-    "start": "hugo server --disableFastRender",
+    "start": "hugo server --disableFastRender -D",
     "make": "node clean.js && webpack -p --config ./webpack.production.config.js && hugo",
     "fastball": "webpack && hugo server",
     "test": "webpack -p --config ./webpack.production.config.js"
