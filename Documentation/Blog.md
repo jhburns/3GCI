@@ -81,6 +81,12 @@ Becomes
 - First 
 - Second
 
+### Emoji
+Instead of copy-pasting them, you can just write `:name:` and the appropriate emoji gets inserted.
+For example ```I :heart: Jonathan``` becomes ```I ❤️ Jonathan```.
+
+Check [this chart](https://www.webpagefx.com/tools/emoji-cheat-sheet/) for all available. 
+
 ### Images
 They are also added through Markdown, but are a little more complicated.
 

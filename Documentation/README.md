@@ -38,4 +38,4 @@ Two commands need to be run to build this.
 None of these commands should be run outside of a dev computer.
 
 ### Production 
-Only one command needs to be run `yarn run make`. Netlify uses this to build the site and all assets are compiled in this mode. Drafts are not built. It is recommended that this command is run before pushing to check for any production issues ahead of time. The site is not make on continuously and is found in */pubic*.  
+Only one command needs to be run `yarn run make`. Netlify uses this to build the site and all assets are compiled in this mode. Drafts are not built. It is recommended that this command is run before pushing to check for any production issues ahead of time. The site is not make on continuously and is found in */pubic*.

@@ -4,9 +4,10 @@ title = "Chapman security"
 theme="GCI"
 ignoreFiles = [ "README.md" ]
 enableRobotsTXT = true
+enableEmoji = true
 
 [Params.img]
-    source = "/created/img/"
+    source = "created/img/"
 
 [Params.header]
     enable = true
@@ -49,6 +50,7 @@ enableRobotsTXT = true
 [Params.blog]
     but = "More Tips"
 
+
 [Params.scripts]
     enable = true
     webpack_enable = false
@@ -71,3 +73,5 @@ enableRobotsTXT = true
     but = "Go Home"
     text = "The requested webpage is not found, please try a different address in the URL bar above."
 
+[Params.slideshow]
+    enable = true

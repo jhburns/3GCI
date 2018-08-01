@@ -5,10 +5,12 @@ layout = "single"
 title = "Testing"
 date = "2018-07-25"
 slug = "testing"
-weight = 0
+weight = 1
 draft = true
 image = "cat.jpg"
 +++
+
+:joy:
 
 # WA WA
 ## WA WA
