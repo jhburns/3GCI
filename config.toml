@@ -61,7 +61,7 @@ enableEmoji = true
 
 [Params.scripts]
     enable = true
-    webpack_enable = false
+    webpack_enable = true
     bootstrap_enable = true
 
 

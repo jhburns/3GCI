@@ -7,7 +7,7 @@ Adds all assets in to the */created* folder in */static/*
 
 - sass file are compiled into *main.css*
 
-- javascript files are given the webpack wrapper and added to */js*. *no_scroll.js* is currently the only used js file and it prevents the background from scrolling when the menu is open.
+- javascript files are given the webpack wrapper and added to the *js/scripts.js*. *no_scroll.js* is currently the only used js file and it prevents the background from scrolling when the menu is open. *console_out.js* tests if scripts are loading correctly.
 
 - */created-icons* is every single icon needed for each computer type. Some of *icons.html* should be copied into the header partial.
 
