@@ -5,6 +5,8 @@ theme="GCI"
 ignoreFiles = [ "README.md" ]
 enableRobotsTXT = true
 
+[Params.img]
+    source = "/created/img/"
 
 [Params.header]
     enable = true

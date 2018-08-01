@@ -7,6 +7,7 @@ date = "2018-07-25"
 slug = "testing"
 weight = 0
 draft = true
+image = "cat.jpg"
 +++
 
 # WA WA

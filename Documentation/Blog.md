@@ -14,6 +14,7 @@ Welcome to the blog section which will detail mostly how to make a new post.
     date = "2018-07-25"
     slug = "[name]"
     weight = 0
+    image = "name.extention" 
     +++
 ```
 Example `passwords.md`
@@ -26,6 +27,7 @@ Example `passwords.md`
     date = "2018-07-25"
     slug = "passwords"
     weight = 0
+    image = "cat.jpg"
     +++
 ```
 Now the blog should be available at http://localhost:1313/blog/name/ or on the site at the same reference.
@@ -89,6 +91,9 @@ They are also added through Markdown, but are a little more complicated.
 Don't forget to change the alt-text and title text, they are important for accessibility. 
 
 Currently only .jpg, .png, and .svg are supported.
+
+#### Presentation Image
+The image that should be associated with the blog should also be added the the above folder, and then be referenced with `image: "filename` in the blog header section (between the +++s). They will not show up in the blog, but instead by things that link to the blog. This image can also be used inside the blog article too, add it the same way as above. 
 
 ## Advanced Config
 
