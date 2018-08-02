@@ -7,7 +7,7 @@ enableRobotsTXT = true
 enableEmoji = true
 
 [Params.img]
-    source = "created/img/"
+    source = "/created/img/"
 
 [Params.header]
     enable = true
