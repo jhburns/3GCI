@@ -17,7 +17,7 @@ enableEmoji = true
 
     [Params.nav.home]
         enable = true
-        img = "/created/img/logo.jpeg"
+        img = "/created/img/logo.jpg"
         text = ""
         alt = "CYBER SMART PANTHERS"
         title = "CYBER SMART PANTHERS: Home"
