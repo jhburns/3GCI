@@ -50,3 +50,10 @@ body {
 .red-link:hover {
   color: $blue;
 }
+
+.section-title {
+  font-family: $title;
+  color: $primary;
+  font-weight: bold;
+  font-size: 3rem;
+}
