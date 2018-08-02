@@ -1,7 +1,7 @@
 <!-- Needed because Hugo doesn't support changing variables normally -->
 <!-- And we need to track the number of actives because there can only be one -->
 {{ $scratch := newScratch }}
-{{ $scratch.Set "actives" 0 }}
+{{ $scratch.Set "blogs" 0 }}
 
 <section id="slideshow" class="bg-grey">
     <div class="container">
@@ -13,9 +13,9 @@
                     <!-- Needed to prevent the blank defualt Blog from loading-->
                     {{ if gt .Weight 0 }}
                         <!-- Only added to the first blog -->
-                        <div  class="carousel-item {{ if (lt ($scratch.Get "actives") 1) }}
+                        <div  class="carousel-item {{ if (lt ($scratch.Get "blogs") 1) }}
                             active
-                            {{ $scratch.Add "actives" 1 }}{{ end }}"><!-- Needed to make sure only one element is active -->
+                            {{ $scratch.Add "blogs" 1 }}{{ end }}"><!-- Needed to make sure only one element is active -->
                             <img class="slide-img w-100" src="{{ .Site.BaseURL }}{{ .Site.Params.img.source }}{{ .Params.image }}" alt="{{ .Params.alt }}" title="{{ .Params.img_title }}">
                             <a href="{{ .Site.BaseURL }}blog/{{ .Slug }}">
                             <div class="carousel-caption bg-trans-grey">
@@ -38,4 +38,10 @@
             </a>
         </div>
     </div>
+
+    <!-- Presents error if there is no blogs from prev-->
+    {{ if eq ($scratch.Get "blogs") 0 }}
+    Error: no blogs found. Add some and then have the Admin restart hugo.
+    {{ end }}
+
 </section>
