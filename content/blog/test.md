@@ -6,6 +6,7 @@ title = "Testing"
 date = "2018-07-25"
 slug = "testing"
 weight = 1
+draft = true
 image = "cat.jpg"
 alt = "Waa"
 img_title = "Woo"
