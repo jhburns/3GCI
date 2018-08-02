@@ -26,13 +26,9 @@ All the stuff
     -add links
 
 -Markdown
-    -get gist fixed
     -ship with local markdown viewer?
     -archytpe auto maker
 
 -Accessibility
     -Fix current in navbar
     -everything
-
--General
-	-Make main headers style

@@ -13,6 +13,7 @@
     "start": "hugo server --disableFastRender -D",
     "make": "node clean.js && webpack -p --config ./webpack.production.config.js && hugo",
     "fastball": "webpack && hugo server",
+    "new": "hugo new -k blog",
     "test": "webpack -p --config ./webpack.production.config.js"
   },
   "author": "jhburns",

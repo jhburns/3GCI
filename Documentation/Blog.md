@@ -1,5 +1,6 @@
 # Blog
 Welcome to the blog section which will detail mostly how to make a new post.
+To make an empty blog, do ```yarn run new [title].md```, then navigate to */content* and edit it. Don't forget to add and commit it!
 
 ## Getting Started
 
