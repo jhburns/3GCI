@@ -28,6 +28,7 @@ All the stuff
 -Markdown
     -get gist fixed
     -ship with local markdown viewer?
+    -archytpe auto maker
 
 -Accessibility
     -Fix current in navbar

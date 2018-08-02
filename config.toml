@@ -55,6 +55,9 @@ enableEmoji = true
     keyboard = false
     pause = true
 
+[Params.tips]
+    title = "Wawaaaaa"
+
 [Params.blog]
     but = "More Tips"
 

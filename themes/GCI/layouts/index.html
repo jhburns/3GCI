@@ -17,13 +17,8 @@
             {{ partial "slideshow.html" . }}
         {{ end }}
 
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h1 class="section-title text-center">Wawawwaw awawawawaa</h1>
-                </div>
-            </div>
-        </div>
+        {{ partial "snippets/title.html" (dict "title" .Site.Params.tips.title) }}
+
 
         <p>AA</p><br>
         <p>AA</p><br>
