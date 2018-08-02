@@ -20,8 +20,9 @@
 
 - */themes/GCI/static/created*: Where compiled assets are dumped by webpack
 
-
 - */content*: Where blog articles are
+
+- */archetypes*: Contains the files that are called by hugo new.
 
 ## Ignore
 
