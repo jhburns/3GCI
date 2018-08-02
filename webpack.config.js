@@ -7,8 +7,8 @@ const glob = require("glob");
 
 //Image plugins
 const { ImageminWebpackPlugin } = require("imagemin-webpack");
-const imageminMozjpeg= require("imagemin-mozjpeg");
 const imageminSvgo = require("imagemin-svgo");
+const imageminMozjpeg = require('imagemin-mozjpeg');
 const imageminOptipng = require("imagemin-optipng");
 
 module.exports = {
@@ -65,7 +65,7 @@ module.exports = {
             bail: false, // Ignore errors on corrupted images
             cache: true,
             imageminOptions: {
-                plugins: [imageminMozjpeg({quality: 100}), imageminSvgo(), imageminOptipng()]
+                plugins: [imageminMozjpeg({ quality: 100}), imageminSvgo(), imageminOptipng()]
             },
             name: "img/[name].[ext]",
         }),
