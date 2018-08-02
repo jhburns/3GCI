@@ -3,9 +3,11 @@ language: node_js
 node_js:
   - "node"
 
+before_install:
+  - sudo apt-get update
+  - sudo apt-get install autoconf libtool nasm -y
 install:
-  -sudo apt-get install autoconf libtool nasm
-- npm install
+  - npm install
   - npm run clean || exit 0
   - wget https://github.com/gohugoio/hugo/releases/download/v0.43/hugo_0.43_Linux-64bit.deb
   - sudo dpkg -i hugo_0.43_Linux-64bit.deb
