@@ -6,7 +6,6 @@ type = "blog"
 layout = "single"
 slug = "waa"
 
-image = "wifi.png"
 alt = ""
 img_title = ""
 
