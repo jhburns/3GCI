@@ -13,4 +13,6 @@ img_title = ""
 icon = "wifi.png"
 alt_icon = ""
 title_icon = ""
+
+draft = true
 +++
