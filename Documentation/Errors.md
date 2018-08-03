@@ -43,5 +43,9 @@ It is important to not give users bad urls, possible areas where this could happ
 ### Existence Checking
 The website is largely designed not link to content that does not exist, using hugo's `fileExists` function. This prevents console errors.
 
-If a file does not exist, the html needed to use it won't either in general.
+If a file does not exist, the html needed to use it won't either in general. For example scripts.js may not load, and it is then not served without error because it is not page critical.
 
+The reasoning to not server some content without error is because it is not page critical so it is not needed. 
+
+## Non-local Scripts
+Currently third-party loaded scripts (jQuery, poppers, bootstrap etc.) are not checked to see if loading on their own CDN. Their uptime is instead trusted to always be up. 

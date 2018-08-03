@@ -29,9 +29,13 @@ enableEmoji = true
                      '/created/img/hamburger_beige.svg', '/created/img/hamburger_green.svg', '/created/img/hamburger_blue.svg',
                       '/created/img/hamburger_white.svg']
 
-        # Index is which color menu is used, starting at 0 and going to 6
-        # see above
-        index = 0
+        # Both values are indexs of the above array, starting at 0 and gonig to 6
+
+        # Icon that loads with the page
+        defualt = 0
+
+        # Icon that is changed to when clicked
+        active = 1
 
     [Params.nav.links]
         enable = true
@@ -55,15 +59,17 @@ enableEmoji = true
     keyboard = false
     pause = true
 
+# frontpage part of blog
 [Params.tips]
     title = "Become a Chapman Cyber Ninja:"
     enable = true
     read = "Read more of: "
     frontpage_number = 4
     all = "READ ALL TIPS"
+    link = "/blog"
 
+# blog info here, 20 shown cap
 [Params.blog]
-    but = "More Tips"
     enable = true
     number = 20
     title = "All Tips"
@@ -73,7 +79,6 @@ enableEmoji = true
     enable = true
     webpack_enable = true
     bootstrap_enable = true
-
 
 [Params.footer]
     enable = true
