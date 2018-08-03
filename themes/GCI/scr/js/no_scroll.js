@@ -4,8 +4,10 @@
 
 $('#navbarSupportedContent').on('hidden.bs.collapse', function () {
     $("body").css("overflow","scroll");
+    $('#carouselExampleControls').carousel('cycle');
 });
 
 $('#navbarSupportedContent').on('show.bs.collapse', function () {
     $("body").css("overflow","hidden");
+    $('#carouselExampleControls').carousel('pause');
 });
