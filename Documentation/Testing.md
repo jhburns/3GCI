@@ -12,7 +12,7 @@ The site is retested every time a new push is done to the master.
 
 ## Why
 
-This is mostly to check if netlify is updating the site, becuase a failure on nelifies part just serves the site from last change.
+This is mostly to check if netlify is updating the site, because a failure on nelify's part just serves the site from last change.
 
 ## Advanced
 
@@ -22,3 +22,8 @@ Next, hugo is manually downloaded and installed because apt-get support is broke
 
 #### Script
 Both the previous two commands are run as tests under the 'script' section 
+
+## Advanced
+- *before install* section is used to install apt packages that are needed to compile mozjpeg because its binaries fail.
+- *|| exit 0* makes sure that cleaning is successful, because it is optional
+- *cache yarn* tells it to cache packages   
