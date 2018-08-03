@@ -24,7 +24,7 @@
         {{ end }}
 
         {{ partial "snippets/sublink.html" (dict "link" "/blog" "text" .Site.Params.tips.all ) }}
-        
+
         {{ if .Site.Params.footer.enable }}
             {{ partial "footer.html" . }}
         {{ end }}

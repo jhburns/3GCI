@@ -17,16 +17,11 @@ All the stuff
     -Copy text
 
 -Home
-    -add blog section
     -add resources section
 
 -Resources
     -create page
     -add links
-
--Markdown
-    -ship with local markdown viewer?
-    -archytpe auto maker
 
 -Accessibility
     -Fix current in navbar
