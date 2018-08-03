@@ -10,7 +10,7 @@
     {{ end }}
 
     {{ if and (fileExists "/themes/GCI/static/created/js/script.js") (.Site.Params.scripts.webpack_enable) }}
-        <script async src="./created/js/script.js"></script>
+        <script async src="{{ .Site.BaseURL}}/created/js/script.js"></script>
     {{ end }}
 
 </section>
