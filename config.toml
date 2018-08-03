@@ -90,3 +90,8 @@ enableEmoji = true
     title = "Page Not Found"
     but = "Go Home"
     text = "The requested webpage is not found, please try a different address in the URL bar above."
+
+    [Params.err.msg]
+        tips = "Error: no tips, contact Admin to check icons, add blog, and restart server"
+        head = "Error: CSS not compiled, please contact Admin to run `yarn run webpack -p` and restart hugo server"
+        slideshow = "Error: no blogs found. Add some and then have the Admin restart hugo."

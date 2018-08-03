@@ -14,7 +14,7 @@
     {{ if fileExists "/themes/GCI/static/created/main.css" }}
         <link rel="stylesheet" href="/created/main.css">
     {{ else }}
-        <p>Error: CSS not compiled, please contact Admin to run "yarn run webpack -p" and restart hugo server</p>
+        <p>{{ .Site.Params.err.msg.head }}</p>
     {{ end }}
 
     <!-- Can only check one file to see if icons have been generated-->

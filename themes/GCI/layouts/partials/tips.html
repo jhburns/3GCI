@@ -29,6 +29,6 @@
     </div>
 
     {{ if eq ($scratch.Get "blogs") 0 }}
-    <p>Error: no tips, check back later</p>
+        <p>{{ .context.Site.Params.err.msg.tips }}</p>
     {{ end }}
 </section>
