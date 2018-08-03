@@ -3,7 +3,7 @@
 {{ $show := .show }}
 
 <section id="#tips">
-    <div class="container pb-5">
+    <div class="container">
         <div class="row">
             {{ range (where .context.Site.Pages "Type" "blog") }}
                 {{ if (lt ($scratch.Get "blogs") $show ) }}

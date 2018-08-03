@@ -23,38 +23,8 @@
             {{ partial "tips.html" (dict "show" .Site.Params.tips.frontpage_number "context" .) }}
         {{ end }}
 
-        {{ }}
-
-        <p>AA</p><br>
-        <p>AA</p><br>
-        <p>AA</p><br>
-        <p>AA</p><br>
-        <p>AA</p><br>
-        <p>AA</p><br>
-        <p>AA</p><br>
-        <p>AA</p><br>
-        <p>AA</p><br>
-        <p>AA</p><br>
-        <p>AA</p><br>
-        <p>AA</p><br>
-        <p>AA</p><br>
-        <p>AA</p><br>
-        <p>AA</p><br>
-        <p>AA</p><br>
-        <p>AA</p><br>
-        <p>AA</p><br>
-        <p>AA</p><br>
-        <p>AA</p><br>
-        <p>AA</p><br>
-        <p>AA</p><br>
-        <p>AA</p><br>
-        <p>AA</p><br>
-        <p>AA</p><br>
-        <p>AA</p><br>
-        <p>AA</p><br>
-        <p>AA</p><br>
-        <p>AA</p><br>
-
+        {{ partial "snippets/sublink.html" (dict "link" "/blog" "text" .Site.Params.tips.all ) }}
+        
         {{ if .Site.Params.footer.enable }}
             {{ partial "footer.html" . }}
         {{ end }}

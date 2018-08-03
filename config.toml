@@ -60,6 +60,7 @@ enableEmoji = true
     enable = true
     read = "Read more of: "
     frontpage_number = 4
+    all = "READ ALL TIPS"
 
 [Params.blog]
     but = "More Tips"
