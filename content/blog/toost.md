@@ -1,16 +1,16 @@
 +++
-title = "{{ replace .Name "-" " " | title }}"
-date = "{{ .Date }}"
+title = "Toost"
+date = "2018-08-02T21:39:51-07:00"
 description = ""
 type = "blog"
 layout = "single"
-slug = ""
+slug = "waa"
 
-image = "no"
+image = "wifi.png"
 alt = ""
 img_title = ""
 
-icon = "no"
+icon = "wifi.png"
 alt_icon = ""
 title_icon = ""
 +++

@@ -11,7 +11,7 @@
             <div class="carousel-inner">
                 {{ range where .Site.Pages "Type" "blog" }}
                     <!-- Needed to prevent the blank defualt Blog from loading-->
-                    {{ if gt .Weight 0 }}
+                    {{ if (fileExists (print "/themes/GCI/static/created/img/" .Params.image) )}}
                         <!-- Only added to the first blog -->
                         <div  class="carousel-item{{ if (lt ($scratch.Get "blogs") 1) }}
                             active

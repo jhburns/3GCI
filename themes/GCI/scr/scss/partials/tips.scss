@@ -1,0 +1,19 @@
+.image-resize {
+  padding-left: 8rem;
+  padding-right: 8rem;
+
+
+  @include media-breakpoint-down(sm) {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
+  @include media-breakpoint-down(md) {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+.tip:hover {
+  color: $primary;
+}

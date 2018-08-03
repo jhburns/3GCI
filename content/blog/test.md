@@ -1,27 +1,31 @@
 +++
-description = "Learn best security practices  IS the dummy text of the typsetting industry wooIS the dummy text of the typsetting industry wooIS the dummy text of the typsetting industry wooIS the dummy text of the typsetting industry wooIS the dummy text of the typsetting industry woo"
+description = "Learn best security practices  typsetting industry wooIS the dummy text of the typsetting industry woo"
 type = "blog"
 layout = "single"
 title = "Testing"
 date = "2018-07-25"
-slug = "testing"
+slug = "test"
 weight = 1
 draft = true
+
 image = "cat.jpg"
 alt = "Waa"
 img_title = "Woo"
+
+icon = "wifi.png"
+alt_icon = "A full-bar wifi signal"
+title_icon = "Wifi"
 +++
 
 :joy:
 
-# WA WA
 ## WA WA
 ### WA WA
 #### WA WA
 ##### WA WA
 ###### WA WA
 
-# **WAA**
+## **WAA**
 
 
 *italics*

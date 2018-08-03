@@ -1,11 +1,10 @@
 # Blog
 Welcome to the blog section which will detail mostly how to make a new post.
-To make an empty blog, do ```yarn run new [title].md```, then navigate to */content* and edit it. Don't forget to add and commit it!
 
 ## Getting Started
+To make an empty blog, do ```yarn run new /blog/[title].md```, then navigate to */content* and edit it. Don't forget to add and commit it!
+That will create the default header using the same title as the filename, but with no other data or content. Change the 'slug' attribute and the blog is now up at url.com/blog/[filename/slug]. 
 
-1. Make a new file in *./content/blog*. It should be in filename *[name].md* where the name is what the url link should be
-1. Add the header to the file in this format:
 ```
     +++
     title = "Will show at the top"
@@ -15,9 +14,14 @@ To make an empty blog, do ```yarn run new [title].md```, then navigate to */cont
     date = "2018-07-25"
     slug = "[name]"
     weight = [integer, not 0]
+    
     image = "[name].[extention]" 
-    alt = "replaces an image that fails to load"
-    img_title = "Description of image"
+    alt = "Description of image"
+    img_title = "tooltip: text on hover"
+    
+    icon = "[name].[extention]"
+    alt_icon = "Description of image"
+    title_icon = "tooltip: text on hover"
     +++
 ```
 Example `passwords.md`
@@ -31,8 +35,14 @@ Example `passwords.md`
     slug = "passwords"
     weight = 6
     image = "cat.jpg"
-    alt = "Man with ski-mask, staring at computer"
-    img_title = "Passoword Image"
+    
+    image = "password_hacker.jpg" 
+    alt = "A man is a black ski mask, typing on a bright computer"
+    img_title = "Beware people like this!"
+    
+    icon = "passwords.png"
+    alt_icon = "A lock"
+    title_icon = "Lock up your data"
     +++
 ```
 Now the blog should be available at http://localhost:1313/blog/name/ or on the site at the same reference.
@@ -49,7 +59,6 @@ Text: Just type or copy-paste it in, no change needed. Add `\&emsp;` to the begi
 Headers(titles): Put a `#` in front of text to make it a heading. The size inversely correlates with the number of #s.
 So this:
 ```
-# Heading
 ## Heading
 ### Heading
 #### Heading
@@ -57,12 +66,13 @@ So this:
 ###### Heading
 ```
 Becomes this
-# Heading
 ## Heading
 ### Heading
 #### Heading
 ##### Heading
 ###### Heading
+
+**Note: do not use a single # because if creates an h1 header and only 1 can be on each page.**
 
 *Italics*: put `*` around text, like `*this*`
 
@@ -119,5 +129,5 @@ In earlier sections, config was briefly gone over, check here and at https://goh
 - alt: what to replace the image with if it doesn't load. Needed for accessibility.  
 - img_title: Needed for accessibility.  
 
-In addition although hugo will be able to process most Markdown that is not mentioned above, it may look weird. Please contact whoever is responsible or override the styling of the base element it generate yourself.  
+In addition although hugo will be able to process most Markdown that is not mentioned above, it may look weird. Any html can be inserted too and it will be rendered like normal.
 

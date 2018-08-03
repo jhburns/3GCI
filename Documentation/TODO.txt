@@ -17,7 +17,6 @@ All the stuff
     -Copy text
 
 -Home
-    -figure out best slash
     -add blog section
     -add resources section
 
@@ -32,3 +31,5 @@ All the stuff
 -Accessibility
     -Fix current in navbar
     -everything
+
+    https://kb-smc.chapman.edu/?p=4124

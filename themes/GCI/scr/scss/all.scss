@@ -8,15 +8,5 @@
 @import "partials/blog";
 @import "partials/footer";
 @import "partials/slideshow";
-
-/* A fake entry to avoid a warning when using webpack -p (production).
-* For some reason, 'warning { expected' by the parser if there isn't at least one of these.
-* Only happens in production for some reason
-* Should be ignored by browsers.
- */
-
-dummy {
-  fake: #entry;
-}
-
+@import "partials/tips";
 

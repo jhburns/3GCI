@@ -3,23 +3,29 @@
 
 <head>
     {{ if .Site.Params.header.enable }}
-    {{ partial "head.html" . }}
+        {{ partial "head.html" . }}
     {{ end }}
 </head>
 
 <body>
 
-{{ if .Site.Params.nav.enable }}
-{{ partial "nav.html" . }}
-{{ end }}
+    {{ if .Site.Params.nav.enable }}
+        {{ partial "nav.html" . }}
+    {{ end }}
 
-{{ if .Site.Params.footer.enable }}
-{{ partial "footer.html" . }}
-{{ end }}
+    {{ partial "snippets/title.html" (dict "title" .Site.Params.blog.title) . }}
 
-{{ if .Site.Params.scripts.enable }}
-{{ partial "scripts.html" . }}
-{{ end }}
+    {{ if .Site.Params.tips.enable }}
+        {{ partial "tips.html" (dict "show" .Site.Params.blog.number "context" .) }}
+    {{ end }}
+
+    {{ if .Site.Params.footer.enable }}
+        {{ partial "footer.html" . }}
+    {{ end }}
+
+    {{ if .Site.Params.scripts.enable }}
+        {{ partial "scripts.html" . }}
+    {{ end }}
 
 </body>
 </html>

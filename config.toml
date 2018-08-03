@@ -57,9 +57,15 @@ enableEmoji = true
 
 [Params.tips]
     title = "Become a Chapman Cyber Ninja:"
+    enable = true
+    read = "Read more of: "
+    frontpage_number = 4
 
 [Params.blog]
     but = "More Tips"
+    enable = true
+    number = 20
+    title = "All Tips"
 
 
 [Params.scripts]

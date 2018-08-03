@@ -1,0 +1,30 @@
+{{ $scratch := newScratch }}
+{{ $scratch.Set "blogs" 0 }}
+{{ $show := .show }}
+
+<section id="#tips">
+    <div class="container pb-5">
+        <div class="row">
+            {{ range (where .context.Site.Pages "Type" "blog") }}
+                {{ if (lt ($scratch.Get "blogs") $show ) }}
+                    {{ if (fileExists (print "/themes/GCI/static/created/img/" .Params.icon ))  }}
+                        {{ $scratch.Add "blogs" 1 }}
+                        <div class="col-12 col-md-6">
+                            <a href="{{ .Site.BaseURL }}blog/{{ .Params.slug }}">
+                                <div class="image-resize">
+                                  <img class="w-100 tip-icon" src="{{ .Site.BaseURL }}{{ .Site.Params.img.source }}{{ .Params.icon }}">
+                                </div>
+                            </a>
+                            <a class="tip" href="{{ .Site.BaseURL }}blog/{{ .Params.slug }}">
+                                <h2 class="red-underline">{{ .Params.Title }}</h2>
+                            </a>
+                            <p class="normal">{{ .Site.Params.tips.read }}
+                                <a class="red-link" href="{{ .Site.BaseURL }}blog/{{ .Params.slug }}">{{ .Params.Description }}</a>
+                            </p>
+                        </div>
+            {{ end }}
+                {{ end }}
+            {{ end }}
+        </div>
+    </div>
+</section>

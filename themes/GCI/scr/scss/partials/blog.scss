@@ -17,9 +17,10 @@
   font-weight: 500;
   line-height: 1.2;
   color: $primary;
+  font-weight: bold;
 }
 
-.blog-cont h1, .blog-cont h2, .blog-cont h3, .blog-cont h4, .blog-cont h5, .blog-cont h6 {
+.blog-cont h2, .blog-cont h3, .blog-cont h4, .blog-cont h5, .blog-cont h6 {
   color: $black;
   font-family: $normal;
 }

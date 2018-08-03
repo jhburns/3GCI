@@ -17,8 +17,13 @@
             {{ partial "slideshow.html" . }}
         {{ end }}
 
-        {{ partial "snippets/title.html" (dict "title" .Site.Params.tips.title) }}
+        {{ partial "snippets/title.html" (dict "title" .Site.Params.tips.title) . }}
 
+        {{ if .Site.Params.blog.enable }}
+            {{ partial "tips.html" (dict "show" .Site.Params.tips.frontpage_number "context" .) }}
+        {{ end }}
+
+        {{ }}
 
         <p>AA</p><br>
         <p>AA</p><br>
