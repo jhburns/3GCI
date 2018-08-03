@@ -48,10 +48,7 @@ module.exports = {
             {
                 loader: "file-loader",
                 options: {
-                    emitFile: true, // Don't forget emit images
                     name: "img/[name].[ext]",
-                    bail: false, // Ignore errors on corrupted images
-                    cache: true,
                 },
                 test: /\.(jpe?g|png|svg)$/i
 
@@ -61,14 +58,6 @@ module.exports = {
 
     plugins: [
         new ExtractTextPlugin('[name].css'),
-        new ImageminWebpackPlugin({
-            bail: false, // Ignore errors on corrupted images
-            cache: true,
-            imageminOptions: {
-                plugins: [imageminMozjpeg({ quality: 100}), imageminSvgo(), imageminOptipng()]
-            },
-            name: "img/[name].[ext]",
-        }),
     ]
 
 };

@@ -7,7 +7,7 @@ These can be caused is a couple of ways. Check these errors anywhere from the tr
 
 1. Npm/yarn doesn't install packages correctly. This can be fixed by updating packages or adding extra dependencies. In extreme cases like `imagemin-mozjpeg` apt-get may be needed to install packages to install.
 1. Webpack error. These are generally caused by incorrectly made configs. FIx and rerun.
-1. Hugo error. these can be syntax error, or content error. Fix syntax or add needed content and rerun.
+1. Hugo error. These can be syntax error, or content error. Fix syntax or add needed content and rerun.
 
 For all back-end error, these will not be shown to the end-user and instead are not build and deployed by netlify. As a result Admin can take their time to fix.
 
@@ -18,6 +18,7 @@ There are two types of general front-end errors.
 1. Important file not found. No .html file, .css file etc.
 1. Nothing in range. When hugo is rendering the site a range is used to get content from the blogs, there are multiple reasons why n content can be generated.
 available 
+
 ### Error message
 For each of these types a good message should still be delivered.
 Format ```Error[optional]: [description of content not available]. Please contact Admin to [add content, optional] and then restart [yarn and/or hugo server].```

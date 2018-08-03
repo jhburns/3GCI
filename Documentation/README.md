@@ -14,6 +14,8 @@
 
 **Blog.md**: Info about how to make a new blog post
 
+**Errors.md**: Types and best practices for site error.
+
 It is recommended to view these files either in GitHub, or to install the plugin to view Markdown files in WebStorm. https://plugins.jetbrains.com/plugin/7793-markdown-support
 
 # How It's Made
@@ -38,4 +40,4 @@ Two commands need to be run to build this.
 None of these commands should be run outside of a dev computer.
 
 ### Production 
-Only one command needs to be run `yarn run make`. Netlify uses this to build the site and all assets are compiled in this mode. Drafts are not built. It is recommended that this command is run before pushing to check for any production issues ahead of time. The site is not make on continuously and is found in */pubic*.
+Only one command needs to be run `yarn run make`. Netlify uses this to build the site and all assets are compiled in this mode. Drafts are not built. It is recommended that this command is run before pushing to check for any production issues ahead of time. The site is not made continuously and is found in */pubic*.
