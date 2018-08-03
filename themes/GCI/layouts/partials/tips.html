@@ -22,9 +22,13 @@
                                 <a class="red-link" href="{{ .Site.BaseURL }}blog/{{ .Params.slug }}">{{ .Params.Description }}</a>
                             </p>
                         </div>
-            {{ end }}
+                    {{ end }}
                 {{ end }}
             {{ end }}
         </div>
     </div>
+
+    {{ if eq ($scratch.Get "blogs") 0 }}
+    <p>Error: no tips, check back later</p>
+    {{ end }}
 </section>
