@@ -2,7 +2,7 @@
 Welcome to the blog section which will detail mostly how to make a new post.
 
 ## Getting Started
-To make an empty blog, do ```yarn run new /blog/[title].md```, then navigate to */content* and edit it. Don't forget to add and commit it!
+To make an empty blog, do ```yarn new /blog/[title].md```, then navigate to */content* and edit it. Don't forget to add and commit it!
 That will create the default header using the same title as the filename, but with no other data or content. Change the 'slug' attribute and the blog is now up at url.com/blog/[filename/slug]. 
 
 ```

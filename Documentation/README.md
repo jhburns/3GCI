@@ -34,10 +34,10 @@ There are two main options for building, development and production
 ### Development
 This form of building is supposed to be quick and constantly updating to make changes easy to test.
 Two commands need to be run to build this.
-- `yarn run start` runs hugo which rebuilds the website after each change. Drafts are also build.
-- `yarn run watch` runs webpack, which only watches images and sass in this mode.
+- `yarn start` runs hugo which rebuilds the website after each change. Drafts are also build.
+- `yarn watch` runs webpack, which only watches images and sass in this mode.
 
 None of these commands should be run outside of a dev computer.
 
 ### Production 
-Only one command needs to be run `yarn run make`. Netlify uses this to build the site and all assets are compiled in this mode. Drafts are not built. It is recommended that this command is run before pushing to check for any production issues ahead of time. The site is not made continuously and is found in */pubic*.
+Only one command needs to be run `yarn make`. Netlify uses this to build the site and all assets are compiled in this mode. Drafts are not built. It is recommended that this command is run before pushing to check for any production issues ahead of time. The site is not made continuously and is found in */pubic*.

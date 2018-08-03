@@ -2,10 +2,16 @@
   "name": "GCI",
   "version": "0.4.5",
   "description": "For a FFC GCI project",
-  "main": "index.js",
-  "repository": "3GCI",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/jhburns/3GCI.git"
+  },
+  "author": {
+    "name" : "Jonathan Burns",
+    "email" : "jburns@gmail.com"
+  },
   "directories": {
-    "doc": "doc"
+    "doc": "Documentation"
   },
   "scripts": {
     "watch": "webpack --watch",
@@ -16,7 +22,6 @@
     "new": "hugo new -k blog",
     "test": "webpack -p --config ./webpack.production.config.js"
   },
-  "author": "jhburns",
   "license": "CC-BY-NC-SA-4.0",
   "dependencies": {
     "babel-preset-env": "^1.7.0",

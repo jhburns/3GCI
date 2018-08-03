@@ -16,10 +16,10 @@ To run the website, first install [yarn](https://yarnpkg.com/lang/en/)
 
 Then in the root directory of this site (./3GCI) run `yarn install`
 
-To open the site in your browser run `yarn run fastball` and go to http://localhost:1313/
+To open the site in your browser run `yarn fastball` and go to http://localhost:1313/
 
 ## Command overview
-Because of node, there are multiple shortcuts used to automate the site. To use each of them type `yarn run [command]`, example: `yarn run make`
+Because of node, there are multiple shortcuts used to automate the site. To use each of them type `yarn [command]`, example: `yarn make`
 
 - **watch**: Automatically recompiles sass (*.scss files in .../scr/scss) so style can be developed quickly
 - **start**: Starts the hugo server, which automatically watches files and rebuilds after changes and severs the content.

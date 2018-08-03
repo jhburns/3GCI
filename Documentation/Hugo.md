@@ -16,7 +16,7 @@ Hugo is very fast and because it generates a static site, there is little overhe
 
 ## Advanced
 
-Hugo is downloaded using a custom npm package, and is run with `yarn run hugo`.
+Hugo is downloaded using a custom npm package, and is run with `yarn hugo`, although custom commands are preferred.
 This package will automatically install hugo on the first usage and reads in the version from *hugo-version.json*.
 
 # Snippets

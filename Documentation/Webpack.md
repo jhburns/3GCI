@@ -1,5 +1,5 @@
 # Webpack
-Webpack is used to automate many process in this site and compiles javascript and sass and compresses images.
+Webpack is used to automate many process in this site and compiles javascript and sass and compresses images. Run with ```yarn webpack``` although custom commands are prefered.
 
 ## What
 
