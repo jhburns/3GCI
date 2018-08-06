@@ -7,7 +7,7 @@
 	Cache-Control: must-revalidate, public
 
 /created/*.css
-        Cache-Control: max-age=604801
+        Cache-Control: max-age=0
         Cache-Control: must-revalidate, public
 
 /created/created-icons/*
