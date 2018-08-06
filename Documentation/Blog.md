@@ -13,13 +13,13 @@ That will create the default header using the same title as the filename, but wi
     layout = "single"
     date = "2018-07-25"
     slug = "[name]"
-    weight = [integer, not 0]
+    weight = [integer, not 0, can be left out]
     
-    image = "[name].[extention]" 
+    image = "[name].[extention]" # leave out this section to no reder in the slideshow  
     alt = "Description of image"
     img_title = "tooltip: text on hover"
     
-    icon = "[name].[extention]"
+    icon = "[name].[extention]" # leave out this section to not render in the list view 
     alt_icon = "Description of image"
     title_icon = "tooltip: text on hover"
     +++
@@ -34,7 +34,6 @@ Example `passwords.md`
     date = "2018-07-25"
     slug = "passwords"
     weight = 6
-    image = "cat.jpg"
     
     image = "password_hacker.jpg" 
     alt = "A man is a black ski mask, typing on a bright computer"
@@ -111,24 +110,43 @@ They are also added through Markdown, but are a little more complicated.
 1. First an image has to be uploaded to *./themes/GCI/scr/img/blog* and then `yarn run watch` or `yarn run make` has to be run to compress it.
 1. In the blog .md file, this formatting has to be used in content to display it `![alt text](/created/img/filename.jpg "Title Text")`
 1. If the image is too vertical it will display poorly so it may need to be cropped outside of the website
+1. All config images, `image` and `icon` can be referenced with just their name. For example ```image = "cat.jpg"``` instead of ```image = "/themes/GCI/scr/img/blog/cat.jpg"```
 
 Don't forget to change the alt-text and title text, they are important for accessibility. 
 
 Currently only .jpg, .png, and .svg are supported.
 
 #### Presentation Image
-The image that should be associated with the blog should also be added the the above folder, and then be referenced with `image: "filename` in the blog header section (between the +++s). They will not show up in the blog, but instead by things that link to the blog. This image can also be used inside the blog article too, add it the same way as above. 
+The image that should be associated with the blog should also be added the the above folder, and then be referenced with `image: "filename` in the blog header section (between the +++s). They will not show up in the blog, but instead by things that link to the blog. This image can also be used inside the blog article too, add it the same way as above. Example:
+```    
+       image = "password_hacker.jpg" 
+       alt = "A man is a black ski mask, typing on a bright computer"
+       img_title = "Beware people like this!"
+```
+
+### Icon
+Icons are similar to Presentation images, one for each blog. They need the config option ```icon = "[name].[extention]"``` and their own ```alt_icon = ""``` ```title_icon = ""``` tags. 
+
+Unlike the presentation image, they should be placed in *./themes/GCI/scr/img/blog/icons* (NOT the main icons folder) and should NOT be used inside the blog.
+Example:
+```
+    icon = "passwords.png"
+    alt_icon = "A flat, abstract image of a lock"
+    title_icon = "Lock up your data"
+```
 
 ## Advanced Config
 
 In earlier sections, config was briefly gone over, check here and at https://gohugo.io/content-management/front-matter/ for full config options. Here are the imporant ones.
 
 - slug: tells hugo what to make the url, overriding the filename.
-- weight: In a list, tells hugo which place this blog should have. Higher number means higher in the order. Cannot be zero.
+- weight: In a list, tells hugo which place this blog should have. Higher number means higher in the order. Cannot be zero. Can be left off if order doesn't matter.
 - draft: can only be set to 'true' since the default is false. Is only built when -D flag is used in hugo. All examples and testing should have this to prevent it from showing up in the production build
 - alt: what to replace the image with if it doesn't load. Needed for accessibility.  
 - img_title: Needed for accessibility.  
 - description: It is also used for the meta tag, meaning it is displayed as a snippet by Google. 
 
 In addition although hugo will be able to process most Markdown that is not mentioned above, it may look weird. Any html can be inserted too and it will be rendered like normal.
+
+Want a blog to only show up in the slideshow or only the list view? Give it only a image or icon respectively, neither will render without having at least a blank config. 
 
