@@ -5,6 +5,8 @@
     {{ if .Site.Params.header.enable }}
         {{ partial "head.html" . }}
     {{ end }}
+
+    {{ partial "snippets/description.html" (dict "description" .Description )}}
 </head>
 
 <body>
