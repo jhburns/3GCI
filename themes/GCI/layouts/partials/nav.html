@@ -52,7 +52,9 @@
     <!-- Should render behind the real navbar -->
     <!-- Only contains the stuff the changes vertical height, which is the image spacer for now -->
     <nav class="navbar navbar-expand-lg pt-md-4 pb-md-4 pt-sm-2 pb-sm-2">
-        <div class="home-img-spacer"></div>
+        <a class="navbar-brand" href="{{ .Site.Params.nav.home.link }}">
+            <div class="home-img-spacer"></div>
+        </a>
     </nav>
 
 </section>
