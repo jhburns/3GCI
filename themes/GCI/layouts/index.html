@@ -19,13 +19,13 @@
             {{ partial "slideshow.html" . }}
         {{ end }}
 
-        {{ partial "snippets/title.html" (dict "title" .Site.Params.tips.title) . }}
+        {{ partial "snippets/title.html" (dict "title" .Site.Params.tips.title "importance" 1 ) . }}
 
         {{ if .Site.Params.blog.enable }}
             {{ partial "tips.html" (dict "show" .Site.Params.tips.frontpage_number "context" .) }}
         {{ end }}
 
-        {{ partial "snippets/sublink.html" (dict "link" .Site.Params.tips.blog "text" .Site.Params.tips.all ) }}
+        {{ partial "snippets/sublink.html" (dict "link" .Site.Params.tips.blog "text" .Site.Params.tips.all "importance" 3) }}
 
         {{ if .Site.Params.footer.enable }}
             {{ partial "footer.html" . }}

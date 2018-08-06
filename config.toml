@@ -76,6 +76,7 @@ enableEmoji = true
     enable = true
     number = 20
     title = "All Tips"
+    but = "More Tips"
     desc = "Learn more about cybersecurity"
 
 [Params.scripts]

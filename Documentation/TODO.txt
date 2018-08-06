@@ -10,6 +10,7 @@ All the stuff
 -Blog
     -Port all current blogs
     -add videos
+    -check video captions
 
 -About
     -Add page
