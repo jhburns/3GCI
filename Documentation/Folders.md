@@ -1,10 +1,18 @@
 # Folders
 
-## Important
+## Important, User Needed
+
+- */content*: Where blog articles are
+
+- */themes/GCI/scr/img/blog*: Where blog images should all be added, for main content, slideshow, or both
+
+- */themes/GCI/scr/img/blog/icons*: Where blog icons should all be added
+
+## Moderately Used, by Developer 
 
 - */themes/GCI/*: Where all the website information is, html, css, javascript, images and more
 
-- */themes/GCI/layouts*: The html files, including the subsections in */partials*
+- */themes/GCI/layouts*: The html files, including the subsections in */partials* which has main page content. */snippets* for short functional content (not `<section>` tag). */blog* for each blog layout and */page* for each sub-page layout.
 
 - */themes/GCI/scr/*: Where all images, scss, and javascript is
 
@@ -14,15 +22,11 @@
 
 - */themes/GCI/scr/img*: Images needed in the site, make sure that every file is named differently here
 
-- */themes/GCI/scr/img/blog*: Where blog images should all be added
-
 - */themes/GCI/static*: non-compiled static files, only the favicon for now (Version 0.3.2)
 
-- */themes/GCI/static/created*: Where compiled assets are dumped by webpack
+- */themes/GCI/static/created*: Where compiled assets are dumped by webpack, DO NOT EDIT
 
-- */content*: Where blog articles are
-
-- */archetypes*: Contains the files that are called by hugo new.
+- */themes/GCI//archetypes*: Contains the files that are called by hugo new. Currently only for blog.
 
 ## Ignore
 

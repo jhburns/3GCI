@@ -47,3 +47,7 @@ Note: `*` is a wildcard and means anything can go there. For example *\*.jpg* me
 - *.gitignore*: Which files/directories git doesn't add to version control
 
 - *netlify.toml*: Used by https://www.netlify.com/ to know which version of hugo to install
+
+# Caches
+
+The way the website handles caching is to cache all files from */static*, except the *main.css* file and of course the main hmtl document. It is recommended to also change the name of an image that is updated to replace it in cache and sever it fresh. 
