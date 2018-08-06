@@ -128,6 +128,7 @@ In earlier sections, config was briefly gone over, check here and at https://goh
 - draft: can only be set to 'true' since the default is false. Is only built when -D flag is used in hugo. All examples and testing should have this to prevent it from showing up in the production build
 - alt: what to replace the image with if it doesn't load. Needed for accessibility.  
 - img_title: Needed for accessibility.  
+- description: It is also used for the meta tag, meaning it is displayed as a snippet by Google. 
 
 In addition although hugo will be able to process most Markdown that is not mentioned above, it may look weird. Any html can be inserted too and it will be rendered like normal.
 

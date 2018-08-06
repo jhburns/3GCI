@@ -12,6 +12,9 @@ enableEmoji = true
 [Params.header]
     enable = true
 
+[Params.home]
+    desc = "Home"
+
 [Params.nav]
     enable = true
 
@@ -73,7 +76,7 @@ enableEmoji = true
     enable = true
     number = 20
     title = "All Tips"
-
+    desc = "Learn more about cybersecurity"
 
 [Params.scripts]
     enable = true
@@ -95,6 +98,7 @@ enableEmoji = true
     title = "Page Not Found"
     but = "Go Home"
     text = "The requested webpage is not found, please try a different address in the URL bar above."
+    desc = "404"
 
     [Params.err.msg]
         tips = "Error: no tips. contact Admin to check icons, add blog, and restart hugo server"
