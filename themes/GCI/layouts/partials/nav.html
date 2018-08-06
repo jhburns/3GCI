@@ -1,11 +1,12 @@
 <section id="navbar">
         <nav class="navbar navbar-expand-lg pt-md-4 pb-md-4 pt-sm-2 pb-sm-2 fixed-top">
-                <div class="home-img">
+
+                <div class="home-img-spacer"></div>
                     <a class="navbar-brand" href="{{ .Site.Params.nav.home.link }}">
                         <img src="{{ .Site.Params.nav.home.img }}" class="d-inline-block align-top home-img" alt="{{ .Site.Params.nav.home.alt }}" title="{{ .Site.Params.nav.home.title }}">
                         {{ .Site.Params.nav.home.text }}
                     </a>
-                </div>
+
 
                 {{ if .Site.Params.nav.menu.enable }}
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,14 +49,9 @@
 
     <!-- A dummy nav bar to prevent content from being behind it -->
     <!-- Should render behind the real navbar -->
-    <!-- Only contains the stuff the changes vertical height, which is the img only for now -->
+    <!-- Only contains the stuff the changes vertical height, which is the image spacer for now -->
     <nav class="navbar navbar-expand-lg pt-md-4 pb-md-4 pt-sm-2 pb-sm-2">
-        <div class="home-img">
-            <a class="navbar-brand" href="{{ .Site.Params.nav.home.link }}">
-                <img src="{{ .Site.Params.nav.home.img }}" class="d-inline-block align-top home-img" alt="{{ .Site.Params.nav.home.alt }}" title="{{ .Site.Params.nav.home.title }}">
-                {{ .Site.Params.nav.home.text }}
-            </a>
-        </div>
+        <div class="home-img-spacer"></div>
     </nav>
 
 </section>
