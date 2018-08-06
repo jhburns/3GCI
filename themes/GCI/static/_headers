@@ -14,10 +14,7 @@
         Cache-Control: max-age=604801
         Cache-Control: must-revalidate, public
 
-/created/img/icons/*
-	Cache-Control: max-age=604801
-	Cache-Control: must-revalidate, public
-
-/created/img/blog/*
-    	Cache-Control: max-age=0
+/created/img/*
+    	Cache-Control: max-age=604801
     	Cache-Control: must-revalidate, public
+
