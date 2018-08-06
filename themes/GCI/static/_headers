@@ -1,12 +1,23 @@
 /favicon.ico
 	Cache-Control: max-age=864000
 	Cache-Control: public
+
 /created/js/*
 	Cache-Control: max-age=604801
 	Cache-Control: must-revalidate, public
+
+/created/*.css
+        Cache-Control: max-age=604801
+        Cache-Control: must-revalidate, public
+
+/created/created-icons/*
+        Cache-Control: max-age=604801
+        Cache-Control: must-revalidate, public
+
 /created/img/icons/*
 	Cache-Control: max-age=604801
 	Cache-Control: must-revalidate, public
-/created/img/blog*
+
+/created/img/blog/*
     	Cache-Control: max-age=0
     	Cache-Control: must-revalidate, public
