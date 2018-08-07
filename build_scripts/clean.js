@@ -1,4 +1,4 @@
-//Basically final version, now also reads in config file 
+//Basically final version, now also reads in config file
 var version = '1.0.0';
 
 var remove_config = process.argv[2];
