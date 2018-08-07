@@ -3,7 +3,7 @@
 // All files are read in, and all images are processed asynchronously so this script is super fast
 // Main bottleneck is internet speed
 
-var version = '0.0.5';
+var version = '0.0.6';
 
 // input/output
 const colors = require('colors');
@@ -31,7 +31,7 @@ fs.readdir(input_folder, (err, files) => {
         return;
     } else {
         //for each file
-        var numFiles = files.length;
+        var numFiles = 0;
 
         files.forEach(function(filename) {
             fs.readFile(input_folder + filename, 'utf-8', function(err, content) {
@@ -61,24 +61,24 @@ fs.readdir(input_folder, (err, files) => {
                                     }
 
                                     //Output
-                                    console.log(colors.bold("Created: ") + options.filename + colors.bold(" For: ") + filename);
+                                    console.log(colors.bold("Created: ") + options.filename + colors.bold(" For: ") + filename
+                                                + " " + colors.dim((numFiles + 1) + '/' + files.length));
 
                                     //Checks if all are done
                                     //I don't know how to do callbacks :(
-                                    numFiles--;
-                                    if (numFiles == 0) {
-                                        console.log(colors.green("Done Generating Thumbnails"));
+                                    numFiles++;
+                                    if (numFiles == files.length) {
+                                        console.log(colors.green("Done Generating ALL Thumbnails"));
                                         console.log();
                                     }
-
                                 });
                             } else {
-                                numFiles--;
+                                numFiles++;
                             }
 
                         });
                     } else {
-                        numFiles--;
+                        numFiles++;
                     }
                 } catch (e) {
                     console.error(colors.red("Error: Parsing error") + e.message);
