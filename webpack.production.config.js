@@ -21,6 +21,7 @@ module.exports = {
         script: glob.sync('./themes/GCI/scr/js/**/*.js'),
         img: glob.sync('./themes/GCI/scr/img/**/*.{png,svg,jpeg,jpg}'),
         logo: "./themes/GCI/scr/img/icons/logo.jpg",
+        thumbnail: glob.sync('./themes/GCI/scr/img/thumbnails/*.thm'),
     },
 
     output: {
@@ -54,9 +55,9 @@ module.exports = {
                     name: "img/[name].[ext]",
                     bail: false, // Ignore errors on corrupted images
                 },
-                test: /\.(jpe?g|png|svg)$/i
+                test: /\.(jpe?g|png|svg|thm)$/i
 
-            }
+            },
         ]
     },
 

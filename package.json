@@ -2,29 +2,31 @@
   "name": "GCI",
   "version": "0.4.5",
   "description": "For a FFC GCI project",
-  "repository" : {
-    "type" : "git",
-    "url" : "https://github.com/jhburns/3GCI.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jhburns/3GCI.git"
   },
   "author": {
-    "name" : "Jonathan Burns",
-    "email" : "jburns@gmail.com"
+    "name": "Jonathan Burns",
+    "email": "jburns@gmail.com"
   },
   "directories": {
     "doc": "Documentation"
   },
   "scripts": {
-    "watch": "webpack --watch",
-    "clean": "node clean.js",
+    "watch": "node ./build_scripts/thumb_gen.js && webpack --watch",
+    "clean": "node ./build_scripts/clean.js",
     "start": "hugo server --disableFastRender -D",
-    "make": "webpack -p --config ./webpack.production.config.js && hugo",
-    "fastball": "webpack && hugo server",
+    "make": "node ./build_scripts/thumb_gen.js && webpack -p --config ./webpack.production.config.js && hugo",
+    "fastball": "node ./build_scripts/thumb_gen.js && webpack && hugo server",
     "new": "hugo new -k blog",
-    "test": "webpack -p --config ./webpack.production.config.js"
+    "test": "node ./build_scripts/thumb_gen.js && webpack -p --config ./webpack.production.config.js",
+    "thumbs": "node ./build_scripts/thumb_gen.js"
   },
   "license": "CC-BY-NC-SA-4.0",
   "dependencies": {
     "babel-preset-env": "^1.7.0",
+    "download-file": "^0.1.5",
     "file-loader": "^1.1.11",
     "jquery": "^3.3.1",
     "minimatch": "^3.0.4",
@@ -37,6 +39,7 @@
     "babel-loader": "^7.1.4",
     "bootstrap": "4.1.2",
     "colors": "^1.3.0",
+    "concat-stream": "^1.6.2",
     "css-loader": "^0.28.11",
     "extract-text-webpack-plugin": "^3.0.2",
     "favicons-webpack-plugin": "0.0.9",
@@ -50,8 +53,11 @@
     "resolve-url-loader": "^2.3.0",
     "rmdir": "^1.2.0",
     "sass-loader": "^7.0.1",
+    "scraper-js": "^1.0.2",
     "style-loader": "^0.21.0",
-    "webpack": "^3.11.0"
+    "toml": "^2.3.3",
+    "webpack": "^3.11.0",
+    "webpack-shell-plugin": "^0.5.0"
   },
   "optionalDependencies": {
     "hugo-cli": "git+ssh://git@github.com/UXSoc/hugo-cli.git"

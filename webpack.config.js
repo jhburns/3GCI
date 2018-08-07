@@ -17,6 +17,7 @@ module.exports = {
         main: "./themes/GCI/scr/scss/all.scss",
         script: glob.sync('./themes/GCI/scr/js/**/*.js'),
         img: glob.sync('./themes/GCI/scr/img/**/*.{png,svg,jpeg,jpg}'),
+        thumbnail: glob.sync('./themes/GCI/scr/img/thumbnails/*.thm'),
     },
 
     output: {
@@ -50,8 +51,16 @@ module.exports = {
                 options: {
                     name: "img/[name].[ext]",
                 },
-                test: /\.(jpe?g|png|svg)$/i
+                test: /\.(jpe?g|png|svg|thm)$/i
 
+            },
+
+            {
+                loader: "file-loader",
+                options: {
+                    name: "/img/[name].thm",
+                },
+                test: /\.(thm)$/i
             }
         ]
     },
