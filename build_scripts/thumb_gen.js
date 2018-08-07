@@ -63,14 +63,17 @@ fs.readdir(input_folder, (err, files) => {
                                     //Output
                                     console.log(colors.bold("Created: ") + options.filename + colors.bold(" For: ") + filename);
 
+                                    //Checks if all are done
+                                    //I don't know how to do callbacks :(
                                     numFiles--;
                                     if (numFiles == 0) {
                                         console.log(colors.green("Done Generating Thumbnails"));
                                         console.log();
                                     }
 
-
                                 });
+                            } else {
+                                numFiles--;
                             }
 
                         });
@@ -78,6 +81,7 @@ fs.readdir(input_folder, (err, files) => {
                 } catch (e) {
                     console.error(colors.red("Error: Parsing error") + e.message);
                 }
+
             });
         });
     }
