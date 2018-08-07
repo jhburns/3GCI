@@ -3,7 +3,7 @@
 // All files are read in, and all images are processed asynchronously so this script is super fast
 // Main bottleneck is internet speed
 
-var version = '0.0.6';
+var version = '0.1.0';
 
 // input/output
 const colors = require('colors');
@@ -61,8 +61,8 @@ fs.readdir(input_folder, (err, files) => {
                                     }
 
                                     //Output
-                                    console.log(colors.bold("Created: ") + options.filename + colors.bold(" For: ") + filename
-                                                + " " + colors.dim((numFiles + 1) + '/' + files.length));
+                                    console.log("Created: " + colors.bold(options.filename) + " \tFor: " + colors.bold(filename)
+                                                + colors.dim(' \t(' + (numFiles + 1) + '/' + files.length + ')'));
 
                                     //Checks if all are done
                                     //I don't know how to do callbacks :(
