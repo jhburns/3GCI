@@ -28,7 +28,7 @@ fs.readdir(input_folder, (err, files) => {
     if (err) {
         console.log(colors.red("Error getting files:"));
         console.log(err);
-        return;
+        return 1;
     } else {
         //for each file
         var numFiles = 0;
@@ -38,7 +38,7 @@ fs.readdir(input_folder, (err, files) => {
                 if (err) {
                     console.log(colors.red("Error reading file:"));
                     console.log(err);
-                    return;
+                    return 1;
                 }
                 
                 try {
@@ -58,11 +58,12 @@ fs.readdir(input_folder, (err, files) => {
                                     if (err) {
                                         console.log(colors.red("Error: could not download"));
                                         console.log(err);
+                                        return 1;
                                     }
 
                                     //Output
                                     console.log("Created: " + colors.bold(options.filename) + " \tFor: " + colors.bold(filename)
-                                                + colors.dim(' \t(' + (numFiles + 1) + '/' + files.length + ')'));
+                                                + colors.dim('\t(' + (numFiles + 1) + '/' + files.length + ')'));
 
                                     //Checks if all are done
                                     //I don't know how to do callbacks :(
@@ -82,6 +83,7 @@ fs.readdir(input_folder, (err, files) => {
                     }
                 } catch (e) {
                     console.error(colors.red("Error: Parsing error") + e.message);
+                    return 1;
                 }
 
             });

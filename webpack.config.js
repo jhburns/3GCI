@@ -58,7 +58,7 @@ module.exports = {
             {
                 loader: "file-loader",
                 options: {
-                    name: "/img/[name].thm",
+                    name: "img/[name].thm",
                 },
                 test: /\.(thm)$/i
             }
