@@ -27,7 +27,9 @@ Because of node, there are multiple shortcuts used to automate the site. To use 
 - **test**: Used to check if production is functioning correctly
 - **clean**: A custom script that deletes all the generated files
 
-- **new [title].md** Makes a new blog post with the given title in */content/blog*. Don't forget to add and commit it through git.
+- **new /blog/[title].md**: Makes a new blog post with the given title in */content/blog*. Don't forget to add and commit it through git.
+
+- **thumbs**: generates all the the thumbnails for each link. Useful for testing if a webpage generates a thumbnail well and runs before all build commands. 
    
 ## Documentation
 Go to the  */Documentation* folder for full documentation

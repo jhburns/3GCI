@@ -77,6 +77,8 @@ fs.readdir(input_folder, (err, files) => {
                             }
 
                         });
+                    } else {
+                        numFiles--;
                     }
                 } catch (e) {
                     console.error(colors.red("Error: Parsing error") + e.message);

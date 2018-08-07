@@ -48,4 +48,11 @@ If a file does not exist, the html needed to use it won't either in general. For
 The reasoning to not server some content without error is because it is not page critical so it is not needed. 
 
 ## Non-local Scripts
-Currently third-party loaded scripts (jQuery, poppers, bootstrap etc.) are not checked to see if loading on their own CDN. Their uptime is instead trusted to always be up. 
+Currently third-party loaded scripts (jQuery, poppers, bootstrap etc.) are not checked to see if loading on their own CDN. Their uptime is instead trusted to always be up.
+
+## Thumbnails
+Because it is a custom, hackish script there are a lot of possible error is can create. Make sure data is formatted correctly and urls are reachable.
+
+If this is not run before build scripts or it fails before a build, the whole thing will fail so be cautious.
+
+It is not designed to throw an error if no image is suitable for a webpage, but will instead not print the first 'done'.  
