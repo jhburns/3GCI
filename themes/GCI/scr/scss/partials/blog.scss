@@ -27,6 +27,7 @@
 
 .blog-cont a {
   color: $grey;
+  font-family: $normal;
 }
 
 .blog-cont a:hover {
@@ -42,6 +43,16 @@
   height: auto;
   width: 100%;
   padding: 5%;
+}
+
+.blog-cont p {
+  color: $black;
+  font-family: $normal;
+}
+
+.blog-cont strong {
+  font-family: $normal;
+  color: $body-copy;
 }
 
 .blog-cont iframe {

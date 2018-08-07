@@ -7,7 +7,6 @@
 
 -Blog
     -Port all current blogs
-    -add videos
 
 -About
     -Add page
@@ -20,6 +19,7 @@
 -Resources
     -create page
     -add links
+    -add videos
 
 -Accessibility
     -check: https://kb-smc.chapman.edu/?p=4124
