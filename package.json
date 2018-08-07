@@ -15,9 +15,10 @@
   },
   "scripts": {
     "watch": "node ./build_scripts/thumb_gen.js && webpack --watch",
-    "clean": "node ./build_scripts/clean.js",
+    "clean": "node ./build_scripts/clean.js ./build_scripts/clean.toml",
+    "wipe": "node ./build_scripts/clean.js ./build_scripts/wipe.toml",
     "start": "hugo server --disableFastRender -D",
-    "make": "node ./build_scripts/thumb_gen.js && webpack -p --config ./webpack.production.config.js && hugo",
+    "make": "node ./build_scripts/thumb_gen.js && webpack -p --config ./webpack.production.config.js && hugo && node ./build_scripts/clean.js ./build_scripts/clean.toml",
     "fastball": "node ./build_scripts/thumb_gen.js && webpack && hugo server",
     "new": "hugo new -k blog",
     "test": "node ./build_scripts/thumb_gen.js && webpack -p --config ./webpack.production.config.js",

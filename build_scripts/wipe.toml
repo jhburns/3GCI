@@ -1,0 +1,9 @@
+removedDirectories =        ['themes/GCI/static/created',
+                            'yarn-error.log',
+                            'error.log',
+                            'resources',
+                            'themes/GCI/scr/img/thumbnails',
+                            'node_modules',
+                            'public',
+                            'yarn.lock',
+                            ]

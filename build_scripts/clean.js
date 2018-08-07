@@ -1,25 +1,35 @@
-var version = '0.0.3';
+//Basically final version, now also reads in config file 
+var version = '1.0.0';
 
-var removedDirectories =    ['public', 'themes/GCI/static/created', 'yarn-error.log', 'error.log', 'resources',
-                            'themes/GCI/scr/img/thumbnails'
-                            ];
+var remove_config = process.argv[2];
+var fs = require('fs');
+var toml = require('toml');
 
-try {
-    const remove = require('rmdir');
-    const colors = require('colors');
+const remove = require('rmdir');
+const colors = require('colors');
 
-    console.log(colors.green("\nDirectory Remover ") + version);
+fs.readFile(remove_config, 'utf8', function (err, data) {
+    if (err) throw err;
 
-    removedDirectories.forEach(function(element) {
-        remove(element, function (err, dirs, files) {
-            console.log("Deleting: " + colors.bold(element));
-        });
-    });
+    var file = toml.parse(data);
+    if (file.hasOwnProperty('removedDirectories')) {
+        try {
+            console.log(colors.green("\nDirectory Remover ") + version);
 
-} catch (e) {
-    console.log("\nHas already been run, cannot remove again");
-    console.log("Run \"yarn install\" first\n");
-}
+            file.removedDirectories.forEach(function (element) {
+                remove(element, function (err, dirs, files) {
+                    console.log("Deleting: " + colors.bold(element));
+                });
+            });
+
+        } catch (e) {
+            console.log(colors.red("\nError removing"));
+            console.log(e.message);
+        }
+    } else {
+        console.log(colors.red("Error reading file: does not contain property: ") + colors.bold('removedDirectories'));
+    }
+});
 
 
 

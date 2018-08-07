@@ -25,7 +25,7 @@ Because of node, there are multiple shortcuts used to automate the site. To use 
 - **start**: Starts the hugo server, which automatically watches files and rebuilds after changes and severs the content.
 - **fastball**: Runs yarn (developer) once then launches hugo. Useful for quickly looking at the site
 - **test**: Used to check if production is functioning correctly
-- **clean**: A custom script that deletes all the generated files
+- **clean**: A custom script that deletes all the generated files **wipe** deletes everything, like all of the node modules
 
 - **new /blog/[title].md**: Makes a new blog post with the given title in */content/blog*. Don't forget to add and commit it through git.
 
