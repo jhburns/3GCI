@@ -1,5 +1,3 @@
-All the stuff
-
 -Search
     -Create Custom Google Search
     -Make sure it indexes the whole site
@@ -10,7 +8,6 @@ All the stuff
 -Blog
     -Port all current blogs
     -add videos
-    -check video captions
 
 -About
     -Add page
@@ -25,7 +22,10 @@ All the stuff
     -add links
 
 -Accessibility
-    -Fix current in navbar
-    -everything
+    -check: https://kb-smc.chapman.edu/?p=4124
+     -check video captions
 
-    https://kb-smc.chapman.edu/?p=4124
+-alert banner
+	-add style
+	-add js
+	-hugo backend

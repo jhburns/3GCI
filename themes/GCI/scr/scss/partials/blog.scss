@@ -43,3 +43,11 @@
   width: 100%;
   padding: 5%;
 }
+
+.blog-cont iframe {
+  padding: 3%;
+
+  @include media-breakpoint-down(md) {
+    padding: 0%;
+  }
+}

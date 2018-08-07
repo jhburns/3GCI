@@ -47,6 +47,8 @@ enableEmoji = true
         # It is a 2D array,
         # First item: link text.
         # Second item: link/section id (which should always start with /# for in page links)
+
+        #links NEED to have end slash to be maked (current) correctly
         text = [['HOME', '/'],
                ['ABOUT', '/#about'],
                ['TIPS', '/blog/'],

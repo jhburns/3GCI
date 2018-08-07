@@ -135,6 +135,17 @@ Example:
     title_icon = "Lock up your data"
 ```
 
+### Youtube Videos
+Youtube videos can also be added quite easily, with something known as a shortcode. 
+
+All you need to dd is include ```{{< youtube [id] >}}``` with the right ID. For example:
+
+```
+{{< youtube ZZ5LpwO-An4 >}}
+``` 
+
+To find the id, navigate to a youtube video, then click the 'share' button. From there, copy the text after `https://youtu.be/` section.
+
 ## Advanced Config
 
 In earlier sections, config was briefly gone over, check here and at https://gohugo.io/content-management/front-matter/ for full config options. Here are the imporant ones.
