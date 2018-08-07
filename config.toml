@@ -47,9 +47,9 @@ enableEmoji = true
         # It is a 2D array,
         # First item: link text.
         # Second item: link/section id (which should always start with /# for in page links)
-        text = [['HOME', '/#'],
+        text = [['HOME', '/'],
                ['ABOUT', '/#about'],
-               ['TIPS', '/blog'],
+               ['TIPS', '/blog/'],
                ['MORE RESOURCES', '/#resources'],
                ['REPORT INCIDENT', 'https://web.chapman.edu/IncidentReport']
                ]

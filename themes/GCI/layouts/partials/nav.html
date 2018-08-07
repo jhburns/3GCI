@@ -26,13 +26,19 @@
                         <button class="btn btn-outline-search my-2 my-sm-0 " type="submit">Search</button>
                     </form>
 
+                    {{ $url := urls.Parse .Permalink }}
+
                     {{ if .Site.Params.nav.links.enable }}
                         <ul class="navbar-nav ml-auto mr-md-3 mr-xl-5">
 
                             <!-- TODO: Fix (current) functionality -->
                             {{ range $.Site.Params.nav.links.text }}
                                 <li class="nav-item ml-3 mt-1 mt-lg-0">
-                                    <a class="nav-link title" href="{{ index . 1}}">{{ index . 0}} <span class="sr-only">(current)</span></a>
+                                    <a class="nav-link title" href="{{ index . 1}}">{{ index . 0}}
+                                        {{ if eq $url.Path (index . 1)  }}
+                                            <span class="sr-only">(current)</span>
+                                        {{ end }}
+                                    </a>
                                 </li>
                             {{ end }}
 
