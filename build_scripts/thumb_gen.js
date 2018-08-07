@@ -31,6 +31,8 @@ fs.readdir(input_folder, (err, files) => {
         return;
     } else {
         //for each file
+        var numFiles = files.length;
+
         files.forEach(function(filename) {
             fs.readFile(input_folder + filename, 'utf-8', function(err, content) {
                 if (err) {
@@ -61,6 +63,13 @@ fs.readdir(input_folder, (err, files) => {
                                     //Output
                                     console.log(colors.bold("Created: ") + options.filename + colors.bold(" For: ") + filename);
 
+                                    numFiles--;
+                                    if (numFiles == 0) {
+                                        console.log(colors.green("Done Generating Thumbnails"));
+                                        console.log();
+                                    }
+
+
                                 });
                             }
 
@@ -73,4 +82,5 @@ fs.readdir(input_folder, (err, files) => {
         });
     }
 });
+
 
