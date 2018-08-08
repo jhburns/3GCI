@@ -16,7 +16,7 @@
         {{ end }}
 
         {{ if .Site.Params.links.enable }}
-            {{ partial "snippets/title.html" (dict "title" .Site.Params.links.title "importance" 2 ) . }}
+            {{ partial "snippets/title.html" (dict "title" .Site.Params.links.title "importance" 1 ) . }}
             {{ partial "links.html" (dict "show" .Site.Params.links.main_number "context" .) }}
         {{ end }}
 
