@@ -9,14 +9,11 @@
     -Port all current blogs
 
 -About
-    -Add page
-    -Profile picture
     -Copy text
 
 -Resources
 	-copy over links
 	-copy over videos
-
 
 -Accessibility
     -check: https://kb-smc.chapman.edu/?p=4124

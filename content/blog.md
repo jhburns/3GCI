@@ -6,4 +6,3 @@ layout = "blog"
 date = "2018-07-25"
 slug = "blog"
 +++
-

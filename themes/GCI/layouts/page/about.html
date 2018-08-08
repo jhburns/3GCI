@@ -21,6 +21,14 @@
         {{ partial "profiles.html" . }}
     {{ end }}
 
+    <div class="row bg-grey no-gutters">
+        <div class="col-1 col-sm-2 col-md-3"></div>
+        <div class="col-10 col-sm-8 col-md-6 blog-cont bg-white p3">
+            {{ .Content }}
+        </div>
+        <div class="col-1 col-sm-2 col-md-3"></div>
+    </div>
+
     {{ if .Site.Params.footer.enable }}
         {{ partial "footer.html" . }}
     {{ end }}
