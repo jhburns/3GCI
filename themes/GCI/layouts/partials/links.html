@@ -1,0 +1,15 @@
+{{ $scratch := newScratch }}
+{{ $scratch.Set "tips" 0 }}
+{{ $show := .show }}
+
+<section id="#links">
+    <div class="container bg-grey">
+        <div class="row">
+            {{ range $link := .context.Site.Data.links }}
+                <a class="red-underline important-link" href="{{ $link.link }}">{{ $link.text }}</a>
+            {{ end }}
+
+            {{ partial "snippets/sublink.html" (dict "link" .context.Site.Params.links.url "text"  .context.Site.Params.links.all "importance" 3)}}
+        </div>
+    </div>
+</section>

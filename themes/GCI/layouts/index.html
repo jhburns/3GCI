@@ -23,9 +23,13 @@
 
         {{ if .Site.Params.blog.enable }}
             {{ partial "tips.html" (dict "show" .Site.Params.tips.frontpage_number "context" .) }}
+            {{ partial "snippets/sublink.html" (dict "link" .Site.Params.tips.blog "text" .Site.Params.tips.all "importance" 3) }}
         {{ end }}
 
-        {{ partial "snippets/sublink.html" (dict "link" .Site.Params.tips.blog "text" .Site.Params.tips.all "importance" 3) }}
+        {{ if .Site.Params.links.enable }}
+            {{ partial "snippets/title.html" (dict "title" .Site.Params.links.title "importance" 2 ) . }}
+            {{ partial "links.html" (dict "show" .Site.Params.links.frontpage_number "context" .) }}
+        {{ end }}
 
         {{ if .Site.Params.footer.enable }}
             {{ partial "footer.html" . }}

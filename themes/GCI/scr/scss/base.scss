@@ -41,6 +41,7 @@ body {
 
 .red-link {
   color: $primary;
+  font-family: $normal;
 }
 
 .red-link:visited {
@@ -56,8 +57,13 @@ body {
   color: $primary;
   font-weight: bold;
   font-size: 3rem;
+  letter-spacing: 3px;
 
   @include media-breakpoint-down(sm) {
     font-size: 2.5rem;
   }
+}
+
+.important-link:hover {
+  color: $primary;
 }

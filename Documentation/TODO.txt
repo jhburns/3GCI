@@ -23,7 +23,7 @@
 
 -Accessibility
     -check: https://kb-smc.chapman.edu/?p=4124
-     -check video captions
+    -check video captions
 
 -alert banner
 	-add style

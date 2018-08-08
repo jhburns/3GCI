@@ -81,6 +81,12 @@ enableEmoji = true
     but = "More Tips"
     desc = "Learn more about cybersecurity"
 
+[Params.links]
+    enable = true
+    title = "Resources"
+    all = "SEE ALL RESOURCES"
+    url = "/resources/"
+
 [Params.scripts]
     enable = true
     webpack_enable = true
