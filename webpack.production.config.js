@@ -72,6 +72,7 @@ module.exports = {
             persistentCache: true,
             inject: true,
         }),
+
         new HtmlWebpackPlugin({
             template: 'themes/GCI/scr/img/icons/template.html',
             inject: 'head',

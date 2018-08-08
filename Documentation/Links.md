@@ -5,6 +5,7 @@ Here is a blank template that can be copy/pasted into a new .toml file:
 ```
 link = ""
 text = ""
+weight = [integer, not 0, can be left out]
 
 enable_thumb = true
 thumb_img = ""
@@ -15,6 +16,7 @@ Example `netlify.toml`:
 ```
 link = "https://www.netlify.com/"
 text = "Welcome to thunderdome"
+weight = 3
 
 enable_thumb = true
 thumb_img = "netlify_thumbnail"
@@ -24,6 +26,7 @@ thumb_img = "netlify_thumbnail"
 
 - link: is of course the link that when clicked on, the website goes to
 - text: what the link is displayed as, avoid making the url or just name of the website as this
+- weight: the order in which each of the links is presented, lower means higher
 - enable_thumb: whether or not the thumbnail is displayed/generated. (true/false). If the generated thumbnail is bad, disable it with this
 - thumb_img: name of the thumbnail, doesn't really matter as long as its not the same as another image. Do NOT include a file extension (.jpg, .png, .svg).
 

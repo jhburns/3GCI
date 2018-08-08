@@ -5,8 +5,16 @@
 <section id="#links">
     <div class="container bg-grey">
         <div class="row">
-            {{ range $link := .context.Site.Data.links }}
-                <a class="red-underline important-link" href="{{ $link.link }}">{{ $link.text }}</a>
+            {{ $img_source := .context.Site.Params.img.source }}
+            {{ range $link := sort .context.Site.Data.links "weight" }}
+                {{ if $link.enable_thumb }}
+                    <div class="col-4">
+                        <img src="{{ $img_source }}{{ $link.thumb_img }}.thm">
+                    </div>
+                {{ end }}
+                <div class="col-8">
+                    <a class="red-underline important-link" href="{{ $link.link }}">{{ $link.text }}</a>
+                </div>
             {{ end }}
 
             {{ partial "snippets/sublink.html" (dict "link" .context.Site.Params.links.url "text"  .context.Site.Params.links.all "importance" 3)}}

@@ -151,7 +151,7 @@ To find the id, navigate to a youtube video, then click the 'share' button. From
 In earlier sections, config was briefly gone over, check here and at https://gohugo.io/content-management/front-matter/ for full config options. Here are the imporant ones.
 
 - slug: tells hugo what to make the url, overriding the filename.
-- weight: In a list, tells hugo which place this blog should have. Higher number means higher in the order. Cannot be zero. Can be left off if order doesn't matter.
+- weight: In a list, tells hugo which place this blog should have. Lower number means higher up the page in the order. Cannot be zero. Can be left off if order doesn't matter.
 - draft: can only be set to 'true' since the default is false. Is only built when -D flag is used in hugo. All examples and testing should have this to prevent it from showing up in the production build
 - alt: what to replace the image with if it doesn't load. Needed for accessibility.  
 - img_title: Needed for accessibility.  

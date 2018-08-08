@@ -51,7 +51,7 @@ module.exports = {
                 options: {
                     name: "img/[name].[ext]",
                 },
-                test: /\.(jpe?g|png|svg|thm)$/i
+                test: /\.(jpe?g|png|svg)$/i
 
             },
 
@@ -59,6 +59,7 @@ module.exports = {
                 loader: "file-loader",
                 options: {
                     name: "img/[name].thm",
+                    emitFile: true,
                 },
                 test: /\.(thm)$/i
             }

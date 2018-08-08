@@ -1,5 +1,6 @@
 link = "https://www.chapman.edu/campus-services/information-systems/security/index.aspx"
 text = "Welcome to thunderdome"
+weight = 3
 
 enable_thumb = true
 thumb_img = "thunderdome"
