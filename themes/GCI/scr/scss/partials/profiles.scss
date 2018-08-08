@@ -1,0 +1,29 @@
+.profile-img-div {
+}
+
+.profile-img {
+  width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.profile-text {
+  margin: 0;
+}
+
+.name {
+  color: $body-copy;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.sub-title {
+  font-size: 1.5rem;
+  color: $accent-green;
+}
+
+.email {
+
+}
