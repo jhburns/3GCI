@@ -13,13 +13,10 @@
     -Profile picture
     -Copy text
 
--Home
-    -add resources section
-
 -Resources
-    -create page
-    -add links
-    -add videos
+	-copy over links
+	-copy over videos
+
 
 -Accessibility
     -check: https://kb-smc.chapman.edu/?p=4124

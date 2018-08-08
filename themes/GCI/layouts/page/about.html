@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="{{ .Site.LanguageCode }}">
+
+<head>
+    {{ if .Site.Params.header.enable }}
+        {{ partial "head.html" . }}
+    {{ end }}
+
+    {{ partial "snippets/description.html" (dict "description" .Site.Params.about.desc )}}
+</head>
+
+<body>
+
+    {{ if .Site.Params.nav.enable }}
+        {{ partial "nav.html" . }}
+    {{ end }}
+
+    {{ partial "snippets/title.html" (dict "title" .Site.Params.about.title "importance" 1) . }}
+
+    {{ if .Site.Params.profiles.enable }}
+        {{ partial "profiles.html" . }}
+    {{ end }}
+
+    {{ if .Site.Params.footer.enable }}
+        {{ partial "footer.html" . }}
+    {{ end }}
+
+    {{ if .Site.Params.scripts.enable }}
+        {{ partial "scripts.html" . }}
+    {{ end }}
+
+</body>
+</html>
