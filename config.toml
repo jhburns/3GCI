@@ -52,7 +52,7 @@ enableEmoji = true
         text = [['HOME', '/'],
                ['ABOUT', '/#about'],
                ['TIPS', '/blog/'],
-               ['MORE RESOURCES', '/#resources'],
+               ['MORE RESOURCES', '/resources/'],
                ['REPORT INCIDENT', 'https://web.chapman.edu/IncidentReport']
                ]
 
@@ -69,6 +69,8 @@ enableEmoji = true
     title = "Become a Chapman Cyber Ninja:"
     enable = true
     read = "Read more of: "
+
+    # In index.html
     frontpage_number = 4
     all = "READ ALL TIPS"
     link = "/blog"
@@ -76,6 +78,8 @@ enableEmoji = true
 # blog info here, 20 shown cap
 [Params.blog]
     enable = true
+
+    # in url.com/blog
     number = 20
     title = "All Tips"
     but = "More Tips"
@@ -86,6 +90,13 @@ enableEmoji = true
     title = "Resources"
     all = "SEE ALL RESOURCES"
     url = "/resources/"
+    desc = "Get helpful outside resources"
+
+    # In index.html
+    frontpage_number = 5
+
+    #in url.com/resources
+    main_number = 20
 
 [Params.scripts]
     enable = true

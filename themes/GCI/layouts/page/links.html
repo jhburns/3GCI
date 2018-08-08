@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="{{ .Site.LanguageCode }}">
+
+    <head>
+        {{ if .Site.Params.header.enable }}
+            {{ partial "head.html" . }}
+        {{ end }}
+
+        {{ partial "snippets/description.html" (dict "description" .Site.Params.links.desc )}}
+    </head>
+
+    <body>
+
+        {{ if .Site.Params.nav.enable }}
+            {{ partial "nav.html" . }}
+        {{ end }}
+
+        {{ if .Site.Params.links.enable }}
+            {{ partial "snippets/title.html" (dict "title" .Site.Params.links.title "importance" 2 ) . }}
+            {{ partial "links.html" (dict "show" .Site.Params.links.main_number "context" .) }}
+        {{ end }}
+
+        <div class="row pt-3 pt-md-4 pt-lg-5 no-gutters">
+            <div class="col-1 col-sm-2 col-md-3"></div>
+            <div class="col-10 col-sm-8 col-md-6 blog-cont mb-3">
+                <h2 class="top-title">Videos</h2>
+                {{ .Content }}
+            </div>
+        </div>
+
+        {{ if .Site.Params.footer.enable }}
+            {{ partial "footer.html" . }}
+        {{ end }}
+
+        {{ if .Site.Params.scripts.enable }}
+            {{ partial "scripts.html" . }}
+        {{ end }}
+
+
+
+    </body>
+</html>

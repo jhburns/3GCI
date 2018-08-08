@@ -39,6 +39,10 @@ body {
   background-color: rgba($black, 0.5);
 }
 
+.bg-white {
+  background-color: $white;
+}
+
 .red-link {
   color: $primary;
   font-family: $normal;

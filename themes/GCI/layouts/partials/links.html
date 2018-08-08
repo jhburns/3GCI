@@ -1,23 +1,32 @@
 {{ $scratch := newScratch }}
-{{ $scratch.Set "tips" 0 }}
+{{ $scratch.Set "links" 0 }}
 {{ $show := .show }}
 
-<section id="#links">
-    <div class="container bg-grey">
-        <div class="row">
+<section id="#links" class="bg-grey">
+    <div class="container pt-2 pb-2 mb-3">
             {{ $img_source := .context.Site.Params.img.source }}
+
             {{ range $link := sort .context.Site.Data.links "weight" }}
-                {{ if $link.enable_thumb }}
-                    <div class="col-4">
-                        <img src="{{ $img_source }}{{ $link.thumb_img }}.thm">
+            {{ if (lt ($scratch.Get "links") $show ) }}
+        {{ $scratch.Add "links" 1 }}
+        <div class="row mt-4 mb-3 pt-2 p-lg-3 p-sm-2">
+
+                        <div class="col-4 col-sm-3 col-lg-2 bg-grey">
+                            <!-- Can't have -->
+                            {{ if $link.enable_thumb }}
+
+                            <img class="thumbnail" src="{{ $img_source }}{{ $link.thumb_img }}.thm" alt="" title="">
+                            {{ end }}
+
+                        </div>
+                    <div class="align-middle align-self-center col-8 col-sm-9 col-lg-10 bg-white right-round pt-1 pb-1 pt-sm-2 pb-sm-2 pt-md-3 pb-md-3">
+                            <a class="red-underline important-link link" href="{{ $link.link }}">{{ $link.text }}</a>
                     </div>
-                {{ end }}
-                <div class="col-8">
-                    <a class="red-underline important-link" href="{{ $link.link }}">{{ $link.text }}</a>
+
                 </div>
+        {{ end }}
             {{ end }}
 
-            {{ partial "snippets/sublink.html" (dict "link" .context.Site.Params.links.url "text"  .context.Site.Params.links.all "importance" 3)}}
         </div>
     </div>
 </section>
