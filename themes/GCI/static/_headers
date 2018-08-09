@@ -2,10 +2,13 @@
 	Cache-Control: max-age=864000
 	Cache-Control: public
 
-/created/js/*
-	Cache-Control: max-age=604801
+/created/js/jason/*
+	Cache-Control: max-age=0
 	Cache-Control: must-revalidate, public
 
+/created/*.css
+        Cache-Control: max-age=0
+        Cache-Control: must-revalidate, public
 /created/*.css
         Cache-Control: max-age=0
         Cache-Control: must-revalidate, public
