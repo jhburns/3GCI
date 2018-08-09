@@ -7,5 +7,4 @@ date = "2018-08-08"
 slug = "about"
 +++
 
-# WAA
-I wumbo you wumbo
+<!-- Toosting -->

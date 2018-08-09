@@ -113,7 +113,7 @@ function search(query) {
  */
 function renderResults(results) {
     if (!results.length) {
-        var $result = $('<h3 class="pt-3 pb-3">No Results, Try a different phrase above</h3>');
+        var $result = $('<h3 class="p-3">No Results, try a different phrase above</h3>');
         $results.append($result);
     }
 
