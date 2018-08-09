@@ -56,3 +56,20 @@
 .btn-outline-search {
   @include button-outline-variant($search);
 }
+
+.search-term {
+  color: $search;
+  font-style: italic;
+}
+
+#results {
+  list-style: none;
+}
+
+.search_list {
+  padding-bottom: 1rem;
+}
+
+.search_link {
+  font-size: 2.5rem;
+}

@@ -4,7 +4,7 @@ type = "blog"
 layout = "single"
 title = "Testing"
 date = "2018-07-25"
-slug = "test"
+slug = "hello"
 weight = 1
 draft = true
 

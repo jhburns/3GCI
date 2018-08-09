@@ -71,3 +71,8 @@ body {
 .important-link:hover {
   color: $primary;
 }
+
+.red-underline:hover {
+  color: $primary;
+  text-decoration-color: $primary;
+}

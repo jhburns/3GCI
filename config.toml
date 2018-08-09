@@ -1,6 +1,6 @@
 baseURL = "https://relaxed-brown-a05637.netlify.com/"
 languageCode = "en-us"
-title = "Chapman security"
+title = "CYBER SMART PANTHERS"
 theme="GCI"
 ignoreFiles = [ "README.md" ]
 enableRobotsTXT = true
@@ -55,6 +55,12 @@ enableEmoji = true
                ['MORE RESOURCES', '/resources/'],
                ['REPORT INCIDENT', 'https://web.chapman.edu/IncidentReport']
                ]
+
+    [Params.nav.search]
+        enable = true
+        title = "Results for:  "
+        close_but = "Close"
+        but = "Search"
 
 
 [Params.slideshow]
