@@ -16,7 +16,10 @@ module.exports = function(grunt) {
             var pagesIndex = [];
             grunt.file.recurse(CONTENT_PATH_PREFIX, function(abspath, rootdir, subdir, filename) {
                 grunt.verbose.writeln("Parse file:",abspath);
-                pagesIndex.push(processFile(abspath, filename));
+                var page = processFile(abspath, filename);
+                if (page != null) {
+                    pagesIndex.push(page);
+                }
             });
 
             return pagesIndex;
@@ -56,6 +59,10 @@ module.exports = function(grunt) {
                 frontMatter = toml.parse(content[1].trim());
             } catch (e) {
                 console.log(e.message);
+            }
+
+            if (frontMatter.draft) {
+                return;
             }
 
             //Changed to only get relative dir
