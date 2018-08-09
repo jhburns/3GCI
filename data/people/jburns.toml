@@ -1,5 +1,6 @@
 name = "Jonathan Burns"
-title = "Website Head Developer"
+title = "Head Website Developer"
 email = "jburns [at] gmail.com"
 img = "jburns.jpg"
 weight = 1
+enable_email = true
