@@ -67,6 +67,7 @@ module.exports = function(grunt) {
 
             // Build Lunr index for this page
             // Changed to read in slug too
+            //Needs the '/' to read in the (current) hugo function into the navbar
             pageIndex = {
                 title: frontMatter.title,
                 tags: frontMatter.tags,

@@ -31,7 +31,7 @@ thumb_img = "netlify_thumbnail"
 - thumb_img: name of the thumbnail, doesn't really matter as long as its not the same as another image. Do NOT include a file extension (.jpg, .png, .svg).
 
 ## Videos
-To add videos to the resources page, go to */content/resources.html* and add the video under the config, using proper markdown. To learn markdown for videos, see the *Blog.md* docs. 
+To add videos to the resources page, go to */content/resources.md* and add the video under the config, using proper markdown. To learn markdown for videos, see the *Blog.md* docs. 
 
 ## Advanced
 

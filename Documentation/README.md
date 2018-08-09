@@ -16,7 +16,11 @@
 
 **Errors.md**: Types and best practices for site error.
 
-**Links.md**: List data formatting and thumbnail information  
+**Links.md**: List data formatting and thumbnail information
+
+**Profile.md**: Empty config and instructions on how to add a new profile
+
+**Search.md**: Advanced information about how searching is implemented   
 
 It is recommended to view these files either in GitHub, or to install the plugin to view Markdown files in WebStorm. https://plugins.jetbrains.com/plugin/7793-markdown-support
 

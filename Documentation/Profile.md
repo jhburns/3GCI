@@ -30,3 +30,6 @@ enable_email = true
 To make sure your face displays in the picture properly it is recommended that the image added is a square or close to it. The bottom of the image is automatically cropped off if not a square.
 
 Use [GIMP](https://docs.gimp.org/en/gimp-tutorial-quickie-crop.html) for a free and easy way to crop.
+
+## Content
+Besides the profiles on the about section, content can be added to */content/about.md* under the config section like a normal blog.
