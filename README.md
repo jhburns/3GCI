@@ -40,4 +40,4 @@ Created by Jonathan H. Burns for GCI Cybersecurity team.
 
 cdUnder the CC-BY-NC-SA-4.0 licence.
 
-Version 0.5.0
+Version 0.6.0
