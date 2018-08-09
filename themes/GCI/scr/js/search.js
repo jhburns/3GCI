@@ -5,15 +5,22 @@ var lunrIndex,
     $results,
     pagesIndex;
 
+
+
 // Initialize lunrjs using our generated index file
+// Changed the file-loader to do it non-caching because then search results will update correctly
 function initLunr() {
     // First retrieve the index file
-    $.getJSON("/created/js/jason/PagesIndex.json")
-        .done(function(index) {
+    $.ajax({
+        cache: false,
+        url: "/created/js/jason/PagesIndex.json",
+        dataType: "json",
+        success: function(index) {
+
             pagesIndex = index;
             // Set up lunrjs by declaring the fields we use
             // Also provide their boost level for the ranking
-            lunrIndex = lunr(function() {
+            lunrIndex = lunr(function () {
                 this.field("title", {
                     boost: 10
                 });
@@ -34,13 +41,8 @@ function initLunr() {
 
                 console.log("Search Data Loaded");
             });
-
-
-        })
-        .fail(function(jqxhr, textStatus, error) {
-            var err = textStatus + ", " + error;
-            console.error("Error getting Hugo index flie:", err);
-        });
+        }
+    })
 }
 
 // Nothing crazy here, just hook up a listener on the input field
