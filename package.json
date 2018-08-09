@@ -14,16 +14,18 @@
     "doc": "Documentation"
   },
   "scripts": {
-    "watch": "node ./build_scripts/thumb_gen.js && webpack --watch",
-    "clean": "node ./build_scripts/clean.js ./build_scripts/clean.toml",
-    "wipe": "node ./build_scripts/clean.js ./build_scripts/wipe.toml",
+    "watch": "npm run thumbs && webpack --watch",
+    "clean": "npm run cust-clean ./build_scripts/clean.toml",
+    "cust-clean": "node ./build_scripts/clean.js",
+    "wipe": "npm run cust-clean ./build_scripts/wipe.toml",
     "start": "hugo server --disableFastRender -D",
-    "make": "node ./build_scripts/thumb_gen.js && webpack -p --config ./webpack.production.config.js && hugo && node ./build_scripts/clean.js ./build_scripts/clean.toml",
-    "fastball": "node ./build_scripts/thumb_gen.js && webpack && hugo server",
+    "make": "npm run lunar && npm run thumbs && npm run prod-webpack &&hugo && npm run clean",
+    "prod-webpack": "webpack -p --config ./webpack.production.config.js",
+    "fastball": "npm run thumbs && webpack && hugo server",
     "new": "hugo new -k blog",
-    "test": "node ./build_scripts/thumb_gen.js && webpack -p --config ./webpack.production.config.js",
+    "test": "npm run lunar && npm run thumbs && npm run prod-webpack",
     "thumbs": "node ./build_scripts/thumb_gen.js",
-    "lunar": "node ./node_modules/grunt/bin/grunt -gruntfile ./build_scripts/Gruntfile.js lunr-index"
+    "lunar": "node ./node_modules/grunt/bin/grunt -gruntfile ./build_scripts/Gruntfile.js lunr-index -v"
   },
   "license": "CC-BY-NC-SA-4.0",
   "dependencies": {

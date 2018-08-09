@@ -69,13 +69,19 @@ function initUI() {
             return;
         }
 
-
         $('#modal_title').text(' ' + query);
         $('#search_modal').modal('show');
 
         var results = search(query);
         renderResults(results);
         return false;
+    });
+
+    $(window).keydown(function(event){
+        if(event.keyCode == 13) {
+            event.preventDefault();
+            $( ".search_button" ).trigger( "click" );
+        }
     });
 }
 
