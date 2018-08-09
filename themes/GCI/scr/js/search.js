@@ -65,6 +65,9 @@ function initUI() {
             current_visible = inputs[1];
         }
 
+        //Needs to be here to trigger correctly, not in no_scroll.js
+        $('#carouselExampleControls').carousel('pause');
+
         var query = $(current_visible).val();
 
         if (query.length < 2) {

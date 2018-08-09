@@ -22,5 +22,17 @@ $('#navbarSupportedContent').on('hidden.bs.collapse', function () {
 
     $('#burger-default').show();
     $('#burger-active').hide();
+});
 
+//To prevent no being able to scroll if menu is opened when small, then resized to be larger
+$(window).resize(function() {
+    if ($('#input_desk').is(":visible")) {
+        $("body").css("overflow","scroll");
+        $('#carouselExampleControls').carousel('cycle');
+    }
+});
+
+//Restarts the slideshow after closing the search modal
+$('#search_modal').on('hidden.bs.modal', function () {
+    $('#carouselExampleControls').carousel('cycle');
 });
