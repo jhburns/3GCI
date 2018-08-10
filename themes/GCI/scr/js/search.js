@@ -70,6 +70,9 @@ function initUI() {
 
         var query = $(current_visible).val();
 
+        //To prevent the input from having a different value than what is searched
+        $(inputs[1]).val('');
+
         if (query.length < 2) {
             return;
         }
@@ -85,7 +88,7 @@ function initUI() {
     $(window).keydown(function(event){
         if(event.keyCode == 13) {
             event.preventDefault();
-            $( ".search_button" ).trigger( "click" );
+            $( "#modal_search_but" ).trigger( "click" );
         }
     });
 }
@@ -122,7 +125,7 @@ function renderResults(results) {
 
     // Only show the ten first results
     results.slice(0, 10).forEach(function(result) {
-        var $result = $('<li class="search_list red-underline">');
+        var $result = $('<li class="search_list pr-4">');
         $result.append($("<a>", {
             href: result.href,
             text: result.title,
