@@ -1,5 +1,5 @@
 +++
-title = "Keep Ii Fresh"
+title = "Keep It Fresh"
 date = "2018-08-09T17:10:47-07:00"
 description = "Patching and updating your device is the best way to stop a..."
 type = "blog"

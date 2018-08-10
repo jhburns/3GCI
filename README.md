@@ -39,6 +39,6 @@ Go to the  */Documentation* folder for full documentation
 
 Created by Jonathan H. Burns for GCI Cybersecurity team. 
 
-cdUnder the CC-BY-NC-SA-4.0 licence.
+Under the CC-BY-NC-SA-4.0 licence.
 
-Version 0.6.0
+Version 1.0.0

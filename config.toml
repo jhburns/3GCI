@@ -94,6 +94,7 @@ enableEmoji = true
 [Params.links]
     enable = true
     title = "Resources"
+    video_title = "Videos"
     all = "SEE ALL RESOURCES"
     url = "/resources/"
     desc = "Get helpful outside resources"
