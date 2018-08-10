@@ -11,7 +11,8 @@ name = ""
 title = ""
 email = ""
 img = ""
-weight = [integer, not 0]
+description = ""
+weight = [integer, not 0 or 1]
 enable_email = true
 ``` 
 - Fill in the information, it is recommended to put "[at]" instead of @ in the email to prevent spam. Ex:
@@ -20,6 +21,7 @@ name = "Jonathan Burns"
 title = "Website Head Developer"
 email = "jburns [at] gmail.com"
 img = "jburns.jpg"
+description = "He is dedicated to providing a good experience through this website and integration with the orientation workshop. His main focus is on creating, maintaining, and providing support to other memebers with the website, but he also helps with project management and the workshop."
 weight = 1
 enable_email = true
 ```
@@ -33,3 +35,6 @@ Use [GIMP](https://docs.gimp.org/en/gimp-tutorial-quickie-crop.html) for a free 
 
 ## Content
 Besides the profiles on the about section, content can be added to */content/about.md* under the config section like a normal blog.
+
+## Advanced
+The description only shows up on larger sized screens or larger to save space. 
