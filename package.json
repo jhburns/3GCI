@@ -15,7 +15,7 @@
   },
   "scripts": {
     "watch": "npm run thumbs && webpack --watch",
-    "make": "npm run lunar && npm run thumbs && npm run prod-webpack &&hugo && npm run clean",
+    "make": "npm run lunar && npm run thumbs && npm run prod-webpack && hugo && npm run clean",
     "prod-webpack": "webpack -p --config ./webpack.production.config.js",
     "test": "npm run lunar && npm run thumbs && npm run prod-webpack",
 
