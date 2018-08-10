@@ -1,0 +1,7 @@
+link = "https://www.pandasecurity.com/mediacenter/tips/college-students-cybersecurity/"
+text = "Panda Guide to Cybersecurity"
+weight = 20
+
+enable_thumb = false
+thumb_img = "sec-panda"
+

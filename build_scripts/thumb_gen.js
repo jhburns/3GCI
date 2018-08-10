@@ -62,8 +62,8 @@ fs.readdir(input_folder, (err, files) => {
                                     }
 
                                     //Output
-                                    console.log("Created: " + colors.bold(options.filename) + " \tFor: " + colors.bold(filename)
-                                                + colors.dim('\t(' + (numFiles + 1) + '/' + files.length + ')'));
+                                    console.log("Created: " + colors.bold(options.filename) + " For: " + colors.bold(filename)
+                                                + colors.dim('(' + (numFiles + 1) + '/' + files.length + ')'));
 
                                     //Checks if all are done
                                     //I don't know how to do callbacks :(
@@ -74,6 +74,8 @@ fs.readdir(input_folder, (err, files) => {
                                     }
                                 });
                             } else {
+                                console.log(colors.yellow("Ignoring: ") + options.filename + colors.dim(" (Not Enabled)")
+                                            + colors.dim('\t(' + (numFiles + 1) + '/' + files.length + ')'));
                                 numFiles++;
                             }
 

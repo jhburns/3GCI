@@ -1,0 +1,6 @@
+link = "https://blogs.chapman.edu/information-systems/2018/03/12/dont-take-the-bait/"
+text = "Chapman Gone Phishing"
+weight = 10
+
+enable_thumb = true
+thumb_img = "sec-fish"

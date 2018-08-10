@@ -28,6 +28,7 @@ Because of node, there are multiple shortcuts used to automate the site. To use 
 - **clean**: A custom script that deletes all the generated files. **wipe** deletes everything, like all of the node modules, it is NOT recommended. 
 
 - **new /blog/[title].md**: Makes a new blog post with the given title in */content/blog*. Don't forget to add and commit it through git.
+- **upload**: after adding new data, or an image, this is a shortcut to add it to git automatically.
 
 - **thumbs**: generates all the the thumbnails for each link. Useful for testing if a webpage generates a thumbnail well and runs before all build commands. 
    

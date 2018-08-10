@@ -1,6 +1,6 @@
-link = "https://www.chapman.edu/campus-services/information-systems/security/index.aspx"
-text = "Welcome to thunderdome"
+link = "https://web.chapman.edu/IncidentReport"
+text = "Report a Cyber Incident"
 weight = 3
 
 enable_thumb = true
-thumb_img = "thunderdome"
+thumb_img = "incident-report"

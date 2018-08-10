@@ -15,17 +15,22 @@
   },
   "scripts": {
     "watch": "npm run thumbs && webpack --watch",
+    "make": "npm run lunar && npm run thumbs && npm run prod-webpack &&hugo && npm run clean",
+    "prod-webpack": "webpack -p --config ./webpack.production.config.js",
+    "test": "npm run lunar && npm run thumbs && npm run prod-webpack",
+
+    "start": "hugo server --disableFastRender -D --config config.toml",
+    "fastball": "npm run thumbs && webpack && hugo server",
+    "new": "hugo new -k blog && npm run upload",
+
+    "thumbs": "node ./build_scripts/thumb_gen.js",
+    "lunar": "node ./node_modules/grunt/bin/grunt -gruntfile ./build_scripts/Gruntfile.js lunr-index -v",
+
     "clean": "npm run cust-clean ./build_scripts/clean.toml",
     "cust-clean": "node ./build_scripts/clean.js",
     "wipe": "npm run cust-clean ./build_scripts/wipe.toml",
-    "start": "hugo server --disableFastRender -D",
-    "make": "npm run lunar && npm run thumbs && npm run prod-webpack &&hugo && npm run clean",
-    "prod-webpack": "webpack -p --config ./webpack.production.config.js",
-    "fastball": "npm run thumbs && webpack && hugo server",
-    "new": "hugo new -k blog",
-    "test": "npm run lunar && npm run thumbs && npm run prod-webpack",
-    "thumbs": "node ./build_scripts/thumb_gen.js",
-    "lunar": "node ./node_modules/grunt/bin/grunt -gruntfile ./build_scripts/Gruntfile.js lunr-index -v"
+
+    "upload": "git add ./content/* ./themes/GCI/scr/img/blog/* ./themes/GCI/scr/img/blog/icons/* ./themes/GCI/scr/img/profile/* ./data/*"
   },
   "license": "CC-BY-NC-SA-4.0",
   "dependencies": {

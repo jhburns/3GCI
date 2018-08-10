@@ -8,4 +8,8 @@ slug = "resources"
 +++
 
 <!-- Add resource videos here -->
-{{< youtube ZZ5LpwO-An4 >}}
+{{< youtube BBnS30lTHhw >}}
+
+{{< youtube fSErHToV8IU >}}
+
+{{< youtube gcM0cq5eZ9c >}}

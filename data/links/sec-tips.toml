@@ -1,0 +1,6 @@
+link = "https://carrington.edu/blog/student-tips/cyber-security-tips/"
+text = "Carrington 8 Cyber Tips"
+weight = 15
+
+enable_thumb = false
+thumb_img = "sec-tips"

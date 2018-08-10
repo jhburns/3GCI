@@ -1,0 +1,6 @@
+link = "https://www.chapman.edu/campus-services/information-systems/security/password-management.aspx"
+text = "Chapman Password Mgmt"
+weight = 5
+
+enable_thumb = true
+thumb_img = "isandt-pass"

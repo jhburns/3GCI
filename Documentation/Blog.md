@@ -98,6 +98,14 @@ Becomes
 - First 
 - Second
 
+Added quotes by putting a `>` in front of the text. So this:
+`> Hello`
+
+Becomes this:
+> Hello
+
+Note: Other markdown still works in quotes, and make sure to still add "" to the actual quote
+
 ### Emoji
 Instead of copy-pasting them, you can just write `:name:` and the appropriate emoji gets inserted.
 For example ```I :heart: Jonathan``` becomes ```I ❤️ Jonathan```.
@@ -159,5 +167,10 @@ In earlier sections, config was briefly gone over, check here and at https://goh
 
 In addition although hugo will be able to process most Markdown that is not mentioned above, it may look weird. Any html can be inserted too and it will be rendered like normal.
 
-Want a blog to only show up in the slideshow or only the list view? Give it only a image or icon respectively, neither will render without having at least a blank config. 
+Want a blog to only show up in the slideshow or only the list view? Give it only a image or icon respectively, neither will render without having at least a blank config.
+
+## Comments
+Want text in content that isn't show on the website but is still readable to whoever is editing the blog? Add it in html comment tags like this 
+
+`<!-- Will Not be shown frontside -->` 
 
