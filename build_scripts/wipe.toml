@@ -6,4 +6,5 @@ removedDirectories =        ['themes/GCI/static/created',
                             'node_modules',
                             'public',
                             'yarn.lock',
+                            './build_scripts/test'
                             ]

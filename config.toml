@@ -2,7 +2,7 @@ baseURL = "https://relaxed-brown-a05637.netlify.com/"
 languageCode = "en-us"
 title = "CYBER SMART PANTHERS"
 theme="GCI"
-ignoreFiles = [ "README.md" ]
+ignoreFiles = [ "README.md", "\\.ig$" ]
 enableRobotsTXT = true
 enableEmoji = true
 

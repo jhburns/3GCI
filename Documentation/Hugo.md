@@ -23,5 +23,8 @@ This package will automatically install hugo on the first usage and reads in the
 As a subsection of partials, the snippet folder is supposed to have very short partial for repeated html. The partials here should all be passed at least 1 variable. How to call each.
 
 - *title.html*: Created a section-header that is centered to the middle of the screen with ```{{ partial "snippets/title.html" (dict "title" .Site.Params.titlevarhere ) }}```. Example ```{{ partial "snippets/title.html" (dict "title" .Site.Params.tips.title) }}```
+  
 
-```  
+## Ignore
+Don't want hugo to render a file? Add the `*.ig` extension to the very end, including the original extension.
+For example the link template is *template.toml.ig*
