@@ -30,8 +30,8 @@
     "lunar": "node ./node_modules/grunt/bin/grunt -gruntfile ./build_scripts/Gruntfile.js lunr-index -v",
 
     "clean": "npm run cust-clean ./build_scripts/clean.toml",
-    "cust-clean": "node ./build_scripts/clean.js",
     "wipe": "npm run cust-clean ./build_scripts/wipe.toml",
+    "cust-clean": "node ./build_scripts/clean.js",
 
     "upload": "git add ./content/* ./themes/GCI/scr/img/blog/* ./themes/GCI/scr/img/blog/icons/* ./themes/GCI/scr/img/profile/* ./data/*"
   },
