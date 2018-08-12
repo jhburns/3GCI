@@ -1,11 +1,11 @@
 # Profile
-Everyone should have a profile in the about section which consists of an image, name, title(position), and email
+Make a new blank person file with `yarn new-pepe [firstintial, lastname]`, Ex: `yarn new-pepe jburns` then go into */data/people* to edit it.
 
-## Make a new one
+Everyone should have a profile in the about section which consists of an image, name, title(position), and email.
 
-- Go to *./data/people* and make a new *.toml* file with any filename. [first initial][last name].toml is recommended.Ex jburns.toml
-- Next, copy this into the new file:
+## File Contents
 
+- This is roughly what a new blank file will look like: 
 ```
 name = ""
 title = ""
@@ -15,7 +15,9 @@ description = ""
 weight = [integer, not 0 or 1]
 enable_email = true
 ``` 
+
 - Fill in the information, it is recommended to put "[at]" instead of @ in the email to prevent spam. Ex:
+
 ```
 name = "Jonathan Burns"
 title = "Website Head Developer"
@@ -38,3 +40,5 @@ Besides the profiles on the about section, content can be added to */content/abo
 
 ## Advanced
 The description only shows up on larger sized screens or larger to save space. 
+
+The default template is in the parent folder */data*, called *people_template.toml.ig* and is copied into the correct folder with the file_copy script.

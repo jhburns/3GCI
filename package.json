@@ -32,7 +32,7 @@
     "clean": "npm run cust-clean ./build_scripts/clean.toml",
     "cust-clean": "node ./build_scripts/clean.js",
     "wipe": "npm run cust-clean ./build_scripts/wipe.toml",
-    
+
     "upload": "git add ./content/* ./themes/GCI/scr/img/blog/* ./themes/GCI/scr/img/blog/icons/* ./themes/GCI/scr/img/profile/* ./data/*"
   },
   "license": "CC-BY-NC-SA-4.0",

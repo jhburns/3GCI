@@ -1,7 +1,9 @@
 # Links
+Automatically make a new empty link file with `yarn new-link [name]`, DON'T add a file extension of .toml to this command.
+
 Links are stored in the */data/links* folder and work similarly to blogs, but without the content and their own url associated with them. 
 
-Here is a blank template that can be copy/pasted into a new .toml file:
+Here is roughly what you get in a new .toml file:
 ```
 link = ""
 text = ""
@@ -41,4 +43,6 @@ To add videos to the resources page, go to */content/resources.md* and add the v
  
  The way the generation works is to download an image from the url linked in the .toml file. It sorts all possible images by best candidate to worst and chooses the best. In the case there is no good image to download, the script instead doesn't say 'done'.
  
- If the script isn't run before webpack, webpack will crash because it can't find any thumbnails.   
+ If the script isn't run before webpack, webpack will crash because it can't find any thumbnails.
+ 
+ The default template is in the parent folder */data*, called *links_template.toml.ig* and is copied into the correct folder with the file_copy script.
