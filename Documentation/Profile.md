@@ -29,6 +29,7 @@ enable_email = true
 ```
 - Make sure the weight is higher than 1
 - Add the image to *./themes/GCI/scr/img/profile* are run/restart yarn with `yarn run watch` to see the changes.
+- After adding and filling out the file, you can run `yarn upload` to easily add it to git.
 
 ## Image tips
 To make sure your face displays in the picture properly it is recommended that the image added is a square or close to it. The bottom of the image is automatically cropped off if not a square.

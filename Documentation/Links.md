@@ -24,6 +24,8 @@ enable_thumb = true
 thumb_img = "netlify_thumbnail"
 ```
 
+After adding and filling out the file, you can run `yarn upload` to easily add it to git.
+
 ## Config details
 
 - link: is of course the link that when clicked on, the website goes to
