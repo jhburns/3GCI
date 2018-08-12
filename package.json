@@ -19,15 +19,20 @@
     "premade": "npm run lunar && npm run thumbs",
     "prod-webpack": "webpack -p --config ./webpack.production.config.js",
     "test": "npm run lunar && npm run thumbs && npm run prod-webpack",
+
     "start": "hugo server --disableFastRender -D --config config.toml",
     "fastball": "npm run thumbs && webpack && hugo server",
-    "new": "hugo new -k blog && npm run upload",
+    "new": "hugo new -k blog",
+    "new-link": "node ./build_scripts/file_copy.js ./data/link_template.toml.ig ./data/links/",
+    "new-peep": "node ./build_scripts/file_copy.js ./data/people_template.toml.ig ./data/people/",
+
     "thumbs": "node ./build_scripts/thumb_gen.js",
     "lunar": "node ./node_modules/grunt/bin/grunt -gruntfile ./build_scripts/Gruntfile.js lunr-index -v",
-    "new-link": "node ./build_scripts/file_copy.js ./data/template.toml.ig ./data/links/ test123.toml",
+
     "clean": "npm run cust-clean ./build_scripts/clean.toml",
     "cust-clean": "node ./build_scripts/clean.js",
     "wipe": "npm run cust-clean ./build_scripts/wipe.toml",
+    
     "upload": "git add ./content/* ./themes/GCI/scr/img/blog/* ./themes/GCI/scr/img/blog/icons/* ./themes/GCI/scr/img/profile/* ./data/*"
   },
   "license": "CC-BY-NC-SA-4.0",
