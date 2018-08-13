@@ -19,20 +19,16 @@
     "premade": "yarn lunar && yarn thumbs",
     "prod-webpack": "webpack -p --config ./webpack.production.config.js",
     "test": "npm run lunar && npm run thumbs && npm run prod-webpack",
-
     "start": "hugo server --disableFastRender -D --config config.toml",
     "fastball": "yarn thumbs && webpack && hugo server",
     "new": "hugo new -k blog",
     "new-link": "node ./build_scripts/file_copy.js ./data/link_template.toml.ig ./data/links/",
     "new-peep": "node ./build_scripts/file_copy.js ./data/people_template.toml.ig ./data/people/",
-
     "thumbs": "node ./build_scripts/thumb_gen.js",
     "lunar": "node ./node_modules/grunt/bin/grunt -gruntfile ./build_scripts/Gruntfile.js lunr-index -v",
-
     "clean": "yarn cust-clean ./build_scripts/clean.toml",
     "wipe": "yarn cust-clean ./build_scripts/wipe.toml",
     "cust-clean": "node ./build_scripts/clean.js",
-
     "upload": "git add ./content/* ./themes/GCI/scr/img/blog/* ./themes/GCI/scr/img/blog/icons/* ./themes/GCI/scr/img/profile/* ./data/*"
   },
   "license": "CC-BY-NC-SA-4.0",
@@ -41,6 +37,7 @@
     "download-file": "^0.1.5",
     "file-loader": "^1.1.11",
     "fs-extra": "^7.0.0",
+    "hugo-cli": "https://github.com/UXSoc/hugo-cli/archive/0.6.2.tar.gz",
     "jquery": "^3.3.1",
     "minimatch": "^3.0.4",
     "popper.js": "^1.14.3",
@@ -72,8 +69,5 @@
     "toml": "^2.3.3",
     "webpack": "^3.11.0",
     "webpack-shell-plugin": "^0.5.0"
-  },
-  "optionalDependencies": {
-    "hugo-cli": "git+ssh://git@github.com/jhburns/hugo-cli.git"
   }
 }
