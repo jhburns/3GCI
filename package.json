@@ -27,7 +27,7 @@
     "new-peep": "node ./build_scripts/file_copy.js ./data/people_template.toml.ig ./data/people/",
 
     "thumbs": "node ./build_scripts/thumb_gen.js",
-    "lunar": "node ./node_modules/gt/bin/gt -gtfile ./build_scripts/Gtfile.js lunr-index -v",
+    "lunar": "node ./node_modules/grunt/bin/grunt -gruntfile ./build_scripts/Gruntfile.js lunr-index -v",
 
     "clean": "yarn cust-clean ./build_scripts/clean.toml",
     "wipe": "yarn cust-clean ./build_scripts/wipe.toml",

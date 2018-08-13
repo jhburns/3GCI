@@ -41,6 +41,9 @@ function initLunr() {
 
                 console.log("Search Data Loaded");
             });
+        },
+        fail: function () {
+            console("Error: failed to download search file");
         }
     })
 }
@@ -54,21 +57,10 @@ function initUI() {
     $(".search_button").click(function() {
         $results.empty();
 
-        var current_visible;
-        if ($('#mobile_search').is(":visible")) {
-            current_visible = inputs[0];
-        } else {
-            current_visible = inputs[2];
-        }
-
-        if ($('#search_modal').is(":visible")) {
-            current_visible = inputs[1];
-        }
-
         //Needs to be here to trigger correctly, not in no_scroll.js
         $('#carouselExampleControls').carousel('pause');
 
-        var query = $(current_visible).val();
+        var query = $(getVisible(inputs)).val();
 
         //To prevent the input from having a different value than what is searched
         $(inputs[1]).val('');
@@ -80,9 +72,7 @@ function initUI() {
         $('#modal_title').text(' ' + query);
         $('#search_modal').modal('show');
 
-        var results = search(query);
-        renderResults(results);
-        return false;
+        getOut(query);
     });
 
     $(window).keydown(function(event){
@@ -91,6 +81,26 @@ function initUI() {
             $( "#modal_search_but" ).trigger( "click" );
         }
     });
+}
+
+function getOut(query) {
+    var results = search(query);
+    renderResults(results);
+}
+
+function getVisible(inputs) {
+    var current_visible;
+    if ($('#mobile_search').is(":visible")) {
+        current_visible = inputs[0];
+    } else {
+        current_visible = inputs[2];
+    }
+
+    if ($('#search_modal').is(":visible")) {
+        current_visible = inputs[1];
+    }
+
+    return current_visible;
 }
 
 /**
