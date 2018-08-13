@@ -46,4 +46,6 @@ Two commands need to be run to build this.
 None of these commands should be run outside of a dev computer.
 
 ### Production 
-Only one command needs to be run `yarn make`. Netlify uses this to build the site and all assets are compiled in this mode. Drafts are not built. It is recommended that this command is run before pushing to check for any production issues ahead of time. The site is not made continuously and is found in */pubic*.
+Only one command needs to be run `npm run make; hugo`. Netlify uses this to build the site and all assets are compiled in this mode. Drafts are not built. It is recommended that this command is run before pushing to check for any production issues ahead of time. The site is not made continuously and is found in */pubic*.
+
+This is the only command that needs npm (and shouldn't be used by devs) because yarn can't be used on Netlify without adding the optional hugo lockfile.
