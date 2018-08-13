@@ -74,6 +74,6 @@
     "webpack-shell-plugin": "^0.5.0"
   },
   "optionalDependencies": {
-    "hugo-cli": "git+ssh://git@github.com/UXSoc/hugo-cli.git"
+    "hugo-cli": "git+ssh://git@github.com/jhburns/hugo-cli.git"
   }
 }
