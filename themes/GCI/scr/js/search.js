@@ -3,49 +3,70 @@
 
 var lunrIndex,
     $results,
-    pagesIndex;
+    pagesIndex,
+    query,
+    first_search;
 
 
+jQuery.cachedScript = function( url, options ) {
+
+    // Allow user to set any option except for dataType, cache, and url
+    options = $.extend( options || {}, {
+        dataType: "script",
+        cache: true,
+        url: url
+    });
+
+    // Use $.ajax() since it is more flexible than $.getScript
+    // Return the jqXHR object so we can chain callbacks
+    return jQuery.ajax( options );
+};
 
 // Initialize lunrjs using our generated index file
 // Changed the file-loader to do it non-caching because then search results will update correctly
 function initLunr() {
     // First retrieve the index file
-    $.ajax({
-        cache: false,
-        url: "/created/js/jason/PagesIndex.json",
-        dataType: "json",
-        success: function(index) {
 
-            pagesIndex = index;
-            // Set up lunrjs by declaring the fields we use
-            // Also provide their boost level for the ranking
-            lunrIndex = lunr(function () {
-                this.field("title", {
-                    boost: 10
+    $.cachedScript( "https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.1/lunr.min.js" ).done(function() {
+        $.ajax({
+            cache: false,
+            url: "/created/js/jason/PagesIndex.json",
+            dataType: "json",
+            success: function(index) {
+
+                pagesIndex = index;
+                // Set up lunrjs by declaring the fields we use
+                // Also provide their boost level for the ranking
+                lunrIndex = lunr(function () {
+                    this.field("title", {
+                        boost: 10
+                    });
+                    this.field("tags", {
+                        boost: 5
+                    });
+                    this.field("content");
+
+                    // ref is the result item identifier (I chose the page URL)
+                    this.ref("href");
+
+                    // Feed lunr with each file and let lunr actually index them
+                    //Modified to work with newer version
+                    // uses basic for loop instead of for each to prevent this from going out of scope
+                    for (var i = 0; i < pagesIndex.length; i++) {
+                        this.add(pagesIndex[i]);
+                    }
+
+                    console.log("Search Data Loaded");
                 });
-                this.field("tags", {
-                    boost: 5
-                });
-                this.field("content");
 
-                // ref is the result item identifier (I chose the page URL)
-                this.ref("href");
-
-                // Feed lunr with each file and let lunr actually index them
-                //Modified to work with newer version
-                // uses basic for loop instead of for each to prevent this from going out of scope
-                for (var i = 0; i < pagesIndex.length; i++) {
-                    this.add(pagesIndex[i]);
-                }
-
-                console.log("Search Data Loaded");
-            });
-        },
-        fail: function () {
-            console("Error: failed to download search file");
-        }
-    })
+                // Needed for first run
+                getOut(query);
+            },
+            fail: function () {
+                console("Error: failed to download search file");
+            }
+        })
+    });
 }
 
 // Nothing crazy here, just hook up a listener on the input field
@@ -60,7 +81,7 @@ function initUI() {
         //Needs to be here to trigger correctly, not in no_scroll.js
         $('#carouselExampleControls').carousel('pause');
 
-        var query = $(getVisible(inputs)).val();
+        query = $(getVisible(inputs)).val();
 
         //To prevent the input from having a different value than what is searched
         $(inputs[1]).val('');
@@ -72,7 +93,13 @@ function initUI() {
         $('#modal_title').text(' ' + query);
         $('#search_modal').modal('show');
 
-        getOut(query);
+        if (first_search) {
+            first_search  = false;
+            renderLoading();
+            initLunr();
+        } else {
+            getOut(query);
+        }
     });
 
     $(window).keydown(function(event){
@@ -81,6 +108,11 @@ function initUI() {
             $( "#modal_search_but" ).trigger( "click" );
         }
     });
+}
+
+function renderLoading() {
+    var $result = $('<h3 class="p-3 red-link">Loading...</h3>');
+    $results.append($result);
 }
 
 function getOut(query) {
@@ -128,6 +160,8 @@ function search(query) {
  * @param  {Array} results to display
  */
 function renderResults(results) {
+    $results.empty();
+
     if (!results.length) {
         var $result = $('<h3 class="p-3">No Results, try a different phrase above</h3>');
         $results.append($result);
@@ -150,9 +184,7 @@ function renderResults(results) {
 
 }
 
-// Let's get started
-initLunr();
-
 $(document).ready(function() {
+    first_search = true;
     initUI();
 });
