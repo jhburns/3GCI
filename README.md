@@ -14,9 +14,9 @@ Either:
 ## Basic Setup
 - To run the website, first install [node](https://nodejs.org/en/) and then [yarn](https://yarnpkg.com/lang/en/)
 
-- Then in the root directory of this site (./3GCI) run `yarn install`
+- Then in the root directory of this site (*/3GCI/*) run `yarn`
 
-- To open the website in your browser run `yarn fastball` and go to http://localhost:1313/
+- To open the website in your browser run `yarn fastball` and go to http://localhost:1313/ after the command is loaded
 
 ## Command overview
 Because of node, there are multiple shortcuts used to automate the site. To use each of them type `yarn [command]`, example: `yarn make`
