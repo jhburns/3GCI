@@ -14,23 +14,23 @@
     "doc": "Documentation"
   },
   "scripts": {
-    "watch": "npm run thumbs && webpack --watch",
-    "make": "npm run lunar && npm run thumbs && npm run prod-webpack && hugo && npm run clean",
-    "premade": "npm run lunar && npm run thumbs",
+    "watch": "yarn thumbs && webpack --watch",
+    "make": "yarn lunar && yarn thumbs && yarn prod-webpack && hugo && yarn clean",
+    "premade": "yarn lunar && yarn thumbs",
     "prod-webpack": "webpack -p --config ./webpack.production.config.js",
-    "test": "npm run lunar && npm run thumbs && npm run prod-webpack",
+    "test": "yarn lunar && yarn thumbs && yarn prod-webpack",
 
     "start": "hugo server --disableFastRender -D --config config.toml",
-    "fastball": "npm run thumbs && webpack && hugo server",
+    "fastball": "yarn thumbs && webpack && hugo server",
     "new": "hugo new -k blog",
     "new-link": "node ./build_scripts/file_copy.js ./data/link_template.toml.ig ./data/links/",
     "new-peep": "node ./build_scripts/file_copy.js ./data/people_template.toml.ig ./data/people/",
 
     "thumbs": "node ./build_scripts/thumb_gen.js",
-    "lunar": "node ./node_modules/grunt/bin/grunt -gruntfile ./build_scripts/Gruntfile.js lunr-index -v",
+    "lunar": "node ./node_modules/gt/bin/gt -gtfile ./build_scripts/Gtfile.js lunr-index -v",
 
-    "clean": "npm run cust-clean ./build_scripts/clean.toml",
-    "wipe": "npm run cust-clean ./build_scripts/wipe.toml",
+    "clean": "yarn cust-clean ./build_scripts/clean.toml",
+    "wipe": "yarn cust-clean ./build_scripts/wipe.toml",
     "cust-clean": "node ./build_scripts/clean.js",
 
     "upload": "git add ./content/* ./themes/GCI/scr/img/blog/* ./themes/GCI/scr/img/blog/icons/* ./themes/GCI/scr/img/profile/* ./data/*"
@@ -56,7 +56,7 @@
     "extract-text-webpack-plugin": "^3.0.2",
     "favicons-webpack-plugin": "0.0.9",
     "glob": "^7.1.2",
-    "grunt": "^1.0.3",
+    "gt": "^1.0.3",
     "html-webpack-plugin": "^3.2.0",
     "imagemin-mozjpeg": "^7.0.0",
     "imagemin-optipng": "^5.2.1",
