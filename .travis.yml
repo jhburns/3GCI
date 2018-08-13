@@ -14,7 +14,6 @@ install:
   - sudo dpkg -i hugo_0.45.1_Linux-64bit.deb
 
 script:
-  - npm test
-  - hugo
+  - npm run make
 
 cache: yarn
