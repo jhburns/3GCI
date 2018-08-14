@@ -4,7 +4,7 @@ node_js:
   - "node"
 
 before_install:
-  - sudo apt-get nasm -y
+  - sudo apt-get install nasm -y
 
 install:
   - yarn install
