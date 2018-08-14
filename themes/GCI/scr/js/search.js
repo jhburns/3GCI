@@ -69,7 +69,6 @@ function initLunr() {
             }
         })
     }).fail(function () {
-        console.log("Waa");
         failLoad();
     });
 }
@@ -129,7 +128,6 @@ function initUI() {
 
 function renderLoading() {
     var $result = $('<h3 class="p-3 red">Loading...</h3>');
-    console.log($result);
     $results.append($result);
 }
 
