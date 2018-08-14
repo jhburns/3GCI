@@ -5,9 +5,10 @@ var lunrIndex,
     $results,
     pagesIndex,
     query,
-    first_search;
+    first_search,
+    failed_to_load;
 
-
+//needed to cache lunr
 jQuery.cachedScript = function( url, options ) {
 
     // Allow user to set any option except for dataType, cache, and url
@@ -15,6 +16,7 @@ jQuery.cachedScript = function( url, options ) {
         dataType: "script",
         cache: true,
         url: url
+
     });
 
     // Use $.ajax() since it is more flexible than $.getScript
@@ -62,14 +64,24 @@ function initLunr() {
                 // Needed for first run
                 getOut(query);
             },
-            fail: function () {
-                console("Error: failed to download search file");
+            error: function () {
+                failLoad();
             }
         })
-    });
+    }).fail(failLoad());
+}
+
+function failLoad() {
+    $results.empty();
+    failed_to_load = true;
+
+    var $result = $('<h2 class="p-3 red">Error: Search Data Not Loaded</h2>');
+    $result.append($('<h4 class="grey pt-3">Please reload page and try again, or contact the Admin</h4>'));
+    $results.append($result);
 }
 
 // Nothing crazy here, just hook up a listener on the input field
+//Changed a lot to use modal
 function initUI() {
     $results = $("#results");
 
@@ -97,6 +109,8 @@ function initUI() {
             first_search  = false;
             renderLoading();
             initLunr();
+        } else if (failed_to_load) {
+            failLoad()
         } else {
             getOut(query);
         }
@@ -111,10 +125,12 @@ function initUI() {
 }
 
 function renderLoading() {
-    var $result = $('<h3 class="p-3 red-link">Loading...</h3>');
+    var $result = $('<h3 class="p-3 red">Loading...</h3>');
+    console.log($result);
     $results.append($result);
 }
 
+//this needs to be a separate function to prevent callbacks from not rendering
 function getOut(query) {
     var results = search(query);
     renderResults(results);
@@ -185,6 +201,7 @@ function renderResults(results) {
 }
 
 $(document).ready(function() {
+    failed_to_load = false;
     first_search = true;
     initUI();
 });
