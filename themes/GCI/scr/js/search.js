@@ -65,10 +65,12 @@ function initLunr() {
                 getOut(query);
             },
             error: function () {
+                console.log("Error: Index failed to load");
                 failLoad();
             }
         })
     }).fail(function () {
+        console.log("Error: Lunr failed to load");
         failLoad();
     });
 }
