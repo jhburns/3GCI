@@ -4,8 +4,7 @@ node_js:
   - "node"
 
 before_install:
-  - sudo apt-get update
-  - sudo apt-get install autoconf libtool nasm -y
+  - sudo apt-get nasm -y
 
 install:
   - yarn install
