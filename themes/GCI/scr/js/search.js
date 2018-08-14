@@ -68,7 +68,10 @@ function initLunr() {
                 failLoad();
             }
         })
-    }).fail(failLoad());
+    }).fail(function () {
+        console.log("Waa");
+        failLoad();
+    });
 }
 
 function failLoad() {
@@ -110,7 +113,7 @@ function initUI() {
             renderLoading();
             initLunr();
         } else if (failed_to_load) {
-            failLoad()
+            failLoad();
         } else {
             getOut(query);
         }
