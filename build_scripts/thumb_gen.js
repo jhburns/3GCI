@@ -68,15 +68,14 @@ fs.readdir(input_folder, (err, files) => {
                                     //Checks if all are done
                                     //I don't know how to do callbacks :(
                                     numFiles++;
-                                    if (numFiles == files.length) {
-                                        console.log(colors.green("Done Generating ALL Thumbnails"));
-                                        console.log();
-                                    }
+                                    checkDone(numFiles, files.length);
                                 });
                             } else {
                                 console.log(colors.yellow("Ignoring: ") + options.filename + colors.dim(" (Not Enabled)")
                                             + colors.dim('\t(' + (numFiles + 1) + '/' + files.length + ')'));
                                 numFiles++;
+
+                                checkDone(numFiles, files.length);
                             }
 
                         });
@@ -92,5 +91,12 @@ fs.readdir(input_folder, (err, files) => {
         });
     }
 });
+
+function checkDone(i, length) {
+    if (i == length) {
+        console.log(colors.green("Done Generating ALL Thumbnails"));
+        console.log();
+    }
+}
 
 
