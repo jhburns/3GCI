@@ -1,0 +1,8 @@
+name = "Rachel Ross"
+title = ""
+email = "rross [at] chapman.edu"
+img = "ray.jpg"
+description = "Rachel Ross is a Chapman sophomore majoring in Computer Science, with a minor in Music Technology. She is Project Manager of the Cyber Smart Panthers, a Schmid College Grand Challenges Initiative team. She’s excited about cybersecurity, data networks, and data center management. She passionate about music and plays flute for the Chapman Jazz Combo. During summer, you can catch her playing water polo and going to the beach."
+
+weight = 51
+enable_email = true
