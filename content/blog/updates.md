@@ -23,9 +23,9 @@ Not another Windows update!  We’ve all seen those pesky patch updates for comp
 
 When you go online, your computer uses all of its protective safeguards to protect your data.  Viruses, malware and rootkits are constantly searching the Internet for old, unpatched operating systems and apps so they can exploit a security flaw and gain entry.  Patches fix these security flaws.  As cyber threats change, software must be patched to protect you from the latest threat.  Computers and the software they house require regular updates to ensure they run safely and efficiently!
 
-> “80% OF SUCCESSFUL CYBER ATTACKS USE VULNERABILITIES FOR WHICH A PATCH OR UPDATE ALREADY EXISTS.”
+> ***“80% OF SUCCESSFUL CYBER ATTACKS USE VULNERABILITIES FOR WHICH A PATCH OR UPDATE ALREADY EXISTS.”***
 >
-> –Verizon Data Breaches Investigation Report
+> *–Verizon Data Breaches Investigation Report*
   
 ## **Where Do Patches Come From?**
 

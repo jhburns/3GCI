@@ -43,4 +43,7 @@ title_icon = "Wifi"
     
 {{< youtube ZZ5LpwO-An4 >}}
  
+ ***Bold AND Italic***
+ 
+ > **Works in blockquotes too**
  

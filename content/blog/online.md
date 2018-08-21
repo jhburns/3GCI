@@ -23,9 +23,9 @@ It’s surprisingly easy to spy on someone or steal their username and password,
 
 Using a public Wi-Fi network puts your devices and information at risk.  Cyber-criminals can create “rogue access points” that provide free hot spots from which to steal your data.  Unfortunately, this gives access any information you provide, such as credit card numbers, confidential information, or passwords.  This is commonly done at hotels, coffee shops, amusement parks, and wherever there are crowds.  Only use trusted public Wi-Fi that is confirmed by the business.  Even still, this data is not secure and can be viewed by others.  Online shopping on public Wi-Fi is a no, no!
 
-> “PUBLIC WI-FI IS INHERENTLY UNSECURE… USE IT WITH THE PREMISE THAT EVERYTHING YOU DO IS VISIBLE TO A THIRD-PARTY STRANGER”
+> ***“PUBLIC WI-FI IS INHERENTLY UNSECURE… USE IT WITH THE PREMISE THAT EVERYTHING YOU DO IS VISIBLE TO A THIRD-PARTY STRANGER”***
 >
-> –Kevin Clark, Monmouth County prosecutor, cybercrime expert
+> *–Kevin Clark, Monmouth County prosecutor, cybercrime expert*
   
 ## **Use Cellular If You Can**
 

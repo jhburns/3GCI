@@ -29,9 +29,9 @@ So, here is a summary of what makes a password strong:
 1. Make if COMPLEX (combination of letters, numbers, and symbols)
 1. Keep it IMPERSONAL (not based on personal information that can be discovered online)
 
-> “I ASKED THE LIBRARIAN LOUDLY FOR THE WI-FI PASSWORD.  SHE SAID “SSHHHHH!” I ASKED “IS THAT ALL LOWER CASE?”
+> ***“I ASKED THE LIBRARIAN LOUDLY FOR THE WI-FI PASSWORD.  SHE SAID “SSHHHHH!” I ASKED “IS THAT ALL LOWER CASE?”***
 >
-> –Mark Haggan
+> *–Mark Haggan*
 
 
 ## **“Who Do I Trust? Me That’s Who”**

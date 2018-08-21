@@ -18,8 +18,28 @@ title_icon = ""
 weight = 1
 +++
 
-Every Cyber Smart Panther needs to be able to Spot a Scam!  Phishing emails are an easy way for cyber criminals to get access to your computer or online accounts.  Be wary of emails from suspicious senders, that use generic salutations, or try to create a sense of urgency.  And never, ever send passwords, social security, or credit card numbers over email. When shopping online, use respectable websites, like Amazon, and look for the lock that shows a it’s secure website. Don’t give hackers access to your data or accounts. A Cyber Smart Panther can Spot a Scam.
+## **Don’t Become “Phishing” Bait**
+The use of phishing emails is the most common and easy way cyber criminals get access to your computer or online accounts. A phishing email is an online scam where cyber criminals send you an email that appears to be legitimate and asks you to provide sensitive information that they can use to gain access to your computer or account. This is usually done by including a link or file attachment that will trigger malware when clicked. The term ’phishing’ is a spin on the word fishing, because criminals are dangling a fake ’lure’ (the email) hoping users will ’bite’ by providing sensitive information that the criminals want – such as passwords, account numbers, or user names.
 
-> “The chances of you being hacked far exceeds the chances of your home being burglarized. This is a big business.”
+Phishing emails can be identified by one or more of the following:
+
+1. Generic salutations (“Dear Customer,”)
+1. Creates sense of urgency (“Must reply now!”)
+1. Lead to websites that aren’t exactly real (FedExxx.com)
+1. Contain grammatical errors
+1. Request sensitive information that a legitimate business would not ask for online (e.g. your password or social security number)
+
+## **Sound Too Good to be True? It is!**
+
+Has a Nigerian prince emailed you? Is there a suspicious pop-up window that says it is from Microsoft? Is a clothing store offering “Buy 2, Get 3 Free”? If your spidey-sense is tingling, then it probably is a scam. I know what you’re thinking, who falls for this? Truth is, more people than you’d think. Think twice before you click.
+
+
+
+> ***“The chances of you being hacked far exceeds the chances of your home being burglarized. This is a big business.”***
 >
-> –Kevin Clark, Monmouth County prosecutor, cybercrime expert
+> *–Kevin Clark, Monmouth County prosecutor, cybercrime expert*
+
+## **How to Spot a Fake Online Store**
+It is very easy to create a website that looks very close to the real deal.  Watch out for online shopping sites that offer deals that are too steep, contain sloppy grammar, don’t allow you to pay with credit card, or have poor reviews.  Stick with well-known online stores to avoid being scammed.
+
+{{< youtube qhEx9nsZpUI >}}
