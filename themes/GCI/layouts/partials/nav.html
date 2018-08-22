@@ -34,7 +34,7 @@
                             <!-- TODO: Fix (current) functionality -->
                             {{ range $.Site.Params.nav.links.text }}
                                 <li class="nav-item ml-3 mt-1 mt-lg-0">
-                                    <a class="nav-link title" href="{{ index . 1 }}" target="{{ index . 2 }}">{{ index . 0}}
+                                    <a class="nav-link" href="{{ index . 1 }}" target="{{ index . 2 }}">{{ index . 0}}
                                         {{ if eq $url.Path (index . 1)  }}
                                             <span class="sr-only">(current)</span>
                                         {{ end }}
