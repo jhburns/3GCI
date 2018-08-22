@@ -23,7 +23,7 @@
 
         {{ if .Site.Params.blog.enable }}
             {{ partial "tips.html" (dict "show" .Site.Params.tips.frontpage_number "context" .) }}
-            {{ partial "snippets/sublink.html" (dict "link" .Site.Params.tips.blog "text" .Site.Params.tips.all "importance" 3) }}
+            {{ partial "snippets/sublink.html" (dict "link" .Site.Params.tips.link "text" .Site.Params.tips.all "importance" 3) }}
         {{ end }}
 
         {{ if .Site.Params.links.enable }}

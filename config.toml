@@ -47,13 +47,14 @@ enableEmoji = true
         # It is a 2D array,
         # First item: link text.
         # Second item: link/section id (which should always start with /# for in page links)
+        # Third item: link target, use '' for this tab ans '_blank' for new tab
 
         #links NEED to have end slash to be maked (current) correctly
-        text = [['HOME', '/'],
-               ['ABOUT', '/about/'],
-               ['TIPS', '/blog/'],
-               ['MORE RESOURCES', '/resources/'],
-               ['REPORT INCIDENT', 'https://web.chapman.edu/IncidentReport']
+        text = [['HOME', '/', ''],
+               ['ABOUT', '/about/', ''],
+               ['TIPS', '/blog/', ''],
+               ['MORE RESOURCES', '/resources/', ''],
+               ['REPORT INCIDENT', 'https://web.chapman.edu/IncidentReport', '_blank']
                ]
 
     [Params.nav.search]
@@ -74,7 +75,7 @@ enableEmoji = true
 [Params.tips]
     title = "Become a Chapman Cyber Ninja:"
     enable = true
-    read = "Read more of: "
+    read = ""
 
     # In index.html
     frontpage_number = 4
@@ -93,14 +94,14 @@ enableEmoji = true
 
 [Params.links]
     enable = true
-    title = "Resources"
+    title = "More Resources"
     video_title = "Videos"
     all = "SEE ALL RESOURCES"
     url = "/resources/"
     desc = "Get helpful outside resources"
 
     # In index.html
-    frontpage_number = 5
+    frontpage_number = 3
 
     #in url.com/resources
     main_number = 20
@@ -115,6 +116,7 @@ enableEmoji = true
     enable = true
     webpack_enable = true
     bootstrap_enable = true
+    analytics = true
 
 [Params.footer]
     enable = true
