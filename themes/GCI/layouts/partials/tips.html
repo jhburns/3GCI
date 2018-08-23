@@ -12,7 +12,7 @@
                         <div class="col-12 col-md-6">
                             <a href="{{ .Site.BaseURL }}blog/{{ .Params.slug }}">
                                 <div class="image-resize">
-                                  <img class="w-100 tip-icon" src="{{ .Site.BaseURL }}{{ .Site.Params.img.source }}{{ .Params.icon }}">
+                                  <img class="w-100 tip-icon" alt="{{ .Params.alt_icon }}" src="{{ .Site.BaseURL }}{{ .Site.Params.img.source }}{{ .Params.icon }}" title="{{ .Params.title_icon }}">
                                 </div>
                             </a>
                             <a class="tip red-underline text-center" href="{{ .Site.BaseURL }}blog/{{ .Params.slug }}">
