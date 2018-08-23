@@ -1,4 +1,4 @@
-**Status of:** https://relaxed-brown-a05637.netlify.com/
+**Status of:** https://cybersmartpanthers.org/
 
  [![Build Status](https://travis-ci.org/jhburns/3GCI.svg?branch=master)](https://travis-ci.org/jhburns/3GCI)
 
