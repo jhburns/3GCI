@@ -11,7 +11,7 @@ alt = ""
 img_title = ""
 
 icon = "flag.png"
-alt_icon = ""
+alt_icon = "Picture of Scam"
 title_icon = ""
 
 # Makes this the first blog listed, so the image is at the top
