@@ -84,7 +84,7 @@ module.exports = {
         new ImageminWebpackPlugin({
             bail: false, // Ignore errors on corrupted images
             imageminOptions: {
-                plugins: [imageminMozjpeg({quality: 90}), imageminSvgo(), imageminOptipng()]
+                plugins: [imageminMozjpeg({quality: 1}), imageminSvgo(), imageminOptipng()]
             },
             name: "img/[name].[ext]",
         }),

@@ -5,12 +5,6 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 const glob = require("glob");
 
-//Image plugins
-const { ImageminWebpackPlugin } = require("imagemin-webpack");
-const imageminSvgo = require("imagemin-svgo");
-const imageminMozjpeg = require('imagemin-mozjpeg');
-const imageminOptipng = require("imagemin-optipng");
-
 module.exports = {
 
     entry: {
