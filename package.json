@@ -14,10 +14,10 @@
     "doc": "Documentation"
   },
   "scripts": {
-    "watch": "yarn thumbs && webpack --watch",
+    "watch": "yarn thumbs && webpack -p --config ./build_scripts/webpack.config.js --watch",
     "make": "yarn lunar & yarn thumbs && yarn prod-webpack && hugo && yarn clean",
     "premade": "yarn lunar & yarn thumbs",
-    "prod-webpack": "webpack -p --config ./webpack.production.config.js",
+    "prod-webpack": "webpack -p --config ./build_scripts/webpack.production.config.js",
     "start": "hugo server --disableFastRender -D --config config.toml --forceSyncStatic",
     "fastball": "yarn thumbs && webpack && hugo server",
     "new": "hugo new -k blog",
