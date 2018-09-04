@@ -17,7 +17,7 @@ module.exports = {
     output: {
         filename: "js/[name].js",
         //needs to be dumped into static to be read by hugo
-        path: path.join(__dirname, "/themes/GCI/static/created"),
+        path: path.join(__dirname, "../",  "/themes/GCI/static/created"),
         libraryTarget: 'umd',
     },
 
