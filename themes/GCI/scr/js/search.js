@@ -141,6 +141,7 @@ function getOut(query) {
 
 function getVisible(inputs) {
     var current_visible;
+
     if ($('#mobile_search').is(":visible")) {
         current_visible = inputs[0];
     } else {

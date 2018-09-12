@@ -26,7 +26,7 @@ $('#navbarSupportedContent').on('hidden.bs.collapse', function () {
 
 //To prevent no being able to scroll if menu is opened when small, then resized to be larger
 $(window).resize(function() {
-    if ($('#input_desk').is(":visible")) {
+    if ($('#input_desk').is(":visible") && !$('#search_modal').is(":visible")) {
         $("body").css("overflow","scroll");
         $('#carouselExampleControls').carousel('cycle');
     }
@@ -34,5 +34,6 @@ $(window).resize(function() {
 
 //Restarts the slideshow after closing the search modal
 $('#search_modal').on('hidden.bs.modal', function () {
+    $("body").css("overflow","scroll");
     $('#carouselExampleControls').carousel('cycle');
 });
