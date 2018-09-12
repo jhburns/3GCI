@@ -26,11 +26,14 @@ $('#navbarSupportedContent').on('hidden.bs.collapse', function () {
 
 //To prevent no being able to scroll if menu is opened when small, then resized to be larger
 $(window).resize(function() {
+
+    //Is needed to prevent background scroll when modal is open and resized
     if ($('#input_desk').is(":visible") && !$('#search_modal').is(":visible")) {
         $("body").css("overflow","scroll");
         $('#carouselExampleControls').carousel('cycle');
     }
 
+    //Prevents background scroll when menu is already open and screen is resized back to menu state
     if ($('#mobile_search').is(":visible")) {
         $("body").css("overflow","hidden");
         $('#carouselExampleControls').carousel('pause');
