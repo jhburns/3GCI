@@ -30,6 +30,11 @@ $(window).resize(function() {
         $("body").css("overflow","scroll");
         $('#carouselExampleControls').carousel('cycle');
     }
+
+    if ($('#mobile_search').is(":visible")) {
+        $("body").css("overflow","hidden");
+        $('#carouselExampleControls').carousel('pause');
+    }
 });
 
 //Restarts the slideshow after closing the search modal
