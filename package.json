@@ -14,8 +14,8 @@
     "doc": "Documentation"
   },
   "scripts": {
-    "dev-make": "webpack --config ./build_scripts/webpack.config.js",
-    "watch": "yarn thumbs && yarn dev-make --watch",
+    "devpack": "webpack --config ./build_scripts/webpack.config.js",
+    "watch": "yarn thumbs && yarn devpack --watch",
     "make": "yarn lunar & yarn thumbs && yarn prod-webpack && hugo && yarn clean",
     "premade": "yarn lunar & yarn thumbs",
     "prod-webpack": "webpack -p --config ./build_scripts/webpack.production.config.js",
