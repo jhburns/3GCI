@@ -19,6 +19,10 @@
             {{ partial "slideshow.html" . }}
         {{ end }}
 
+        {{ if .Site.Params.video.enable }}
+            {{ partial "snippets/video.html" (dict "id" .Site.Params.video.youtube_id ) . }}
+        {{ end }}
+
         {{ partial "snippets/title.html" (dict "title" .Site.Params.tips.title "importance" 1 ) . }}
 
         {{ if .Site.Params.blog.enable }}

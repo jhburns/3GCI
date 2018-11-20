@@ -71,6 +71,10 @@ enableEmoji = true
     keyboard = false
     pause = true
 
+[Params.video]
+    enable = true
+    youtube_id = "ZZ5LpwO-An4"
+
 # frontpage part of blog
 [Params.tips]
     title = "Become a Chapman Cyber Ninja:"
