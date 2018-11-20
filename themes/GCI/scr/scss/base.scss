@@ -86,6 +86,7 @@ body {
   color: $grey;
 }
 
+/* Needed to prevent scrollbar for the video snippet */
 .hide-overflow {
   overflow: hidden;
 }
