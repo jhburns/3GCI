@@ -51,7 +51,7 @@ The reasoning to not server some content without error is because it is not page
 Currently third-party loaded scripts (jQuery, poppers, bootstrap etc.) are not checked to see if loading on their own CDN. Their uptime is instead trusted to always be up.
 
 ## Thumbnails
-Because it is a custom, hackish script there are a lot of possible error is can create. Make sure data is formatted correctly and urls are reachable.
+Because it is a custom, hackish script there are a lot of possible error it can create. Make sure data is formatted correctly and urls are reachable.
 
 If this is not run before build scripts or it fails before a build, the whole thing will fail so be cautious.
 
@@ -61,7 +61,7 @@ It is not designed to throw an error if no image is suitable for a webpage, but 
 Due to the nature of the site, searching can be very inconsistent. Details and reasoning are given in the *Search.md* doc, but here are some issue that could happen.
 
 - Can't input: Likely caused by not putting in more than 1 character, but also can be from the front-end search script being broken
-- No Results: Not itself and error, but there should also be a good message displayed
+- No Results: Not itself an error, but there should also be a good message displayed
 - Wrong input: Because there are three input boxes a user may be able to input something into one and click the button for another which can be confusing. If this is enough of a problem, the script should be changed
 - Don't have the .json file: Either an issue with hugo or grunt. Check if either have errors on build.
 - No content: Grunt is likely reading the wrong dir.
