@@ -17,6 +17,7 @@
     "devpack": "webpack --config ./build_scripts/webpack.config.js",
     "watch": "yarn thumbs && yarn devpack --watch",
     "make": "yarn lunar & yarn thumbs && yarn prod-webpack && hugo && yarn clean",
+    "make:stats": "yarn premade && yarn prod-webpack --profile --json > webpack.stats.json",
     "premade": "yarn lunar & yarn thumbs",
     "prod-webpack": "webpack -p --config ./build_scripts/webpack.production.config.js",
     "start": "hugo server --disableFastRender -D --config config.toml --forceSyncStatic",
