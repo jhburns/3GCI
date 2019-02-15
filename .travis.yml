@@ -12,7 +12,7 @@ before_install:
 - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then sudo apt-get install nasm -y; fi
 
 install:
-- yarn install
+- yarn install --network-timeout 1000000
 - yarn clean || exit 0
 
 script:
