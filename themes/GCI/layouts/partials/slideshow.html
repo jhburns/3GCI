@@ -10,38 +10,43 @@
              data-keyboard="{{ .Site.Params.slideshow.keyboard }}" data-pause="{{ .Site.Params.slideshow.pause }}">
             <div class="carousel-inner">
                 {{ range (where .Site.Pages "Type" "blog") }}
-                    <!-- Needed to prevent the blank defualt Blog from loading-->
-                    {{ if (fileExists (print "/themes/GCI/static/created/img/" .Params.image) )}}
+                    <!-- Needed to prevent the blank default Blog from loading, wil crash on windows because of nil value -->
+                    {{ if and ( isset .Params "image" ) (ne .Params.image "") }}
+                        <!-- Only loads the slide if the blog's image exists -->
+                        {{ if (fileExists (print "/themes/GCI/static/created/img/" .Params.image) )}}
                         <!-- Only added to the first blog -->
-                        <div  class="carousel-item{{ if (lt ($scratch.Get "blogs") 1) }}
+                            <div  class="carousel-item{{ if (lt ($scratch.Get "blogs") 1) }}
                             active
                             {{ $scratch.Add "blogs" 1 }}{{ end }}"><!-- Needed to make sure only one element is active -->
-                            <img class="slide-img w-100" src="{{ .Site.BaseURL }}{{ .Site.Params.img.source }}{{ .Params.image }}" alt="{{ .Params.alt }}" title="{{ .Params.img_title }}">
-                            <a href="{{ .Site.BaseURL }}blog/{{ .Slug }}">
-                            <div class="carousel-caption bg-trans-grey">
-                                <h3 class="title carousel-header">{{ .Params.Title }}</h3>
-                                <p class="title carousel-text">{{ .Params.Description }}</p>
+                                <img class="slide-img w-100" src="{{ .Site.BaseURL }}{{ .Site.Params.img.source }}{{ .Params.image }}" alt="{{ .Params.alt }}" title="{{ .Params.img_title }}">
+                                <a href="{{ .Site.BaseURL }}blog/{{ .Slug }}">
+                                    <div class="carousel-caption bg-trans-grey">
+                                        <h3 class="title carousel-header">{{ .Params.Title }}</h3>
+                                        <p class="title carousel-text">{{ .Params.Description }}</p>
+                                    </div>
+                                </a>
                             </div>
-                            </a>
-                        </div>
+                        {{ end }}
                     {{ end }}
                 {{ end }}
-
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
         </div>
+
+
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
     </div>
 
     <!-- Presents error if there is no blogs from prev-->
     {{ if eq ($scratch.Get "blogs") 0 }}
-        <p>{{ .Site.Params.err.msg.slideshow }}</p>
+    <p>{{ .Site.Params.err.msg.slideshow }}</p>
     {{ end }}
 
 </section>
+

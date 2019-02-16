@@ -7,7 +7,7 @@ date = "2018-07-25"
 slug = "hello"
 draft = true
 
-image = "cat.jpg"
+image = ""
 alt = "Waa"
 img_title = "Woo"
 
