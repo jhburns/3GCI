@@ -16,7 +16,7 @@
   "scripts": {
     "devpack": "webpack --config ./build_scripts/webpack.config.js",
     "watch": "yarn thumbs && yarn devpack --watch",
-    "make": "yarn lunar & yarn thumbs && yarn prod-webpack && hugo && yarn clean",
+    "make": "yarn lunar & yarn thumbs && yarn prod-webpack && hugo && yarn minify && yarn clean",
     "make:stats": "yarn premade && yarn prod-webpack --profile --json > webpack.stats.json",
     "premade": "yarn lunar & yarn thumbs",
     "prod-webpack": "webpack -p --config ./build_scripts/webpack.production.config.js",
@@ -27,6 +27,7 @@
     "new-peep": "node ./build_scripts/file_copy.js ./data/people_template.toml.ig ./data/people/",
     "thumbs": "node ./build_scripts/thumb_gen.js",
     "lunar": "node ./node_modules/grunt/bin/grunt -gruntfile ./build_scripts/Gruntfile.js lunr-index -v",
+    "minify": "yarn html-minifier --collapse-whitespace --minify-js --remove-comments --input-dir ./public --output-dir ./public --file-ext html",
     "clean": "yarn cust-clean ./build_scripts/clean.toml",
     "wipe": "yarn cust-clean ./build_scripts/wipe.toml",
     "cust-clean": "node ./build_scripts/clean.js",
