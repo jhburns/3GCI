@@ -9,7 +9,7 @@
              data-ride="{{ .Site.Params.slideshow.ride }}" data-interval="{{ .Site.Params.slideshow.interval }}"
              data-keyboard="{{ .Site.Params.slideshow.keyboard }}" data-pause="{{ .Site.Params.slideshow.pause }}">
             <div class="carousel-inner">
-                {{ range where .Site.Pages "Type" "blog" }}
+                {{ range (where .Site.Pages "Type" "blog") }}
                     <!-- Needed to prevent the blank defualt Blog from loading-->
                     {{ if (fileExists (print "/themes/GCI/static/created/img/" .Params.image) )}}
                         <!-- Only added to the first blog -->
