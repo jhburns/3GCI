@@ -17,5 +17,3 @@ install:
 
 script:
 - yarn make
-
-cache: yarn

@@ -6,7 +6,7 @@
     <div class="container">
         <div class="row">
             {{ range (where .context.Site.Pages "Type" "blog") }}
-                {{ if (lt ($scratch.Get "blogs") $show ) }}
+                {{ if and (lt ($scratch.Get "blogs") $show ) ( isset .Params "icon" ) (ne .Params.icon "")}}
                     {{ if (fileExists (print "/themes/GCI/static/created/img/" .Params.icon ))  }}
                         {{ $scratch.Add "blogs" 1 }}
                         <div class="col-12 col-md-6">
