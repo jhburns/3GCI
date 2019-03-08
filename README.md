@@ -31,7 +31,11 @@ Because of node, there are multiple shortcuts used to automate the site. To use 
 - **upload**: after adding new blog, data, or an image, this is a shortcut to add it to git automatically.
 
 - **thumbs**: generates all the the thumbnails for each link. Useful for testing if a webpage generates a thumbnail well and runs before all build commands. 
-   
+
+## How To Add a Video To The Home Page
+
+In *config.toml* edit the values under these lines: https://git.io/fhheM.
+
 ## Documentation
 Go to the  */Documentation* folder for full documentation
 
