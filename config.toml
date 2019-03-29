@@ -72,8 +72,8 @@ enableEmoji = true
     pause = true
 
 [Params.video]
-    enable = false
-    youtube_id = "ZZ5LpwO-An4"
+    enable = true
+    youtube_id = ""
 
 # frontpage part of blog
 [Params.tips]
