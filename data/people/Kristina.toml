@@ -1,0 +1,8 @@
+name = "Kristina Nguyen"
+title = ""
+email = "krnguyen [at] chapman.edu"
+img = "kristina.jpg"
+description = "Kristina Nguyen is a Chapman sophomore pursuing a major in Biochemistry and Molecular Biology and a minor in Health Science. As one of the few members not majoring in Computer Science, she mainly contributes towards the public relation aspects of the Cyber Smart Panthers Project; she makes sure that the technical jargon relating to cybersecurity is translatable and understandable towards the intended audience."
+
+weight = 101
+enable_email = true
