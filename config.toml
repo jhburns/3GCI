@@ -73,7 +73,7 @@ enableEmoji = true
 
 [Params.video]
     enable = true
-    youtube_id = ""
+    youtube_id = "MIuIP7BE9vw"
 
 # frontpage part of blog
 [Params.tips]
