@@ -15,6 +15,11 @@
             {{ partial "nav.html" . }}
         {{ end }}
 
+
+        {{ if .Site.Params.alert_stripe.enable }}
+            {{ partial "alert_stripe.html" . }}
+        {{ end }}
+
         {{ if .Site.Params.slideshow.enable }}
             {{ partial "slideshow.html" . }}
         {{ end }}

@@ -15,6 +15,12 @@ enableEmoji = true
 [Params.home]
     desc = "Home"
 
+[Params.alert_stripe]
+    enable = true
+    content = "Welcome to Cyber Smart Panthers, consider: "
+    link = "https://www.google.com/"
+    link_text = "click here"
+
 [Params.nav]
     enable = true
 
