@@ -1,6 +1,15 @@
 <section id="alert_stripe">
     <div class="container">
-        <p>{{ .Site.Params.alert_stripe.content }}</p>
-        <a href="{{ .Site.Params.alert_stripe.link }}">{{ .Site.Params.alert_stripe.link_text }}</a>
+        <div class="row">
+            <div class="col-11">
+                <p class="d-inline-block">{{ .Site.Params.alert_stripe.content }}</p>
+                <a class="d-inline-block" href="{{ .Site.Params.alert_stripe.link }}">
+                    {{ .Site.Params.alert_stripe.link_text }}
+                </a>
+            </div>
+            <div class="col-1">
+                &times;
+            </div>
+        </div>
     </div>
 </section>
