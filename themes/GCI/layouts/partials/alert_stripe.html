@@ -1,4 +1,4 @@
-<section id="alert_stripe" class="bg-primary">
+<section id="alert-stripe" class="bg-primary collapse">
     <div class="container pt-3">
         <div class="row">
             <div class="col-1"></div>
@@ -7,7 +7,7 @@
                 <p class="alert-text alert-link">{{ .Site.Params.alert_stripe.content }}</p>
             </a>
 
-            <div class="col-1">
+            <div class="col-1 close-icon p-0 text-center" data-toggle="collapse" id="alert-close">
                 &times;
             </div>
         </div>

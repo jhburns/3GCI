@@ -15,3 +15,14 @@
     text-decoration-color: $white;
   }
 }
+
+.close-icon {
+  font-size: 2rem;
+  color: $white;
+  text-decoration: none;
+
+  &:hover {
+    color: $body-copy;
+    text-decoration: none;
+  }
+}

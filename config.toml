@@ -126,6 +126,7 @@ enableEmoji = true
     webpack_enable = true
     bootstrap_enable = true
     analytics = true
+    cookies_enable = true
 
 [Params.footer]
     enable = true
