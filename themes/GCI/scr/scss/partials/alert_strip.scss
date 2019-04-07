@@ -1,0 +1,12 @@
+.alert-text {
+  font-family: $title;
+  color: $white;
+  font-weight: bold;
+}
+
+.alert-link {
+
+  &:hover {
+    text-decoration-color: $white;
+  }
+}

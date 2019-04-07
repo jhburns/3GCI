@@ -17,9 +17,8 @@ enableEmoji = true
 
 [Params.alert_stripe]
     enable = true
-    content = "Welcome to Cyber Smart Panthers, consider: "
+    content = "Welcome to Cyber Smart Panthers, consider clicking here."
     link = "https://www.google.com/"
-    link_text = "click here"
 
 [Params.nav]
     enable = true

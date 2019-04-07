@@ -29,7 +29,9 @@ body {
   color:  $grey;
 }
 
-/* Markdown changes */
+.bg-primary {
+  background-color: $primary;
+}
 
 .bg-grey {
   background-color: $light-grey;
