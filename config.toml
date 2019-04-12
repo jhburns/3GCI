@@ -66,7 +66,7 @@ enableEmoji = true
 
 [Params.alert_stripe]
     enable = false
-    content = "Welcome to Cyber Smart Panthers, consider clicking here."
+    content = "Think you're cyber smart? Take the cyber smart challenge!"
     link = "https://www.google.com/"
 
 [Params.slideshow]

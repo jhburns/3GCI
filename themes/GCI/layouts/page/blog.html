@@ -15,6 +15,7 @@
         {{ partial "nav.html" . }}
     {{ end }}
 
+
     {{ partial "snippets/title.html" (dict "title" .Site.Params.blog.title "importance" 1) . }}
 
     {{ if .Site.Params.tips.enable }}
