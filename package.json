@@ -21,7 +21,7 @@
     "premade": "yarn lunar & yarn thumbs",
     "prod-webpack": "webpack -p --config ./build_scripts/webpack.production.config.js",
     "start": "hugo server --disableFastRender -D --config config.toml --forceSyncStatic",
-    "fastball": "yarn lunar & yarn thumbs && yarn dev-make && hugo server",
+    "fastball": "yarn lunar & yarn thumbs && yarn devpack && hugo server",
     "new": "hugo new -k blog",
     "new-link": "node ./build_scripts/file_copy.js ./data/link_template.toml.ig ./data/links/",
     "new-peep": "node ./build_scripts/file_copy.js ./data/people_template.toml.ig ./data/people/",

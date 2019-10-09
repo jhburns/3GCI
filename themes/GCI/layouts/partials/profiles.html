@@ -10,10 +10,6 @@
                     <p class="profile-text title name text-center">{{ $person.name }}</p>
                     <p class="profile-text normal sub-title text-center">{{ $person.title }}</p>
 
-                    {{ if $person.enable_email }}
-                        <p class="profile-text normal email text-center">Email: <i>{{ $person.email }}</i></p>
-                    {{ end }}
-
                     <div class="person-desc pl-3 mt-3">
                         <p class="profile-text normal d-none d-lg-block">{{ $person.description }}</p>
                     </div>
