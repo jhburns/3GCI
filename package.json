@@ -40,7 +40,7 @@
     "file-loader": "^1.1.11",
     "fs-extra": "^7.0.0",
     "hugo-cli": "https://github.com/UXSoc/hugo-cli/archive/0.6.2.tar.gz",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "minimatch": "^3.0.4",
     "popper.js": "^1.14.3",
     "scss": "^0.2.4"
