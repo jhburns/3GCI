@@ -61,7 +61,7 @@
     "imagemin-optipng": "^5.2.1",
     "imagemin-svgo": "^6.0.0",
     "imagemin-webpack": "^3.0.0",
-    "node-sass": "^4.9.0",
+    "node-sass": "^4.13.1",
     "resolve-url-loader": "^2.3.0",
     "rmdir": "^1.2.0",
     "sass-loader": "^7.0.1",
